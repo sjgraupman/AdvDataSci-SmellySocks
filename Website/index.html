@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Playground for visualization</title>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/topojson.v2.min.js"></script>
+    <link href="/d3-geomap/css/d3.geomap.css" rel="stylesheet">
+    <script src="/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
+    <script src="/d3-geomap/js/d3.geomap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href ="styles/style.css"    
+    <embed src = "images/map.svg" type = "image/svg+xml" id = "world" width = 408 height = 230>
+        <h3> Playing around with d3 Graphs for Final Project</h3>
+        <div id = "map"></div>
+        <script id = "notes">
+            
+            var height = 900;
+            var width = 580;
+            var padding = 0;
+
+            var map = d3.geomap().geofile('/d3-geomap/topojson/world/countries.json');
+            d3.select('#map').call(map.draw, map);
+            
+                     
+        </script>
+        
+        
+        
+    </body>
+    
+    </html>

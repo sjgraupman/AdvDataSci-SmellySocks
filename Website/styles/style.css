@@ -1,0 +1,16 @@
+body {
+    font-family: 'Slabo 27px', Calibri sans-serif;
+}
+
+svg {
+    border: solid black 3px;
+}
+rect.bar {
+    fill: blue;
+}
+text.label {
+    fill: #888;
+    font-size: x-small;
+    dominant-baseline: middle;
+    text-anchor:middle;
+}
