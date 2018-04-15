@@ -3,34 +3,37 @@
 <head>
     <meta charset="utf-8">
     <title>Playground for visualization</title>
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="http://d3js.org/topojson.v2.min.js"></script>
-    <link href="/d3-geomap/css/d3.geomap.css" rel="stylesheet">
-    <script src="/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
-    <script src="/d3-geomap/js/d3.geomap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+    <link rel="stylesheet" href ="styles/style.css"    
 </head>
 <body>
-    <link rel="stylesheet" href ="styles/style.css"    
-    <embed src = "images/map.svg" type = "image/svg+xml" id = "world" width = 408 height = 230>
-        <h3> Playing around with d3 Graphs for Final Project</h3>
-        <div id = "map"></div>
-        <script id = "notes">
-            
-            var height = 900;
-            var width = 580;
-            var padding = 0;
 
-            var map = d3.geomap().geofile('/d3-geomap/topojson/world/countries.json');
-            d3.select('#map').call(map.draw, map);
-            
-                     
-        </script>
-        
-        
-        
-    </body>
-    
-    </html>
+<h1> Example of D3 Map</h1>
+    <div id = 'container' style="position: relative; width: 700px; height: 500px;"></div>
+    <script id = "notes">
+        var map = new Datamap({
+            element: document.getElementById('container'),
+            scope: 'world',
+            fills: {
+                HIGH: '#afafaf',
+                LOW: '#123456',
+                MEDIUM: 'blue',
+                UNKNOWN: 'rgb(0,0,0)',
+                defaultFill: 'green'
+            },
+            geographyConfig: {
+                highlightOnHover: false
+            },
+            data: {
+                IRL: {
+                    fillKey: 'LOW',
+                    numberOfThings: 1000
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
