@@ -1,0 +1,1001 @@
+Row_Number,Time_Stamp,SockOwner1_Name,SockOwner1_Country,SockOwner1_Gender,SockOwner1_Age,SockOwner1_Smelliness,SockOwner2_Name,SockOwner2_Country,SockOwner2_Gender,SockOwner2_Age,SockOwner2_Smelliness
+1,12:59:14,Riccardo Mussotti,Laos,F,7,0.85,Irvin Murtimer,Israel,M,17,0.86
+2,13:04:59,Jud Acock,China,M,8,0.26,Abey Rosita,Portugal,M,14,0.1
+3,1:18:37,Udale Christene,Bulgaria,M,9,0.91,Tann Olney,Russia,M,9,0.34
+4,9:33:33,Dionysus Gooderidge,Ethiopia,M,60,0.62,Vassily Symper,Indonesia,M,64,0.14
+5,18:25:37,Kalvin De Antoni,Honduras,M,78,0.81,Tito Twyford,Brazil,M,16,0.61
+6,8:25:18,Marla Saddington,China,M,87,0.24,Geneva Dener,Comoros,F,49,0.47
+7,5:36:22,Dede Taill,Democratic Republic of the Congo,M,62,0.71,Aubree Alessandone,Indonesia,F,39,0.4
+8,21:50:20,Gizela Iorio,Philippines,F,49,0.48,Bessie Bulleyn,Yemen,F,60,0.88
+9,11:51:08,Brig Drewery,Indonesia,M,90,0.74,Cullie Jentet,Portugal,M,73,0.62
+10,14:16:38,Yale Van Giffen,Indonesia,F,48,0.33,Howey Milmoe,China,M,10,0.5
+11,7:35:41,Saxe Fiske,China,M,15,0.7,Dallas Gulleford,United States,M,45,0.68
+12,12:32:32,Scot Dobby,Sweden,M,90,0.65,Reagen Lavin,Indonesia,M,23,0.66
+13,17:37:03,Ram Hallums,Indonesia,F,14,0.84,Bobbie Boomes,China,M,55,0.28
+14,20:26:26,Merla Spacie,Poland,F,52,0.73,Emelia Harpur,Vietnam,F,58,0.95
+15,0:44:50,Ross Sisson,China,F,83,0.68,Tull Cawood,China,M,18,0.94
+16,14:20:33,Cece Gentry,China,M,63,0.57,Stanislaus Sealeaf,Tanzania,M,28,0.53
+17,16:32:10,Bary Ayllett,South Korea,M,80,0.15,Casper Faulconbridge,China,M,25,0.12
+18,0:43:26,Tobe Dungey,Philippines,F,14,0.62,Andy Malek,Israel,F,52,0.1
+19,17:55:56,Archambault Overlow,Philippines,M,30,0.65,Alphonse Clearie,China,M,32,0.86
+20,12:06:18,Godfrey Itschakov,Netherlands,F,80,0.84,Cirstoforo Barttrum,Portugal,M,95,0.96
+21,13:14:01,Morissa Kilfeder,United States,M,75,0.19,Gennie Bridie,Thailand,F,78,1.0
+22,20:15:30,Mala Goede,China,M,87,0.43,Maggee Wellen,China,F,60,0.58
+23,1:28:54,Rosabelle Brosi,Colombia,M,38,0.79,Constantina Gatsby,Portugal,F,77,0.38
+24,22:00:09,Thain Bengough,Indonesia,F,63,0.32,Karl Dennis,Iran,M,79,0.6
+25,0:20:17,Seth Warboy,Dominican Republic,F,73,0.31,Elden Bowne,Czech Republic,M,6,0.3
+26,18:19:31,Eugenia Dawidowitz,United States,M,13,0.9,Calla Willets,Canada,F,90,0.65
+27,4:18:45,Evanne Tiffin,Canada,M,52,0.68,Margot Leifer,France,F,83,0.12
+28,10:02:39,Bidget Sargent,China,F,1,0.71,Madelene Sweetnam,Indonesia,F,81,0.46
+29,0:22:30,Franciska Wohler,China,F,92,0.65,Jeniffer Sherman,Portugal,F,40,0.64
+30,8:36:47,Nicolais Jillett,Indonesia,M,38,0.72,Merwyn Salzburg,China,M,65,0.83
+31,3:49:13,Rick Craddy,Indonesia,M,35,0.08,Reg Raithby,Albania,M,83,0.07
+32,4:31:53,Cleo MacRitchie,China,F,89,1.0,Beckie Heatly,Nepal,F,24,0.04
+33,4:34:18,Dimitry Newsome,Nigeria,F,38,0.68,Roma Crunkhurn,Nigeria,M,68,0.07
+34,4:09:53,Gerhard Morrallee,Indonesia,F,17,0.39,Jock Swancott,Poland,M,48,0.44
+35,12:12:05,Kennie Bringloe,China,F,29,0.05,Carleton Nelson,Indonesia,M,64,0.35
+36,19:44:56,Kaitlin Onians,Peru,M,39,0.42,Sher Antalffy,Brazil,F,76,0.64
+37,18:23:34,Solly Hourstan,Ukraine,M,48,0.72,Chane Slavin,Poland,M,29,0.72
+38,11:14:05,Verne Escoffrey,United States,M,46,0.52,Odie Budgen,Poland,M,69,0.53
+39,23:15:50,Arvin Duckham,China,M,85,0.97,Cirillo Fosdike,China,M,59,0.37
+40,22:05:54,Maury Boyne,Russia,M,64,0.52,Alphonso Savile,China,M,62,0.86
+41,13:41:09,Denyse Budd,China,M,1,0.71,Tobi Colclough,Philippines,F,3,0.6
+42,20:30:56,Conant Wernher,Poland,M,9,0.91,Toddie Tubritt,Philippines,M,37,0.69
+43,21:15:11,Alaric Lochrie,Ecuador,M,71,0.92,Morry Seiller,China,M,31,0.94
+44,3:14:13,Dee Burgher,Colombia,M,38,0.83,Quintina Trank,China,F,76,0.13
+45,22:02:19,Lurette Brandsen,Brazil,M,25,0.45,Anica Holywell,Bulgaria,F,20,0.62
+46,3:18:50,Cris Domek,Poland,M,54,0.86,Oralle Bolger,Indonesia,F,93,0.75
+47,7:53:08,Krystyna Van Giffen,France,F,14,0.63,Josi Stoppe,China,F,84,0.62
+48,4:29:25,Justin Barnby,China,M,51,0.11,Dylan Strutley,Philippines,M,67,0.97
+49,12:17:37,Audi Dymick,Syria,F,31,0.14,Ree McTaggart,Yemen,F,47,0.8
+50,1:36:31,Gradeigh Mocquer,Afghanistan,M,18,0.47,Baxter Bing,United States,M,87,0.37
+51,11:35:12,Glad Starsmeare,Sweden,F,32,0.19,Sheilah Castellone,Russia,F,93,0.4
+52,11:37:22,Jolene Briamo,China,F,26,0.01,Margot Jacobowits,Albania,F,85,0.89
+53,15:02:29,Jesus Fendley,France,M,4,0.42,Alfonso Brine,Indonesia,M,8,0.14
+54,9:58:20,Lenette Robertson,Czech Republic,M,89,0.43,Ginger Bhar,China,F,29,0.8
+55,6:19:29,Eugen Neilan,Philippines,M,2,0.77,Matthaeus Perot,China,M,53,0.35
+56,2:22:26,Juana Craighead,Somalia,M,68,0.61,Pattie Yeld,Brazil,F,66,0.49
+57,11:25:53,Therine Fairlem,Iran,F,86,0.81,Doralynne Wisher,Argentina,F,80,0.26
+58,21:06:51,Gordie Norval,Philippines,F,90,0.25,Ario Gawke,France,M,89,0.37
+59,6:50:59,Dorthea Nanuccioi,France,F,68,0.47,Mallorie Surmeyers,Indonesia,F,45,0.82
+60,5:35:55,Fanchette Minihan,China,F,90,0.11,Kim Elijah,Philippines,F,93,0.11
+61,19:45:08,Marika Bartlet,Indonesia,M,65,0.14,Calla Fyall,Mongolia,F,46,0.16
+62,0:23:56,Saba Delnevo,China,M,74,0.81,Alyson McLenaghan,Russia,F,10,0.01
+63,8:23:37,Pablo Powlett,New Zealand,F,89,0.05,Reinald Limer,China,M,94,0.27
+64,17:49:21,Maegan Clifforth,China,F,58,0.12,Adria Gyppes,Eritrea,F,21,0.62
+65,14:27:39,Eveleen Piser,Indonesia,M,12,0.69,Bell Northrop,Indonesia,F,64,0.38
+66,22:41:14,Gun Planque,Greece,M,34,0.28,Colas Vedstra,Philippines,M,34,0.68
+67,22:48:15,Jemmie Pistol,China,F,49,0.18,Denys Bourner,Indonesia,F,37,0.2
+68,21:22:00,Sven Fromont,Poland,F,29,0.86,Munroe Windmill,Argentina,M,72,0.39
+69,17:29:13,Gerick Rozea,Colombia,M,26,0.22,Chauncey Drewery,Ukraine,M,51,0.13
+70,22:41:00,Olivero Staggs,Poland,M,32,0.76,Sanson Wigelsworth,Thailand,M,38,0.37
+71,22:55:53,Baxter Filan,Poland,M,34,0.62,Nickolaus Ciciotti,China,M,47,0.56
+72,18:29:21,Theadora Mathivon,Brazil,F,27,0.75,Laureen Wesley,Mauritius,F,95,0.27
+73,1:23:02,Rolfe Tomasicchio,Greece,F,58,0.53,Kleon Schust,Cameroon,M,60,0.4
+74,19:10:58,Sissy Meritt,Norway,M,81,0.67,Jenn Wannell,Indonesia,F,20,0.91
+75,17:50:13,Alexandros Feld,Philippines,F,34,0.18,Mord Hasker,Pakistan,M,51,0.74
+76,8:56:22,Leodora Wellard,Philippines,F,38,0.54,Kimmie Roscow,Ukraine,F,62,1.0
+77,6:45:47,Theodor Van Baaren,Poland,F,49,0.79,Burke Brosch,Portugal,M,45,0.17
+78,10:54:09,Joan Kenningley,China,F,87,0.69,Calida McGing,Honduras,F,95,0.11
+79,23:45:04,Saunders Chasier,Poland,M,12,0.04,Keir Whordley,China,M,3,0.19
+80,18:29:19,Sabina Oluwatoyin,Indonesia,M,32,0.59,Anstice Palluschek,South Korea,F,49,0.79
+81,2:46:09,Odie Lomasny,Russia,F,14,0.4,Had Mathelin,China,M,3,0.44
+82,11:52:35,Melvyn Josefsen,Sri Lanka,M,14,0.82,Derrik Adnet,China,M,55,0.69
+83,15:02:37,Delora Burdon,Poland,M,72,0.86,Molly Hazeldene,Portugal,F,68,0.01
+84,9:24:47,Isaac McGarel,Ireland,F,67,0.25,Abran Sopp,France,M,1,0.67
+85,9:37:59,El Fish,Turkmenistan,M,85,0.67,Dorey Portress,China,M,89,0.64
+86,7:06:18,Kathryn Duffil,China,F,79,0.7,Charity Voase,Taiwan,F,33,0.16
+87,14:57:39,Louisette Haycock,Peru,F,49,0.49,Lilah Kiera,Portugal,F,2,0.06
+88,10:34:50,Liana Seeley,Japan,F,8,0.57,Linnie MacFadyen,Brazil,F,73,0.38
+89,19:27:18,Morena Applin,China,F,94,0.48,Sisile Baber,China,F,24,0.57
+90,14:57:46,Marwin Jayume,China,F,9,0.5,Derrik Woollhead,China,M,14,0.82
+91,5:12:50,Terese Goodliffe,China,F,39,0.76,Nicolle Workman,China,F,77,0.41
+92,22:15:31,Janenna Ford,Micronesia,M,38,0.63,Ilysa Guise,Yemen,F,56,0.78
+93,15:30:32,Leland Loughlin,Portugal,F,35,0.26,Byran Ixor,New Zealand,M,10,0.76
+94,5:23:57,Rasia Lyngsted,Germany,F,5,0.2,Bernete Ginnally,South Africa,F,77,0.09
+95,0:41:49,Marsh Towers,Brazil,F,13,0.52,Herschel Ebbrell,Portugal,M,15,0.78
+96,1:57:44,Modestine Bagg,Poland,F,38,0.72,Catharina Petrillo,China,F,25,0.42
+97,17:04:51,Euphemia Ortiger,Czech Republic,F,95,0.34,Terrie Junes,Morocco,F,36,0.88
+98,4:50:30,Thaxter Gilford,China,F,50,0.28,Elden Prudence,Peru,M,64,0.48
+99,3:31:41,Carey Dieton,China,M,65,0.19,Pete Pickerill,Indonesia,M,29,0.84
+100,6:55:33,Issy Dunckley,Paraguay,F,86,0.58,Bobette Aleavy,Japan,F,16,0.06
+101,18:33:29,Naomi Gives,Indonesia,F,54,0.33,Shani Atton,Peru,F,9,0.09
+102,17:34:45,Jard St. Hill,Indonesia,F,23,0.01,Brandy Buzin,Sweden,M,86,0.84
+103,22:59:35,Dolph Biddell,China,F,49,0.84,Gordan Burston,Ireland,M,46,0.74
+104,21:36:27,Trula Francecione,Russia,M,24,0.85,Alvira Arthan,Portugal,F,3,0.23
+105,13:04:14,Eydie Maha,Brazil,F,64,0.05,Anthea Grebner,Mexico,F,7,0.66
+106,18:10:35,Chrysler Wavell,Micronesia,F,46,0.08,Lauree Hosier,Greece,F,23,0.09
+107,10:52:42,Devland Symones,Indonesia,M,79,0.13,Alisander MacTrustie,Argentina,M,16,0.71
+108,3:12:07,Harriett Hawkeswood,Portugal,M,19,0.69,Alika Leving,United States,F,46,0.85
+109,5:54:13,Shayne Ciccotto,Indonesia,F,91,0.35,Jerad Pim,Yemen,M,7,0.59
+110,12:59:59,Peri Schonfeld,Greece,F,43,0.75,Bev Antonelli,Afghanistan,F,21,0.79
+111,4:29:10,Milena Darling,Portugal,F,93,0.37,Camila Kopta,Brazil,F,44,0.38
+112,6:32:43,Elle Benfell,Indonesia,F,3,0.69,Marcela Espinos,Brazil,F,25,0.8
+113,16:46:49,Lyndell Thickpenny,Ukraine,F,17,0.3,Hortense Dillingham,Ireland,F,90,0.17
+114,6:56:53,Alessandro Nix,China,M,34,0.41,Ikey Yearsley,Sweden,M,81,0.72
+115,0:19:48,Brian McMychem,Thailand,F,52,0.86,Isador Barkus,Slovenia,M,92,0.96
+116,3:59:10,Halette Marjanski,Greece,M,53,0.76,Sula Lawrance,Czech Republic,F,18,0.66
+117,17:38:31,Willdon Egleton,China,M,4,0.23,Colver Pendleton,France,M,55,0.03
+118,7:53:18,Ursa Knight,China,F,21,0.32,Zondra Creelman,Bolivia,F,62,0.71
+119,11:29:46,Daisi Manley,Bulgaria,F,78,0.27,Elva Kurt,Brazil,F,94,0.85
+120,2:16:54,Josefina McCrann,Switzerland,F,32,0.19,Guillemette Buttery,France,F,72,0.35
+121,17:49:26,Meredeth Keri,Morocco,M,43,0.09,Consalve Banks,China,M,55,0.67
+122,17:30:54,Gerry Roundtree,Zambia,M,5,0.3,Cookie Sikorski,Azerbaijan,F,28,0.01
+123,7:23:09,Marsh Derill,Japan,M,61,0.22,Allayne Sturch,Peru,M,58,0.11
+124,23:14:13,Diana Ingledow,Malawi,M,86,0.64,Melinda Marzello,Mexico,F,94,0.72
+125,8:05:33,Alikee Friday,Colombia,M,90,0.18,Patsy Roscrigg,Indonesia,F,18,0.64
+126,6:50:55,Herb Fortune,Indonesia,M,89,0.88,Grenville Jury,China,M,50,0.39
+127,6:14:20,Estevan Puckett,Niger,F,22,0.54,Whitby Daulby,China,M,78,0.45
+128,19:18:48,Winona Labusch,Thailand,F,76,0.97,May Gheorghescu,Indonesia,F,87,0.87
+129,8:21:56,Doria Lillee,Malaysia,F,47,0.96,Aidan Faers,Zambia,F,75,0.49
+130,6:41:48,Pattie Gibbin,Bosnia and Herzegovina,F,47,0.13,Arri Del Castello,Portugal,M,77,0.51
+131,3:12:25,Rikki Blackham,Iran,F,3,0.28,Audie Vallow,Portugal,F,50,0.3
+132,11:08:04,Nert Vowell,Azerbaijan,F,7,0.82,Billi Guiver,Russia,F,29,0.78
+133,4:04:27,Dasi Petrovsky,Sweden,F,29,0.79,Joli Loache,Afghanistan,F,22,0.05
+134,0:57:33,Arlinda Byer,Philippines,M,50,0.9,Megan Aleavy,China,F,52,0.74
+135,14:24:24,Dionne Greally,Thailand,M,11,0.17,Bunny Drains,Brazil,F,45,0.92
+136,5:37:07,Isadore Bigadike,French Polynesia,F,38,0.18,Sumner Hadcock,United States,M,78,0.48
+137,23:03:47,Beaufort Bispham,Hungary,F,1,0.97,Tam Teasey,Indonesia,M,73,0.46
+138,2:04:59,Rosalinde Clerke,South Africa,F,51,0.39,Kimmy Dooland,Indonesia,F,85,0.57
+139,18:44:44,Tiphany Rehn,Indonesia,F,54,0.33,Dulciana Flintiff,Colombia,F,23,0.47
+140,11:20:23,Olympia Macartney,Japan,F,15,0.24,Orly Marshal,Indonesia,F,17,0.11
+141,15:02:33,Kaine Killerby,Finland,F,8,0.58,Shelley Napier,Czech Republic,M,53,0.44
+142,19:00:08,Timothee Corke,China,M,22,0.92,Wang Bennedsen,Iran,M,70,0.12
+143,3:49:45,Sax Gyngyll,Philippines,F,93,0.13,Peadar Margery,Indonesia,M,57,0.56
+144,8:40:27,Bernette Lownes,United States,M,91,0.5,Winny Gymlett,Czech Republic,F,84,0.05
+145,1:22:49,Giustino Trusslove,China,F,59,0.41,Rollins Bernardeschi,Portugal,M,27,0.76
+146,4:15:27,Bennett Reddy,China,M,68,0.15,Denney Kofax,Portugal,M,36,0.19
+147,20:48:05,Georgeanne Coumbe,China,M,60,0.35,Minerva Elfleet,China,F,43,0.47
+148,23:34:59,Jobey Gyenes,Tajikistan,F,50,0.95,Concettina Tutt,Russia,F,30,0.09
+149,18:05:02,Ahmed Bomfield,China,F,22,0.64,Brewster Sheerin,France,M,33,0.27
+150,6:53:16,Maury Bagnold,Poland,F,7,0.43,Pryce Ludee,Indonesia,M,46,0.77
+151,16:03:46,Conway Spearett,Indonesia,M,52,0.19,Alistair Vanstone,China,M,12,0.94
+152,23:55:20,Nobie Chalfain,Philippines,M,72,0.59,Quincy Standeven,Albania,M,18,0.11
+153,0:49:31,Brose Guillot,China,F,43,0.36,Tiler Parmenter,Chile,M,55,0.36
+154,14:24:21,Jasmina Oxberry,Serbia,M,89,0.69,Stefanie Estick,East Timor,F,73,0.6
+155,18:24:34,Nickie MacFadzan,China,M,33,0.26,Christy Wybourne,Indonesia,F,65,0.09
+156,22:25:22,Brittany Devinn,Brazil,F,51,0.87,Lynnelle Visco,Philippines,F,88,0.9
+157,10:00:43,Dur Nordass,Czech Republic,F,23,0.97,Huntley Burle,China,M,58,0.02
+158,11:40:18,Jesus Bauser,Philippines,M,66,0.32,Wadsworth Balkwill,China,M,37,0.4
+159,4:25:58,Scarlet Thorn,Sweden,F,80,0.83,Doroteya Halms,Peru,F,84,0.87
+160,8:13:23,Paxton Parlot,Russia,M,48,0.36,Haslett Ravelus,Philippines,M,67,0.34
+161,3:26:15,Kincaid Peto,China,M,59,0.62,Normy Bertomieu,Uzbekistan,M,3,0.74
+162,9:38:19,Darwin Janczyk,Indonesia,F,88,0.17,Ruttger Bottrill,Sweden,M,22,0.7
+163,2:19:25,Aubrie Millen,Canada,F,11,0.29,Freida Haston,Libya,F,26,0.92
+164,2:54:10,Gerardo Leal,Netherlands,M,43,0.53,Wells Ryman,South Africa,M,18,0.08
+165,2:08:22,Val Harrismith,Indonesia,F,63,0.14,Kitty Skone,Israel,F,40,0.47
+166,2:51:49,Clayborn Tuny,Portugal,M,2,0.51,Walt Ayres,Portugal,M,20,0.97
+167,8:07:57,Cornela Radeliffe,Peru,F,32,0.8,Odella Swidenbank,Mozambique,F,5,0.92
+168,19:49:52,Mavis Strick,China,M,62,0.2,Cordelia Winckle,Canada,F,83,0.77
+169,23:18:38,Gilemette Sporgeon,Syria,F,52,0.89,Adeline Jager,Indonesia,F,59,0.42
+170,16:22:50,Lockwood Henrichs,Malaysia,M,24,0.28,Sloane Hoolaghan,China,M,40,0.01
+171,3:54:36,Hulda Yuryev,Belarus,F,37,0.26,Evita Aggett,Palestinian Territory,F,18,0.74
+172,20:03:11,Brandtr Legendre,Philippines,F,87,0.79,Galven Liddle,China,M,34,0.41
+173,4:12:02,Lenette Yeandel,China,F,95,0.7,Cherilynn Kettles,Russia,F,4,0.6
+174,11:04:37,Candida De Lacey,Costa Rica,F,12,0.48,Eba Nutkins,Russia,F,54,0.26
+175,18:44:16,Pammi Cushe,South Korea,F,37,0.85,Leandra Ashborne,Venezuela,F,51,0.95
+176,16:09:37,Odelinda Jedrzej,Poland,M,83,0.24,Ellen Eddisforth,Brazil,F,5,0.91
+177,11:28:09,Reginald Heaford,Mauritius,F,67,0.76,Sean Lounds,Mongolia,M,89,0.37
+178,4:48:25,Theodoric Fardoe,China,F,21,0.47,Waiter Rickersy,Lebanon,M,69,0.85
+179,14:24:21,Katine Bastow,China,M,4,0.53,Daphna Guitt,Moldova,F,75,0.11
+180,15:59:25,Dane Mendel,Brazil,M,67,0.87,Wallis Cornely,China,M,83,0.69
+181,23:58:04,Vivienne Wickstead,Indonesia,F,91,0.7,Sammy Queyos,Philippines,F,76,0.9
+182,20:09:34,Hort Falkous,Indonesia,F,83,0.16,Alix Aldwick,Poland,M,33,0.65
+183,23:04:44,Harlen Crusham,Poland,M,74,0.26,Vladimir Rockhall,South Africa,M,55,0.7
+184,7:55:09,Cristian Bunning,Indonesia,M,12,0.32,Samson Canland,Japan,M,46,0.04
+185,3:56:30,Jammie Timmermann,Bosnia and Herzegovina,F,11,0.19,Ebonee Fibbit,Guinea,F,39,0.32
+186,8:51:03,Janeta Penwright,Peru,M,90,0.76,Marianna Klejin,Western Sahara,F,69,0.64
+187,17:05:25,Rosanna Pratley,Russia,F,87,0.07,Lina Cairney,Indonesia,F,70,0.8
+188,22:50:07,Kelcey Aizikov,Ukraine,M,2,0.58,Layne Duffit,Norway,F,35,0.95
+189,17:38:38,Melany Buss,Indonesia,M,13,0.22,Danielle Tailour,China,F,49,0.52
+190,2:37:49,Carma Ondracek,Indonesia,F,55,0.9,Marci Moxstead,Peru,F,62,0.89
+191,18:57:31,Angelika Triplow,Russia,M,69,0.52,Gnni Sneezem,China,F,62,0.07
+192,3:38:26,Kaitlyn Marcos,Colombia,F,44,0.22,Constanta Blasi,Indonesia,F,21,0.52
+193,4:08:25,Kelci Derisley,Philippines,F,63,0.31,Barbara-anne Bone,Brazil,F,44,0.88
+194,12:49:10,Lesly Sondland,China,M,74,0.11,Kristy Ettritch,Indonesia,F,88,0.52
+195,17:23:56,Christie Petr,Sweden,M,61,0.14,Tova Monument,Indonesia,F,81,0.24
+196,21:03:11,Roanna Kmicicki,Peru,F,25,0.89,Marlene Yelden,Uzbekistan,F,68,0.89
+197,18:50:55,Gabe Hibbart,United States,F,64,0.64,Marten Dressel,Russia,M,5,0.78
+198,8:28:58,Harmony Moggan,Philippines,M,62,0.83,Cheryl Seatter,Iceland,F,18,0.65
+199,22:31:42,Winne Tewes,Portugal,F,60,0.51,Genny MacCosto,China,F,34,0.47
+200,4:58:08,Kerrin Ilieve,Panama,F,14,0.66,Marie-jeanne Cunradi,China,F,33,0.62
+201,14:06:38,Franky Meach,Belarus,M,93,0.93,Rupert Quennell,Mexico,M,3,0.15
+202,2:32:28,Abdul Pheasant,Sweden,M,8,0.66,Case Osband,France,M,3,0.57
+203,9:53:53,Drona Chree,Peru,F,18,0.01,Marisa Wabey,Vietnam,F,78,0.5
+204,14:24:38,Matilde Bottrell,Nigeria,M,56,0.34,Bill Cuddy,Ecuador,F,61,0.01
+205,5:58:04,Etienne Casarini,China,F,47,0.96,Parker Binks,Sweden,M,32,0.06
+206,23:22:57,Barnie Jerwood,China,F,76,0.28,Clyde Hacking,Poland,M,56,0.68
+207,21:03:37,Jamal Mildner,Chad,F,9,0.17,Sergei Broadnicke,China,M,9,0.89
+208,18:00:22,Basile Messier,Ecuador,M,91,0.75,Maury Fraczek,Philippines,M,73,0.17
+209,20:08:47,Chanda Blakeley,China,M,35,0.03,Brittni Stedson,Russia,F,58,0.11
+210,17:32:30,Annadiane Rove,Indonesia,F,27,0.06,Enrichetta Kearey,Indonesia,F,2,0.97
+211,15:48:04,Jervis Heyfield,France,M,18,0.89,Emmott Bouda,China,M,46,0.16
+212,7:34:07,Tammara Thackray,China,M,64,0.55,Analise Maryman,China,F,40,0.27
+213,3:33:55,Crissie MacKibbon,Indonesia,M,17,0.47,Filia Stretton,China,F,70,0.78
+214,6:07:03,Estele Veivers,Portugal,F,68,0.2,Celine Lugden,Indonesia,F,85,0.35
+215,11:17:08,Culley Varndall,Ukraine,F,5,0.97,Sutton Sawell,Ethiopia,M,46,0.07
+216,15:54:45,Shirl Nials,Bolivia,F,1,0.7,Glori Grinstead,Sweden,F,30,0.66
+217,12:32:06,Paulie Gain,Russia,M,55,0.29,Ulrikaumeko Stear,Peru,F,37,0.33
+218,18:24:59,Rutter Gainsborough,Indonesia,F,11,0.33,Karlan Larchiere,Indonesia,M,11,0.05
+219,4:38:50,Cloe Allerton,China,M,90,0.97,Bernette Fisby,Sri Lanka,F,46,0.62
+220,1:27:16,Kristian Comellini,Indonesia,F,57,0.51,Carey Schieferstein,Thailand,M,91,0.26
+221,9:56:32,Karlan Sturman,Czech Republic,F,36,0.96,Gray Temprell,Spain,M,55,0.15
+222,5:29:58,Issi Bonsall,China,M,39,0.69,Miof mela Gurton,Costa Rica,F,46,0.96
+223,8:48:07,Angus Dransfield,Indonesia,F,27,0.83,Ulric Danielot,Portugal,M,63,0.59
+224,19:54:26,Devondra Mewrcik,Russia,M,86,0.28,Cecilia Dedenham,China,F,24,0.75
+225,17:36:18,Liza Casale,United States,F,90,0.05,Kaylil Claessens,Indonesia,F,53,0.14
+226,0:52:43,Kennie Schusterl,Sweden,F,94,0.05,Etienne Danniell,Canada,M,63,0.67
+227,11:00:13,Lindsy Purchase,Ireland,M,35,0.99,Ynes Jilliss,Yemen,F,17,0.25
+228,5:02:01,Eran Hammer,Russia,M,42,0.66,Audra McKernan,China,F,27,0.46
+229,5:49:52,Read Guierre,Kazakhstan,F,16,0.45,Hazel Finlay,Argentina,M,78,0.6
+230,16:31:37,Emera Splevin,China,M,9,0.62,Koralle Lyburn,Azerbaijan,F,72,0.04
+231,22:49:32,Syd Riccelli,China,F,88,0.2,Gannie Gillfillan,Indonesia,M,18,0.57
+232,15:28:49,Sile Cawdery,Poland,F,2,0.41,Ivy Mumberson,Indonesia,F,3,0.05
+233,16:11:36,Faydra Buesnel,China,M,15,0.37,Willette Chinnery,Palestinian Territory,F,92,0.1
+234,21:23:19,Gerda McCallam,Russia,M,10,0.99,Kori Schall,Czech Republic,F,38,0.38
+235,2:10:35,Brear Feasby,Norway,F,38,0.55,La verne Kilban,Malaysia,F,10,0.57
+236,12:03:13,Clifford Yurin,China,M,66,0.32,Wilbur Bootell,Afghanistan,M,39,0.34
+237,5:05:42,Trudi Blything,Argentina,F,54,0.46,Roxi Fante,China,F,45,0.14
+238,1:00:25,Tito Fanstone,Mexico,M,35,0.47,Antoni Narrie,Albania,M,3,0.77
+239,21:03:38,Clayton Burtwhistle,Peru,M,52,0.76,Haily McKerron,China,M,10,0.28
+240,18:44:34,Raymond Wathan,China,M,93,0.97,Skipper Dagworthy,Peru,M,80,0.13
+241,8:05:36,Yves Delbergue,Bosnia and Herzegovina,F,45,0.62,Gordy Trevillion,China,M,43,0.17
+242,14:25:55,Brandi Lempel,Portugal,F,86,0.4,Lesli Barefoot,United States,F,86,0.08
+243,22:04:35,Devland Crispin,China,F,12,0.68,Pablo Burkitt,Indonesia,M,20,0.65
+244,16:46:31,Joly Blenkinsop,Brazil,M,93,0.56,Rosalind Leipold,Tajikistan,F,43,0.13
+245,0:15:04,Caresse Nottingam,Philippines,M,20,0.4,Valeria Hurdedge,Philippines,F,76,0.85
+246,0:33:45,Eadith Beek,Russia,M,79,0.56,Rebecka Jotcham,Indonesia,F,80,0.29
+247,4:43:02,Zita Matcham,Georgia,M,74,0.04,Margarita Livezey,Indonesia,F,67,0.34
+248,18:39:54,Carney Stockau,Portugal,F,50,0.05,Kliment Navarro,China,M,75,0.45
+249,20:16:49,Mose Kinnear,Ethiopia,F,6,0.57,Syman Duckitt,Sri Lanka,M,85,0.09
+250,1:40:08,Bourke Boniface,United States,M,58,0.93,Kellen Grieswood,Poland,M,17,0.19
+251,2:25:07,Guinevere Sargint,Botswana,F,47,0.41,Pauletta Percy,Russia,F,22,0.26
+252,18:21:19,Edna Dunrige,Indonesia,M,13,0.19,Lenora Wickrath,Spain,F,64,0.07
+253,11:16:01,Aylmer Malyj,China,M,69,0.93,Eadmund Horwell,China,M,74,0.13
+254,7:17:23,Thadeus Roger,Ecuador,F,30,0.17,Gery Lahive,Libya,M,34,0.08
+255,18:58:28,Felita Gurling,Fiji,M,62,0.64,Leanor Methuen,Philippines,F,52,0.45
+256,19:13:33,Georgi Dellatorre,Israel,F,73,0.86,Tanny Bront,Philippines,M,67,0.77
+257,10:18:22,Ervin Graham,Poland,F,89,0.17,Roth Thulborn,China,M,70,0.46
+258,0:49:19,Garrot Duffrie,China,F,27,0.95,Bartlet Joisce,Brazil,M,94,0.65
+259,0:54:04,Caritta Gaule,United States,F,71,0.49,Dael Clemenson,China,F,83,0.98
+260,4:09:08,Lucky Bonavia,Sweden,F,21,0.37,Joelle Keener,China,F,16,0.84
+261,22:07:14,Terrell Chattelaine,Colombia,F,42,0.12,Wood Chevis,Brazil,M,75,0.96
+262,14:59:30,Ives Peckitt,Philippines,M,28,0.85,Otho Boocock,Mali,M,90,0.86
+263,18:07:43,Kelsy Peyton,Indonesia,F,35,0.7,Madelin Pizey,China,F,33,0.43
+264,12:29:45,Eustace Silber,China,F,17,0.33,Pail Egdale,Ukraine,M,81,0.73
+265,23:12:54,Euphemia Kull,China,F,19,0.54,Morganica Medler,Indonesia,F,34,0.97
+266,22:53:24,Matt Courtin,Kazakhstan,F,93,0.09,Bradford Argrave,Philippines,M,31,0.27
+267,8:53:43,Wilbur Swancott,Norway,F,77,0.27,Filberto Styles,China,M,95,0.55
+268,17:22:40,Quinlan Haile,United States,M,88,0.72,Odie Stow,China,M,30,0.76
+269,7:11:34,Corney Broadbere,Peru,F,16,0.14,Morly Buyers,China,M,69,0.6
+270,3:06:01,Tersina Halfacree,Japan,F,1,0.83,Prudence Belfield,Indonesia,F,10,0.45
+271,14:41:46,Bondy Halbord,Bosnia and Herzegovina,M,44,0.39,Giraldo Tuck,Ukraine,M,81,0.54
+272,22:50:20,Binny Hue,Brazil,F,26,0.59,Koralle Wolledge,Indonesia,F,91,0.79
+273,13:42:53,Claire Mee,Indonesia,M,3,0.03,Brant Paoloni,Sweden,M,70,0.8
+274,8:20:11,Kevan Gounet,Japan,M,39,0.58,Stafford Bowdery,Kenya,M,14,0.88
+275,20:19:10,Neala Oseman,Russia,M,24,0.73,Vikki Wolsey,North Korea,F,21,0.5
+276,21:34:27,Vidovik Guiot,China,F,29,0.52,Nollie Monard,Indonesia,M,23,0.49
+277,12:20:44,Roland De Banke,Sweden,M,94,0.67,Roi Lattos,China,M,64,0.84
+278,21:08:27,Cinnamon Fowlds,China,F,61,0.2,Karisa Cary,Philippines,F,77,0.83
+279,11:40:51,Prescott Wadworth,Portugal,M,47,0.2,Natty Grimsey,China,M,27,0.44
+280,0:15:15,Norbie Laugheran,Bulgaria,M,35,0.09,Sloane Stratford,Philippines,M,63,0.11
+281,17:22:47,Lynnea Adriaan,China,M,54,0.57,Thea Ucchino,United States,F,31,0.7
+282,23:13:30,Anabelle Phare,Russia,M,21,0.43,Georgianne Tetsall,Poland,F,63,0.45
+283,5:44:25,Val Matyas,Paraguay,F,15,0.43,Livia Butt Gow,Uzbekistan,F,77,0.95
+284,6:03:53,Gayleen Holston,China,M,69,0.79,Christiana Feehan,Greece,F,57,0.19
+285,0:10:35,Edsel Peat,Russia,F,14,0.75,Valle Avraham,Argentina,M,51,0.32
+286,13:08:36,Dominga Withinshaw,Thailand,F,74,0.49,Marie-jeanne Negal,Afghanistan,F,75,0.45
+287,22:48:25,Felice Amoss,Brazil,F,90,0.37,Jacobo Cuffin,Russia,M,91,0.98
+288,13:42:00,Louis Krystof,France,F,25,0.78,Hillery Bealing,China,M,54,0.41
+289,10:43:15,Marice Linne,Portugal,F,70,0.65,Jami Ticksall,Pakistan,F,77,0.63
+290,4:51:06,Edgardo Maulin,Portugal,M,39,0.58,Isacco Le Breton,Georgia,M,89,0.63
+291,3:13:51,Drusilla Burkin,Nigeria,M,74,0.93,Catherin Pilkington,Indonesia,F,4,0.85
+292,20:38:46,Rowena Upcraft,Russia,M,42,0.8,Nisse Vales,Costa Rica,F,24,0.06
+293,5:59:07,Shea Petrillo,France,F,11,0.85,Selma Kerswill,Ukraine,F,55,0.19
+294,1:10:29,Ellissa Ealam,Indonesia,F,59,0.17,Karrie Lightbown,Indonesia,F,45,0.63
+295,0:20:12,Arabele Sheryne,Mexico,F,33,0.02,Cristin Redley,Czech Republic,F,63,0.41
+296,18:16:26,Bettina Attenbrow,Colombia,F,60,0.88,Elvira Bain,China,F,29,0.86
+297,21:42:28,Gerrard Twinbrow,Russia,F,47,0.99,Patric Glendenning,Mexico,M,65,0.19
+298,15:48:36,Lane Ager,China,M,31,0.65,Fan Peers,Greece,F,56,0.38
+299,0:27:49,Flem Dryburgh,Poland,F,86,0.85,Clemmy Burree,Peru,M,55,0.69
+300,18:22:56,Ware Enston,China,F,50,0.94,Gabby Tivolier,Russia,M,84,0.35
+301,21:39:15,Andriana Uff,Chile,M,95,0.23,Margarete Archbutt,Finland,F,93,0.6
+302,23:29:01,Jacklyn Ducker,China,F,89,0.35,Faydra De la Barre,Moldova,F,82,0.87
+303,14:59:14,Arlin Chafney,Poland,M,19,0.37,Omero Bader,China,M,61,0.38
+304,0:58:05,Joelynn Symcox,Russia,M,88,0.58,Jeanette Ottosen,Brazil,F,47,0.88
+305,9:27:17,Donavon Pockett,Brazil,F,9,0.88,Inger Pringley,Thailand,M,13,0.89
+306,0:48:40,Rene Moreinis,Sri Lanka,F,5,0.35,Vanessa Skoyles,Egypt,F,83,0.36
+307,8:49:22,Bernhard Eubank,Russia,M,82,0.74,Linoel D'Ambrogio,Poland,M,71,0.49
+308,1:56:43,Dennison McDavitt,Philippines,M,22,0.02,Bendix Simnell,Argentina,M,35,0.02
+309,6:02:30,Otho Rozsa,Madagascar,M,45,0.09,Isidor Franssen,Japan,M,81,0.15
+310,6:03:28,Starla Andreotti,Indonesia,F,18,0.51,Dorice Sutherden,Germany,F,33,0.52
+311,8:48:48,Terrell Gribbell,Costa Rica,F,52,0.08,Alfy Mosedill,Brazil,M,20,0.56
+312,14:19:35,Carlita Whiteley,Ukraine,F,59,0.07,Nata Launchbury,France,F,51,0.7
+313,19:48:41,Moses Schaffler,Greece,M,21,0.13,Alain Hourston,Bulgaria,M,81,1.0
+314,7:07:50,Raynor Parish,China,F,77,0.17,Hubey Plinck,China,M,10,0.24
+315,17:16:52,Lee Caile,Philippines,M,46,0.35,Zorina Trippick,United States,F,48,0.2
+316,20:27:03,Jaye Davys,Serbia,F,44,0.48,Bancroft Streeten,China,M,34,0.76
+317,19:01:29,Tabby Balcon,China,F,81,0.94,Thatcher Vango,Indonesia,M,33,0.15
+318,10:09:28,Madelene Baudone,Poland,F,20,0.64,Corette Pauwel,Macedonia,F,91,0.73
+319,18:38:25,Lorrie Spratley,Morocco,F,46,0.61,Austine Border,Philippines,F,88,0.91
+320,4:39:58,Obed Vobes,United States,M,50,0.47,Keir Alibone,Ukraine,M,33,0.47
+321,10:50:10,Codi Bernaldez,China,F,50,0.28,Chickie O'Hollegan,Poland,M,14,0.34
+322,1:47:20,Valentine Griffitts,Peru,F,11,0.67,Mary Valentim,Indonesia,F,1,0.4
+323,23:04:04,Felicio Raselles,China,F,83,0.96,Terry Kendal,Russia,M,64,0.18
+324,13:00:40,Steffen Wapple,Peru,M,55,0.84,Dennie Wyllis,Poland,M,83,1.0
+325,8:59:52,Silas Gunston,Brazil,F,10,0.89,Matthew Silcocks,Honduras,M,3,0.98
+326,19:13:35,Alyda Leif,France,F,26,0.02,Dona Roth,China,F,72,0.82
+327,8:57:47,Dionisio Buncher,Yemen,F,8,0.93,Klemens Belford,Peru,M,59,0.76
+328,5:45:18,Abbott Jaouen,Ghana,M,32,0.81,Jose Lindeberg,Indonesia,M,61,0.09
+329,11:08:29,Freida Bastian,Albania,M,86,0.29,Cherilyn Kowalski,Mongolia,F,34,0.02
+330,7:41:53,Orson Durnford,Japan,M,32,0.13,Nicolas Shalliker,Portugal,M,84,0.74
+331,1:36:42,Callida Offin,Kenya,F,39,0.16,Alysia Bapty,Poland,F,9,0.29
+332,9:37:05,Rafe Woodruffe,Peru,F,93,0.23,Waylan Hinemoor,Peru,M,12,0.37
+333,22:46:50,Huntlee Sisneros,Poland,M,12,0.08,Saunderson Burdell,Indonesia,M,72,0.34
+334,17:54:03,Margeaux Becken,Indonesia,F,22,0.4,Jacquelin Paull,Peru,F,14,0.76
+335,8:30:57,Mignonne Klimus,Argentina,F,7,1.0,Renae Fitton,Cuba,F,44,0.16
+336,20:14:08,Nicholas Healy,Portugal,F,25,0.62,Stearn Causon,Brazil,M,88,0.14
+337,21:23:48,Nickolas Hatch,Portugal,M,54,0.97,Giorgi Gawith,Palestinian Territory,M,58,0.86
+338,9:37:27,Arleen Amberger,Yemen,F,28,0.19,Betta Maffini,Cyprus,F,64,0.45
+339,16:31:57,Meredith Buckthorp,Comoros,F,71,0.94,Kort Gatman,Netherlands,M,67,0.71
+340,12:57:34,Tammy Croux,Indonesia,F,67,0.13,Norrie Ainsby,Denmark,F,40,0.27
+341,13:55:29,Tally Kintish,Greece,M,8,0.74,Melinde Ruggieri,Philippines,F,30,0.87
+342,6:57:51,Cristine Holbie,Thailand,F,50,0.53,Juieta Telford,Mongolia,F,83,0.8
+343,7:29:57,Alfie Padgham,United States,M,1,0.32,Alyce Bottrill,Haiti,F,93,0.17
+344,9:50:35,Thurston Bartens,Russia,F,6,0.76,Ulick MacKeever,China,M,90,0.54
+345,22:46:37,Edith Lyddiard,China,M,58,0.74,Gladys Portigall,Indonesia,F,39,0.7
+346,9:52:26,Garrett Fishly,China,F,92,0.92,Towney Penhall,China,M,75,0.44
+347,11:17:12,Dun O' Liddy,France,F,79,0.7,Vincents Waldrum,Ukraine,M,21,0.96
+348,10:55:35,Melloney Adnett,Armenia,M,11,0.28,Bekki Furbank,Vietnam,F,18,0.72
+349,5:25:00,Regine Slowgrove,Philippines,M,22,0.39,Norri Verrillo,Argentina,F,63,0.35
+350,6:15:12,Gerardo Chaize,Brazil,F,6,0.46,Cly Scatchard,Portugal,M,68,0.73
+351,16:13:34,Marcille Bridgewater,Finland,F,1,0.48,Marys Baggs,Venezuela,F,23,0.66
+352,2:51:24,Johan Kobiela,Peru,F,46,0.19,Karlis Pollastro,Colombia,M,58,0.58
+353,9:35:52,Cleon Barnfather,Russia,F,51,0.97,Steve Horlock,Macedonia,M,36,0.42
+354,17:02:00,Joellyn Alten,Indonesia,F,29,0.96,Sophie Abraham,China,F,80,0.68
+355,19:10:10,Megan Widger,France,F,6,0.57,Brear Bourbon,Peru,F,61,0.0
+356,16:52:48,Son Chaters,Democratic Republic of the Congo,M,49,0.57,Randolf Ellar,Philippines,M,77,0.47
+357,16:25:07,Aksel Downham,Vietnam,M,83,0.96,Chevalier Seppey,China,M,41,0.89
+358,8:30:50,Urson Gaskal,Venezuela,F,77,0.76,Ignacius Stutely,China,M,56,0.21
+359,5:25:35,Rhonda Novkovic,Japan,F,27,0.04,Darsey Sillwood,Philippines,F,47,0.35
+360,4:48:06,Templeton Leadbitter,Russia,M,80,0.06,Sig Curley,Marshall Islands,M,70,0.26
+361,9:29:38,Paulette Frane,Croatia,M,83,0.55,Winnah Brabender,Philippines,F,4,0.74
+362,0:07:24,Esra Hellcat,Portugal,M,41,0.15,Bertram Onele,Russia,M,47,0.99
+363,15:37:41,Arthur Weeks,Russia,M,19,0.37,Kerry Mendes,Indonesia,M,24,0.59
+364,11:25:26,Jacinda Worland,Vietnam,F,88,0.65,Melissa Yellowlea,Pakistan,F,64,0.04
+365,10:35:51,Roda Farmiloe,Russia,M,43,0.7,Elna Henrion,Denmark,F,73,0.51
+366,11:09:01,Halette Lanchbery,Indonesia,M,13,0.83,Charleen Haysman,Ireland,F,41,0.16
+367,1:12:51,Ulberto Ranscome,Canada,M,89,0.78,Gav Vannet,Colombia,M,95,0.59
+368,18:52:17,Marietta Wharby,Brazil,M,83,0.51,Daisie McIlherran,Poland,F,23,0.61
+369,3:56:10,Adair Mingay,France,M,95,0.09,Wolfie Bricket,Sweden,M,59,0.78
+370,21:16:44,Sandra Dennidge,Japan,F,49,0.21,Jade Affuso,China,F,69,0.68
+371,18:44:14,Boony Torvey,Philippines,M,56,0.8,Gottfried Bartolomucci,Indonesia,M,31,0.6
+372,0:08:38,Bat Towns,Russia,M,10,0.92,Alfie Glaister,United States,M,58,0.1
+373,3:45:32,Verena Lamputt,China,M,86,0.73,Sherilyn Harring,Croatia,F,91,0.82
+374,20:52:18,Cinda Wycliff,China,F,5,0.58,Netta Pietri,Philippines,F,23,0.15
+375,3:52:09,Quentin Shreeve,Indonesia,M,87,0.65,Papageno Dinse,Sweden,M,52,0.69
+376,19:39:21,Leopold Ulyet,China,M,49,0.79,Dionysus Tinman,Argentina,M,45,0.92
+377,17:11:32,Flor Chirm,China,F,39,0.15,Billi Verrier,Poland,F,22,0.01
+378,18:49:27,Caitrin Lambshine,China,M,55,0.72,Sibby Mendes,China,F,15,0.86
+379,6:23:48,Paxton Knevit,Tunisia,M,29,0.75,Decca Pratley,Russia,M,72,0.62
+380,13:17:08,Rafa Glavis,Brazil,F,33,0.58,Dorothee Semkins,China,F,17,0.49
+381,4:34:53,Katherina Zimmermeister,Spain,M,71,0.14,Carmita Giraudat,Sweden,F,6,0.86
+382,4:58:12,Wildon Biaggi,Nigeria,F,39,0.38,Greg Timms,Indonesia,M,67,0.93
+383,17:47:45,Bobbie Heikkinen,Iran,F,33,0.56,Bentlee Johnsey,Philippines,M,55,0.01
+384,8:33:05,Tanitansy Quarlis,China,M,46,0.65,Leigha Heffron,China,F,5,0.91
+385,14:43:41,Yovonnda Parman,Russia,M,62,0.36,Cordey Lowthorpe,Portugal,F,21,0.11
+386,7:12:06,Hewitt Iglesia,Indonesia,M,35,0.3,Jason Wawer,Indonesia,M,50,0.13
+387,23:26:14,Camile Macak,Brazil,F,64,0.99,Auguste Stooders,China,F,54,0.48
+388,18:59:54,Godart Castan,Democratic Republic of the Congo,M,30,0.55,Timofei Ubsdall,China,M,12,0.46
+389,21:42:44,Grazia Remmers,China,F,35,0.84,Cari Munnis,China,F,61,0.79
+390,10:02:28,Kilian Southard,Philippines,M,65,0.45,Euell Larmett,Brazil,M,49,0.35
+391,6:27:45,Hyacinthie Osipenko,Nepal,M,95,0.74,Dehlia Elfe,Chile,F,87,0.18
+392,16:30:57,Holly Sapsed,Portugal,F,29,0.61,Amory Oglesbee,China,M,9,0.97
+393,14:34:33,Aleen Dumbrall,Greece,F,86,0.5,Clementine Jurasek,China,F,30,0.85
+394,4:14:44,Kristen Pablos,Swaziland,M,1,0.01,Michal Dennistoun,Uzbekistan,F,83,0.96
+395,1:06:43,Frederique Cleeton,Kazakhstan,F,66,0.79,Aurilia Death,Philippines,F,45,0.5
+396,18:01:58,Benedicta Antonognoli,China,F,7,0.73,Paola Aspray,China,F,23,0.62
+397,21:55:30,Mycah Levin,Malaysia,F,39,0.31,Levi Rough,Russia,M,4,1.0
+398,1:26:48,Barbe Schermick,China,M,19,0.16,Ora Keeney,Russia,F,70,0.81
+399,13:46:00,Jock Klimko,Indonesia,M,75,0.6,Benjie Kingsland,China,M,3,0.31
+400,14:35:55,Pauly Fildes,Tunisia,M,54,0.07,Erika Kinzel,Thailand,F,50,0.67
+401,14:05:09,Drusy Moynihan,Poland,F,7,0.8,Caroljean Gabbitus,Brazil,F,75,0.32
+402,18:23:58,Lennie Lorenzin,Portugal,M,62,0.34,Giorgi McLewd,Philippines,M,88,0.42
+403,8:46:07,Danette Belli,Micronesia,F,65,0.63,Lexy Gibbon,Russia,F,8,0.08
+404,0:58:25,Ulises Wolfenden,China,F,48,0.93,Thibaut Gallahar,Philippines,M,27,0.11
+405,0:36:37,Whitney Dole,Sweden,M,11,0.92,Rees Rainard,Portugal,M,8,0.18
+406,8:05:51,Monica Nolton,Belarus,M,6,0.67,Rozanne Chappelle,China,F,25,0.88
+407,12:13:11,Ferdinanda Hurran,Czech Republic,M,7,0.97,Giulia Lawland,Indonesia,F,1,0.05
+408,14:46:27,Amii Bone,China,F,67,0.92,Leticia Shedden,Macedonia,F,86,0.96
+409,1:53:18,Abbey Moretto,Pakistan,M,94,0.27,Tracy Tichner,China,F,34,0.22
+410,2:36:18,Otha Gauntlett,Japan,M,73,0.79,Arlee Le Leu,China,F,62,0.36
+411,1:07:03,Larissa Slemmonds,China,M,83,0.61,Cassondra Hartigan,China,F,91,0.06
+412,20:34:45,Jamison Fearne,Peru,F,81,0.18,Ricky Ridgewell,Indonesia,M,20,0.51
+413,17:50:39,Leyla Scullin,Laos,F,40,0.68,Willette Plane,Lithuania,F,35,0.53
+414,19:12:51,Trstram Magenny,China,M,52,0.01,Peter Brisland,Iran,M,65,0.06
+415,19:28:08,Ephrem Guthrie,Democratic Republic of the Congo,F,32,0.09,Sergent Marcoolyn,China,M,91,0.91
+416,14:10:57,Konstantin Chesterman,Czech Republic,F,21,0.93,Hobey Huban,Mexico,M,7,0.8
+417,18:33:38,Ddene Harrema,Russia,M,46,0.81,Merrile Petasch,Indonesia,F,94,0.79
+418,3:03:13,Vivyanne Roger,Argentina,F,38,0.74,Lula Seawright,Philippines,F,48,0.8
+419,4:32:05,Yulma Rosewell,Philippines,M,80,0.37,Nikita Alexsandrovich,Brazil,M,64,0.34
+420,2:47:24,Ced Boscott,Netherlands,F,18,0.37,Urbain Kuhlmey,China,M,48,0.58
+421,17:01:06,Clarice Theml,Brazil,M,83,0.47,Aloise Beri,Russia,F,55,0.09
+422,22:03:36,Consuela Lenham,Japan,F,51,0.28,Brandais Curmi,Colombia,F,49,0.4
+423,16:04:42,Kandy Hefner,Ukraine,M,54,0.53,Mitzi Fleis,Germany,F,86,0.18
+424,9:01:30,Carlie Benardeau,Indonesia,F,54,0.05,Ari McGreay,Indonesia,M,40,0.62
+425,15:13:18,Palm Stonuary,Ukraine,M,59,0.85,Quint Reggiani,Macedonia,M,15,0.56
+426,4:01:05,Jamesy Trundell,China,M,23,0.03,Philip Winterflood,Russia,M,8,0.82
+427,16:14:18,Vaclav Priddle,Uzbekistan,F,21,0.21,Giordano Aguirrezabal,Bosnia and Herzegovina,M,63,0.75
+428,4:28:46,Georg Von Helmholtz,Czech Republic,F,2,0.51,Farrell Holt,Sudan,M,23,0.82
+429,23:21:47,Michail Creswell,Philippines,M,17,0.59,Bordie McKitterick,Kenya,M,51,0.6
+430,10:24:00,Leanora Terrell,France,F,48,0.27,Elspeth Petrolli,China,F,25,0.92
+431,11:23:56,Harrie Bienvenu,France,M,80,0.1,Latrena Wylder,South Africa,F,79,0.73
+432,3:19:29,Essa Tzuker,China,M,62,0.83,Annamarie McAlindon,Russia,F,32,0.84
+433,1:17:58,Xena Brocking,El Salvador,M,20,0.11,Sande Dami,Libya,F,76,0.26
+434,20:30:25,Wallache Doumic,Indonesia,F,19,0.86,Ashley Borkett,American Samoa,M,48,0.29
+435,12:57:39,Clerc Trowl,China,F,16,0.53,Maurie Shapero,New Zealand,M,80,0.23
+436,11:18:22,Hardy Bampfield,Indonesia,M,71,0.82,Rudie Edeler,Sudan,M,23,0.42
+437,18:35:47,Edy Gadson,South Africa,M,18,0.93,Jennee Scholler,Russia,F,79,0.42
+438,3:11:23,Hugo Eastridge,Portugal,M,74,0.12,Maje Triebner,Brazil,M,87,0.11
+439,13:51:12,Hollis Hobson,Brazil,F,26,0.43,Myron McKerrow,Ukraine,M,23,0.94
+440,16:14:18,Aguie Guild,Bulgaria,F,30,0.34,Nicolis Keen,Sweden,M,28,0.65
+441,9:51:53,Sheffield Quillinane,China,M,48,0.14,Paolo Siemons,China,M,24,0.74
+442,15:33:23,Cathleen Davenell,Indonesia,M,68,0.34,Madlen Shermar,Hungary,F,46,0.03
+443,11:38:11,Hillary Schubart,Jamaica,F,56,0.78,Tedda Pykerman,Mexico,F,50,0.83
+444,20:33:35,Arty Ruppelin,Philippines,M,48,0.21,Willy Breming,China,M,76,0.83
+445,0:06:49,Trevor Miquelet,China,F,5,0.46,Zeke Slatten,Japan,M,69,0.71
+446,20:24:05,Sephira Casiroli,China,M,66,0.97,Beverlie Soldi,France,F,65,0.97
+447,7:03:26,Aundrea Cogzell,Indonesia,M,29,0.21,Gilda Isoldi,Malta,F,54,0.14
+448,8:39:12,Kain Kyles,Poland,M,69,0.57,Baird Ranahan,Canada,M,89,0.3
+449,13:06:50,Rusty Mileham,Russia,M,54,0.96,Isak Lawlee,Peru,M,73,0.12
+450,17:00:18,Deina Moye,Israel,M,76,0.73,Oliy Grigori,Sweden,F,95,0.67
+451,15:58:13,Cordula Hintzer,Philippines,F,68,0.89,Toinette Liebmann,Croatia,F,59,0.44
+452,20:48:00,Gerianna Lowrey,Philippines,M,65,0.46,Denna Wiz,Indonesia,F,45,0.66
+453,4:50:57,Damaris Huckel,Indonesia,M,46,0.45,Bettye Demoge,Philippines,F,17,0.7
+454,5:06:25,Isac Neller,France,F,7,0.8,Nikola Munslow,Brazil,M,41,0.0
+455,2:46:31,Mathilda Doodson,Croatia,F,56,0.89,Bobby Beaman,Indonesia,F,83,1.0
+456,13:35:03,Camey Shortell,Nigeria,M,73,0.46,Antone Ever,Poland,M,46,0.22
+457,2:37:05,Kimberli Ladbury,Malaysia,F,37,0.14,Kikelia Gabbett,China,F,75,0.91
+458,3:42:49,Georgie Kitto,Russia,F,46,0.79,Mahmoud Coll,China,M,30,0.89
+459,16:34:39,Karole Chater,Poland,F,90,0.39,Bari Leyborne,Colombia,F,42,0.95
+460,22:22:29,Bernie Stolting,Kyrgyzstan,M,85,0.72,Neysa Margetson,Indonesia,F,19,0.35
+461,5:16:22,Bel Muzzollo,Brazil,M,83,0.82,Babb Oakden,Indonesia,F,34,0.94
+462,1:12:14,Ardis Nasi,China,M,12,0.96,Celinka Grimsdell,Kazakhstan,F,81,0.84
+463,4:23:56,Ginny Robrow,Kenya,F,68,0.58,Faith Huxton,Russia,F,65,0.55
+464,13:07:23,Yvor Beveridge,Russia,M,25,0.77,Raoul Feuell,Indonesia,M,54,0.55
+465,21:31:14,Tatiana Mintoft,South Africa,M,16,1.0,Melodee Kopman,Mexico,F,2,0.1
+466,7:27:58,Wylie Kleinlerer,Russia,F,91,0.11,Humfrid Bruhnke,Indonesia,M,52,0.07
+467,11:26:09,Barney Tolumello,Guatemala,F,86,0.62,Trenton Hillaby,Mongolia,M,38,0.68
+468,14:07:28,Faye Tuffey,Bahrain,M,59,0.65,Corinna Boshell,Nigeria,F,78,0.87
+469,7:46:22,Mozes Norrey,Portugal,F,56,0.23,Talbot Sawney,Indonesia,M,4,0.44
+470,10:43:06,Rodolph Dumphy,Netherlands,M,32,0.02,Orion Blare,China,M,4,0.46
+471,5:32:31,Tabbitha Massy,Egypt,F,75,0.58,Clovis Pendry,Canada,F,10,0.87
+472,17:43:52,Meaghan Akitt,United States,F,58,0.92,Mariele Duffus,China,F,66,0.55
+473,8:44:26,Brianna Llewhellin,Portugal,F,16,0.2,Valerye Matteoni,Russia,F,42,1.0
+474,10:23:09,Godfree Aylen,Ukraine,F,84,0.97,Lovell Lerner,United States,M,34,0.63
+475,1:06:20,Rafferty Billham,China,M,45,0.15,Jone Jessen,Russia,M,61,0.54
+476,17:23:27,Bryanty Barcroft,Philippines,F,91,0.94,Theodoric Molyneaux,Slovenia,M,87,0.66
+477,4:34:15,Reinold Naul,Pakistan,M,36,0.57,Wes McAvinchey,Uganda,M,43,0.44
+478,7:56:09,Richard Rainard,Democratic Republic of the Congo,F,61,0.22,Howey Burbidge,Indonesia,M,11,0.69
+479,12:47:56,Torre Corkett,Brazil,F,73,0.13,Reamonn Lauder,Iran,M,54,0.74
+480,20:23:09,Joshia Ygou,Indonesia,F,50,0.33,Cletus Cliff,Philippines,M,66,0.02
+481,16:57:22,Candide McKendo,United States,M,48,0.65,Ilse Leyninye,Indonesia,F,3,0.48
+482,3:49:32,Manda Bletso,Czech Republic,F,85,0.83,Octavia Joel,American Samoa,F,40,0.71
+483,16:49:27,Fred Currall,China,M,90,0.48,Sayer Taynton,Argentina,M,32,0.18
+484,2:43:45,Alvinia MacAllester,Mongolia,M,39,0.19,Krystyna Blackway,Portugal,F,20,0.97
+485,4:45:26,Lissi Roden,China,F,29,0.29,Aviva Chue,Portugal,F,4,0.1
+486,21:19:56,Aili Gretham,Peru,M,19,0.26,Leelah Blasi,Afghanistan,F,82,0.05
+487,17:42:42,Eadie Corbert,Guatemala,F,3,0.09,Lulita Speedy,China,F,17,0.93
+488,20:52:01,Sanders Senter,China,F,9,0.17,Nathanael Reid,Peru,M,79,1.0
+489,5:58:08,Moses Philot,China,F,92,0.15,Terry Willshear,Thailand,M,56,0.14
+490,6:29:47,Editha Blais,China,M,73,0.02,Scarlett Hove,Palestinian Territory,F,20,0.48
+491,14:55:17,Rhett Dincke,Indonesia,M,58,0.83,Mata Kegan,Japan,M,75,0.58
+492,20:47:29,Brien Carnie,China,M,31,0.66,Dalis Hince,Georgia,M,18,0.31
+493,8:03:50,Phyllys Beadon,Nepal,F,66,0.89,Kathleen Panketh,China,F,26,0.61
+494,22:07:38,Tades Peto,Tanzania,M,30,0.42,Alvy Combes,Philippines,M,42,0.01
+495,2:43:12,Anatollo Dillistone,Russia,F,71,0.74,Omero Bordiss,Indonesia,M,33,0.94
+496,16:29:23,Lodovico Skerm,Russia,F,33,0.32,Bev Abotson,Russia,M,42,0.6
+497,16:21:39,Freedman Chace,Guatemala,F,36,0.83,Carl Southcoat,Canada,M,51,0.46
+498,10:43:44,Roxanna Josovitz,China,F,51,0.2,Celinka Fishlock,Canada,F,64,0.06
+499,9:28:17,Kirstin Marciskewski,France,M,3,0.05,Paule Quinton,Greece,F,54,0.73
+500,20:18:21,Willem Staley,Portugal,F,18,0.69,Ernesto Baversor,Philippines,M,89,0.93
+501,13:02:36,Tremaine Roizin,China,M,43,0.62,Gregory Pheasant,Bolivia,M,62,0.41
+502,17:52:43,Bret Sach,Indonesia,F,10,0.65,Bary Ost,China,M,27,0.71
+503,11:58:33,Adelind Kaemena,Slovenia,M,21,0.19,Odelia Baton,China,F,7,0.04
+504,14:47:13,Leoine Marrow,Chile,M,69,0.38,Krystle Heaviside,Sweden,F,60,0.96
+505,1:14:15,Benni Harrow,China,M,74,0.38,Rebecca Meece,Poland,F,57,0.84
+506,20:58:05,Margarethe Moakler,Indonesia,M,83,0.14,Leia Liversage,China,F,4,0.99
+507,5:27:28,Lorine Corzon,Philippines,M,90,0.35,Kellen Di Maggio,Laos,F,36,0.19
+508,7:07:56,Ced Ambroziak,Tunisia,F,18,0.14,Duncan Muddiman,Brazil,M,15,0.35
+509,4:37:03,Fairleigh Fryd,Indonesia,F,53,0.2,Jakie Youll,Israel,M,17,0.98
+510,9:39:23,Neil Karsh,Czech Republic,M,76,0.82,Emanuele Gonzalvo,China,M,5,0.09
+511,9:53:34,Janine Irnis,Indonesia,F,25,0.66,Adela Roast,Malawi,F,33,0.15
+512,22:29:26,Blaire Joppich,Philippines,F,42,0.01,Ciel Gowrie,Pakistan,F,12,0.41
+513,23:33:54,Brade De Nisco,Macedonia,F,34,0.66,Godard Cortes,Argentina,M,79,0.14
+514,12:35:07,Janessa Osborne,Philippines,M,21,0.18,Darcy Santi,China,F,30,0.84
+515,21:35:43,Eydie Tookill,Sweden,F,40,0.44,La verne Cops,Colombia,F,25,0.79
+516,19:01:43,Loreen Cromack,Portugal,F,31,0.36,Gwennie Duffyn,Lithuania,F,69,0.45
+517,11:09:38,Halimeda Marthen,Russia,M,11,0.08,Danya Emmott,Morocco,F,87,0.2
+518,21:15:03,Cornelia Crathern,Nicaragua,F,42,0.23,Christel Winsbury,Brazil,F,52,0.91
+519,17:56:02,Wye Terris,Philippines,F,77,0.4,Padget Trasler,Russia,M,13,0.04
+520,22:37:04,Lidia Ferras,China,M,47,0.62,Mercedes Clohessy,Brazil,F,45,0.13
+521,5:06:34,Roderick Crab,Kiribati,M,50,0.3,Arie Stockall,Philippines,M,55,0.38
+522,11:17:13,Sully Talkington,Portugal,M,53,0.8,Alfredo Bayne,Bangladesh,M,70,0.78
+523,11:37:33,Mike Giannazzi,Poland,M,89,0.53,Spencer Greenrde,China,M,40,0.81
+524,11:54:39,Conrado Navarijo,Syria,M,54,0.06,Gherardo Peyto,United States,M,22,0.61
+525,7:34:35,Mac Crowder,Croatia,F,12,0.83,Millard Beardall,Uzbekistan,M,92,0.36
+526,5:12:11,Gorden Press,Vietnam,F,64,0.03,Rodrick Johanning,Indonesia,M,76,0.2
+527,7:18:45,Hubie Paynton,Togo,F,73,0.12,Mandel Bruckstein,Philippines,M,90,0.05
+528,4:28:10,Brittaney Scourgie,Poland,F,10,0.08,Hinda Affleck,Russia,F,62,0.04
+529,6:05:59,Irena Brookes,Indonesia,M,31,0.67,Zondra Hounsham,Paraguay,F,1,0.35
+530,7:01:27,Claudius Paramor,Brazil,F,8,0.56,Kliment Stocks,Russia,M,71,0.43
+531,7:25:26,Anallese Campion,Indonesia,M,88,0.77,Corella Trembley,China,F,50,0.4
+532,6:26:42,Alex St Leger,Mongolia,M,78,0.6,Vachel Shortall,Colombia,M,73,0.98
+533,5:17:37,Caryl Crottagh,Russia,M,54,0.1,Ramsey Bremeyer,Poland,M,95,0.77
+534,7:43:53,Sibella Diemer,Albania,F,18,0.1,Mersey Le Batteur,Russia,F,23,0.92
+535,0:44:01,Kizzie Harriagn,Mali,F,87,0.39,Marissa Veschambes,China,F,4,0.17
+536,20:31:01,Lew Spellsworth,Philippines,F,20,0.5,Jason Wraighte,France,M,59,0.69
+537,22:37:01,Devonna Nicholes,Argentina,M,42,0.99,Marylou De Cristoforo,China,F,54,0.06
+538,4:31:19,Marv Blankhorn,Netherlands,F,33,0.87,Caspar Paine,Bangladesh,M,12,0.19
+539,14:34:07,Ainsley Corah,Poland,M,2,0.74,Kaylyn Barrott,Indonesia,F,4,0.44
+540,19:10:38,Tyrone Raven,China,F,26,0.34,Rafi Greaser,Brazil,M,37,0.74
+541,23:06:58,Catrina Yellep,South Africa,F,39,0.34,Harmonia Gookes,Philippines,F,21,0.8
+542,5:44:44,Pascale Kalvin,East Timor,M,26,0.22,Parnell Prestage,Nigeria,M,2,0.7
+543,16:11:06,Dorree Pobjoy,Sweden,F,53,0.68,Venus Kedwell,China,F,65,0.12
+544,14:10:40,Carleton Asplin,China,M,8,0.53,Gaultiero Duggen,Nicaragua,M,16,0.42
+545,1:13:51,Haroun Giovanetti,Poland,F,70,0.82,Sancho Pickvance,Peru,M,77,0.2
+546,13:47:49,Nikolia Goose,Indonesia,M,68,0.3,Sheena Dinsey,Serbia,F,54,0.78
+547,6:24:33,Clerissa Van de Vlies,Indonesia,M,69,0.2,Jessi Kubu,Venezuela,F,31,0.77
+548,13:39:30,Chuck Youens,China,M,92,0.16,Benny Smalcombe,China,M,32,0.01
+549,12:09:17,Ardine Malatalant,Peru,M,20,0.75,Lavena Hitter,Yemen,F,62,0.13
+550,22:37:16,Phillipe Arrow,Portugal,M,4,0.2,Augie Cafferky,Peru,M,60,0.39
+551,6:32:31,Suzi Brocket,Portugal,F,19,0.92,Eugine Islip,United States,F,59,0.81
+552,14:55:51,Netty Ordish,Yemen,M,30,0.77,Renell Skala,Indonesia,F,11,0.28
+553,18:34:36,Meier Tresler,United States,M,47,0.44,Alyosha Cruce,China,M,40,0.76
+554,19:15:33,Lisbeth Sedgman,Russia,F,59,0.74,Chanda Rawlyns,Egypt,F,88,0.91
+555,14:19:23,Madonna Mustoo,Ireland,F,48,0.71,Devan Gritland,Russia,F,64,0.91
+556,12:26:28,Kory Heaphy,Russia,M,94,0.55,Lucian Guyver,Indonesia,M,83,0.51
+557,7:03:57,Johann Morrid,Nigeria,M,33,0.51,Elston Goodbairn,Indonesia,M,58,0.59
+558,10:14:52,Demetris Dobbison,Portugal,F,48,0.76,Marigold Bannon,China,F,54,0.86
+559,18:50:57,Fons Withull,Ukraine,M,48,0.71,Gordy Emanuelli,China,M,7,0.67
+560,11:33:53,Lynelle Bastistini,Bangladesh,M,16,0.6,Martica Stolberg,Japan,F,73,0.61
+561,15:14:08,Amberly Wrixon,China,F,95,0.53,Mella Haibel,Serbia,F,9,0.49
+562,2:18:03,Othelia Linnock,Indonesia,F,84,0.41,Christan Sciacovelli,Czech Republic,F,60,0.45
+563,21:23:51,Falito Beels,China,M,8,0.53,Harmon Theuff,Fiji,M,50,0.31
+564,18:11:02,Chrissy Vannozzii,Russia,F,50,0.63,Chase Marchello,Poland,M,50,0.48
+565,12:08:47,Dominique Walding,Portugal,M,84,0.68,Koralle Bonn,Russia,F,91,0.78
+566,23:29:43,Scott Offener,Iraq,M,78,0.49,Alfredo Glidden,Philippines,M,9,0.21
+567,15:25:13,Adelle Pointing,Pakistan,M,18,0.96,Clarette Lowne,Portugal,F,59,0.78
+568,23:44:46,Natalie Cheeke,South Korea,F,8,0.24,Jaquelyn Hoble,China,F,61,0.34
+569,17:48:51,Marney Androsik,United States,F,49,0.44,Freddie Farre,Philippines,F,28,0.55
+570,17:10:48,Jeffry Slyvester,Brazil,M,3,0.62,Darill Pappi,China,M,34,0.06
+571,11:52:30,Rana Cooch,Indonesia,M,64,0.23,Kynthia McNeice,Greece,F,2,0.87
+572,1:15:52,Kanya McGann,Russia,M,40,0.47,Etty Gowans,Cuba,F,69,0.34
+573,2:23:22,Alikee Lovering,Sweden,M,20,0.25,Nola Normavill,Poland,F,4,0.94
+574,3:16:03,Thomas Gawn,Russia,M,28,0.34,Laney Creebo,Russia,M,84,0.49
+575,23:10:51,Gerrie Verbeke,China,F,95,0.59,Deidre Molyneux,Guatemala,F,49,0.96
+576,1:01:13,Roshelle Hulatt,Portugal,M,38,0.69,Willyt Mignot,Nigeria,F,80,0.16
+577,16:40:47,Franklyn Burtonwood,Indonesia,M,17,0.51,Jermain Elcott,China,M,90,0.8
+578,13:57:55,Katuscha Skeath,China,M,8,0.53,Beatriz Livingstone,North Korea,F,71,0.56
+579,12:03:45,Audrye Foulstone,Russia,M,20,0.47,Stace Wildey,China,F,3,0.99
+580,10:15:07,Megan Disman,Poland,M,5,0.5,Giovanna Mapes,Guinea,F,91,0.35
+581,12:37:46,Noby Oldam,Argentina,M,16,0.37,Tanner Eckly,United States,M,67,0.38
+582,13:24:02,Ned Ronnay,Mexico,F,78,0.1,Blayne Howkins,Portugal,M,47,0.83
+583,8:16:31,Claude Vearncombe,Ethiopia,M,65,0.27,Cecilia Appleby,Portugal,F,82,0.16
+584,2:55:01,Gerek Rowbury,Armenia,M,11,0.04,Jose Rook,China,M,12,0.91
+585,23:51:11,Idaline Dablin,China,F,22,0.04,Mirabel MacAlpine,Bolivia,F,12,0.31
+586,18:29:47,Angeli Denholm,South Korea,F,94,0.98,Marsh Nassie,Poland,M,15,0.67
+587,3:24:42,Rob Bettam,Peru,F,53,0.36,Willie Koppelmann,Indonesia,M,55,0.51
+588,22:26:33,Edmon Backen,Israel,F,72,0.92,Edik Mitcham,Philippines,M,73,0.65
+589,9:02:49,Theodor Gelderd,Philippines,M,88,0.15,Roger Bruggen,Colombia,M,95,0.25
+590,23:28:05,Richard Broodes,China,M,22,0.21,Samson Saylor,Vietnam,M,12,0.17
+591,11:01:49,Lothaire Chapelhow,Philippines,F,39,0.62,Rancell Domsalla,Malaysia,M,64,0.42
+592,6:16:28,Lory Tatum,China,M,79,0.38,Lianne Hallan,Russia,F,58,0.53
+593,9:44:26,Theo Goaley,Indonesia,F,48,0.38,Garvin Bevan,Indonesia,M,68,0.97
+594,17:19:15,Dolly Skelly,Indonesia,F,33,0.06,Molly Eyeington,Kazakhstan,F,72,0.36
+595,0:17:07,Kaela Rosell,Nigeria,M,3,0.11,Cristine Scarisbrick,Argentina,F,52,0.59
+596,19:23:06,Harlan Donoher,Indonesia,M,19,0.1,Dewey Habben,Kenya,M,76,0.47
+597,6:00:44,Ricki Gierth,Czech Republic,M,76,0.85,Con Loughman,China,M,93,1.0
+598,0:16:20,Weston Pellett,Russia,M,22,0.49,Theobald Davydzenko,Nigeria,M,80,0.88
+599,11:21:22,Pren Hulme,Nigeria,M,11,0.45,Winslow O'Keenan,Russia,M,79,0.62
+600,7:35:34,Car Manktelow,Russia,M,24,0.89,Gaby Ballingal,United States,M,13,0.05
+601,16:03:31,Hayyim Orrick,Poland,F,9,0.59,Todd Warbey,Sweden,M,77,0.01
+602,7:39:09,Amalea Lunnon,Russia,F,29,0.22,Loralie Norkett,Indonesia,F,48,0.16
+603,2:21:01,Matias O'Roan,Russia,F,38,0.93,Rutherford Olivera,Macedonia,M,16,0.55
+604,8:49:41,Chaim Laughren,Philippines,F,95,0.15,Roi Soldi,Nicaragua,M,42,0.33
+605,11:04:02,Slade Ugolotti,China,M,16,0.46,Willie Avesque,Indonesia,M,11,0.19
+606,3:01:57,Ardath Shingles,Philippines,F,66,0.91,Imogen Acaster,Indonesia,F,53,0.83
+607,5:32:36,Ringo Salasar,China,M,23,0.8,Dalton Willbourne,Western Sahara,M,71,0.55
+608,15:06:47,Aron Orris,Sweden,F,70,0.75,Patin Machans,Japan,M,13,0.47
+609,2:46:12,Erica Benazet,Vietnam,M,70,0.29,Gusta Maxfield,Vietnam,F,7,0.86
+610,16:48:21,Alverta Maulden,Sweden,M,6,0.67,Edwina Vallentin,Cameroon,F,17,0.74
+611,18:33:00,Marven Haward,China,F,94,0.68,Faulkner De Gogay,Ivory Coast,M,92,0.13
+612,19:34:23,Skyler Caskey,Netherlands,F,27,0.05,Cullan Androck,Brazil,M,16,0.32
+613,5:44:09,Junette Harryman,Sweden,M,15,0.48,Gene Khrishtafovich,Denmark,F,76,0.24
+614,19:21:47,Shina Morde,Poland,F,26,0.95,Tiphanie Gamet,Brazil,F,73,0.53
+615,21:19:52,Lotty Grzeskowski,Indonesia,M,35,0.87,Loise Bachelor,Nigeria,F,83,0.88
+616,4:59:02,Lyon Dennant,Thailand,F,55,0.53,Matthiew Sidebotton,Syria,M,36,0.51
+617,4:59:29,Germayne Wray,Mongolia,F,61,0.86,Tiebold Braznell,Slovenia,M,83,0.79
+618,2:17:03,Jarad Sodory,China,M,4,0.59,Darill Vanetti,South Korea,M,68,0.09
+619,18:09:47,Conan McBay,Indonesia,M,23,0.48,Boycey MacArthur,United States,M,82,0.54
+620,7:11:35,Rollins Jorat,Argentina,F,23,0.61,Riobard Bonome,Philippines,M,92,0.52
+621,13:18:19,Aguistin Rooksby,Chile,F,49,0.07,Klemens Sellner,Kyrgyzstan,M,74,0.25
+622,3:58:08,Blanca Hoffman,Afghanistan,M,74,0.79,Mignonne Povah,Laos,F,72,0.18
+623,0:39:35,Cary Antonomoli,China,F,87,0.62,Alisa Shellcross,Brazil,F,53,0.61
+624,12:02:37,Randi Blouet,Ukraine,F,88,0.87,Sean Thorby,China,M,62,0.13
+625,0:22:04,Mirella Craghead,Israel,F,23,0.8,Francine Harniman,Portugal,F,16,0.89
+626,23:01:40,Louie Winwood,Croatia,M,13,0.74,George Hallwood,Peru,M,37,0.11
+627,13:54:00,Zandra Ashwood,Philippines,M,11,0.95,Carri Warrener,Russia,F,77,0.85
+628,19:51:19,Shannon Hardman,Sweden,F,1,0.54,Rory Ord,Sweden,M,91,0.31
+629,12:09:09,Romain Dakhno,Norway,F,29,0.44,Freemon Dutton,Greece,M,16,0.52
+630,11:08:36,Franky Applewhite,Thailand,F,72,0.36,Fredrick Normaville,Colombia,M,65,0.69
+631,14:10:49,Monty Elcoate,Denmark,M,53,0.26,Wolfy Caff,Poland,M,20,0.72
+632,13:43:15,Mirella Batistelli,Germany,M,56,0.85,Darrelle Tidbald,Philippines,F,18,0.37
+633,17:50:31,Livia Puttergill,United States,F,81,0.87,Denys Bolley,United States,F,52,1.0
+634,23:37:07,Gerladina Bengtsson,Kazakhstan,F,70,0.19,Delila Pegram,Sweden,F,42,0.94
+635,4:31:28,Pincas Woofenden,Indonesia,F,20,0.28,Englebert Barrie,Vietnam,M,37,0.12
+636,23:55:56,Hedda Rehm,Russia,M,9,0.68,Lindi Ames,Russia,F,65,0.11
+637,18:34:36,Free Whanstall,Greece,F,33,0.59,Devy Van Arsdall,Ireland,M,23,0.29
+638,11:11:35,Arlene Musker,Ukraine,F,11,0.02,Carin Malthus,Yemen,F,56,0.86
+639,1:19:11,Esteban Lutton,Qatar,M,64,0.09,Sloane Gildroy,China,M,65,0.11
+640,4:58:45,Raynor Stanhope,Palestinian Territory,M,75,0.32,Win Staner,Indonesia,M,34,0.09
+641,9:46:51,Keen Klehn,Indonesia,F,56,0.43,Berkeley Reddlesden,China,M,8,0.66
+642,12:49:48,Lebbie Taillant,Syria,M,35,0.1,Rhonda Bricham,Brazil,F,90,0.89
+643,11:54:31,Letta Targett,Thailand,M,10,0.21,Merl Escala,Tanzania,F,72,0.72
+644,6:13:34,Channa Rowatt,Philippines,F,59,0.15,Adan Amoore,Russia,F,51,0.04
+645,4:08:45,Greg Clemas,Egypt,F,44,0.81,Forrest Megainey,Philippines,M,74,0.41
+646,22:23:18,Gelya Legan,Bosnia and Herzegovina,M,82,0.31,Kippie Probate,Panama,F,56,0.69
+647,23:09:00,Winnifred Tysall,Argentina,F,7,0.53,Abbe Garci,France,F,34,0.83
+648,17:24:46,Henryetta Brickstock,Nepal,M,26,0.64,Rina Pash,Palestinian Territory,F,92,0.02
+649,7:17:30,Jareb Diggins,China,M,62,0.33,Solly Normavell,China,M,49,0.85
+650,1:50:06,Jammal Ambrus,Indonesia,M,74,0.01,Lou Galea,Greece,M,35,0.88
+651,22:16:57,Keith Albinson,Indonesia,M,53,0.87,Brigg Inggall,Croatia,M,80,0.64
+652,9:17:21,Parry MacKeller,China,M,83,0.77,Gerardo Baraclough,Poland,M,57,0.65
+653,19:27:52,Immanuel Bignal,Philippines,M,89,0.96,Brody Summersby,France,M,56,0.35
+654,15:06:29,Codi Spira,Portugal,F,34,0.82,Alla Ingolotti,Russia,F,2,0.84
+655,18:40:16,Janette Geram,China,F,27,0.05,Pegeen Gylle,Philippines,F,23,0.5
+656,1:39:50,Thomas Gariff,Luxembourg,M,12,0.36,Iggie Hempshall,China,M,16,0.17
+657,4:14:41,Napoleon Taaffe,Iran,M,9,0.24,Whitney Lillie,China,M,79,0.02
+658,21:24:36,Kitty Gregoire,Sweden,M,62,0.55,Libbie Wederell,China,F,64,0.6
+659,16:53:22,Lorrie Kinastan,Indonesia,F,74,0.4,Tony Timmins,Indonesia,F,17,0.13
+660,2:48:32,Amelina Sewley,China,M,29,0.63,Goldarina Wibrew,Ethiopia,F,50,0.79
+661,0:08:29,Alexis Arlidge,Indonesia,F,64,0.82,Siusan Moatt,Pakistan,F,43,0.49
+662,2:38:10,Kayne Cawthorn,Vietnam,M,62,0.24,Birch Bernt,Senegal,M,38,0.69
+663,20:58:54,Jillene Dillow,Canada,F,88,0.59,Lainey Mathison,Ukraine,F,13,0.67
+664,13:46:08,Rudolph Roxbee,Tanzania,F,42,0.51,Julio Corriea,South Africa,M,21,0.63
+665,7:42:39,Brent Olney,Philippines,M,2,0.62,Richy Zanitti,Russia,M,29,0.88
+666,7:00:58,Larine Ritchley,India,M,18,0.02,Hana Flippini,Argentina,F,8,0.66
+667,2:33:01,Murielle Hovey,Argentina,F,33,0.76,Gipsy Rennard,China,F,80,0.19
+668,11:09:24,Meade Zellmer,Brazil,F,86,0.13,Stevena Pietrusiak,Philippines,F,84,0.31
+669,18:37:21,Burl Lilbourne,Argentina,M,83,0.24,Yehudi Manass,Indonesia,M,14,0.91
+670,6:37:51,Aundrea Beale,Indonesia,F,51,0.14,Ki Casely,Palestinian Territory,F,77,0.47
+671,2:12:32,Shauna Daviot,China,F,52,0.71,Rozella Fehners,China,F,14,0.46
+672,9:17:38,Charmine McArte,China,M,76,0.05,Selina Dinsmore,China,F,18,0.79
+673,4:51:52,Karmen Denley,Indonesia,F,21,0.86,Gae Woodfield,Czech Republic,F,14,0.98
+674,8:14:36,Robinetta Jachimak,China,M,88,0.24,Kacy Lansdowne,Hungary,F,53,0.66
+675,6:27:10,Lauren Monnelly,Indonesia,M,29,0.94,Chloette Grayham,Peru,F,36,0.99
+676,21:21:54,Crissie Prickett,Canada,F,68,0.39,Leora Norwood,Japan,F,79,0.28
+677,10:00:42,Brigit Fulkes,Poland,M,69,0.34,Carolann Verheijden,Russia,F,25,0.09
+678,3:54:21,Penn Cotterell,Greece,M,72,0.7,Ring Schohier,Japan,M,22,0.62
+679,6:49:32,Jeanne Breinlein,China,M,37,0.82,Celisse Capstack,China,F,76,0.65
+680,17:33:36,Perceval Leser,Indonesia,F,19,1.0,Alain Vynall,Indonesia,M,90,0.91
+681,1:40:03,Jacques Ruggier,Philippines,F,89,0.25,Dunn O'Lunney,Indonesia,M,30,0.24
+682,0:08:56,Emmanuel Cappleman,Czech Republic,M,14,0.47,Rik Veque,Canada,M,10,0.83
+683,1:11:10,Free Dwerryhouse,China,F,7,0.99,Ginger Pendlebury,Nigeria,M,11,0.5
+684,9:00:39,Des Millery,China,M,28,0.58,Elvin Clemas,Greece,M,24,0.37
+685,11:53:09,Bell Stevens,China,F,45,0.69,Fanechka Loveless,Russia,F,74,0.7
+686,3:05:02,Brnaba Easey,Finland,M,90,0.5,Falkner Moorcraft,Thailand,M,36,0.47
+687,16:26:37,Timmy Danbury,Sweden,M,9,0.23,Hansiain Ackermann,Poland,M,15,0.84
+688,0:39:35,Alida Lampett,Chile,M,43,0.8,Natalya Leggott,Mongolia,F,75,0.85
+689,10:44:27,Delcine Saffe,United States,M,38,0.33,Daffie Amies,Indonesia,F,13,0.59
+690,12:54:24,Amelina Curnow,Poland,F,33,0.18,Cacilia Stonhard,Afghanistan,F,84,0.12
+691,16:09:15,Courtney Greensite,China,F,53,0.78,Cyrille Fay,Ivory Coast,M,43,0.0
+692,23:48:52,Meredith Peggram,Costa Rica,F,40,0.72,Ambros Eskell,Albania,M,87,0.76
+693,9:59:00,Hoebart Gethouse,Denmark,M,68,0.41,Gabriel Whapham,Philippines,M,47,0.68
+694,19:21:07,Sutherlan Gilsthorpe,Indonesia,M,81,0.94,Douglass Slemmonds,Czech Republic,M,29,0.62
+695,9:09:39,Flor Sorby,China,F,26,0.28,Elsinore McTrusty,China,F,83,0.64
+696,20:36:31,Thorin Marmon,China,F,21,0.72,Arnie Wilcot,Sri Lanka,M,36,0.49
+697,20:33:58,Erasmus Bradder,Indonesia,F,61,0.92,Ezekiel Leathes,Sudan,M,18,0.17
+698,14:10:05,Tades Pitrasso,Indonesia,M,17,0.87,Jamison Diggons,Indonesia,M,93,0.84
+699,23:17:49,Dalton Shewon,Russia,F,94,0.95,Humfried Varnam,Peru,M,53,0.26
+700,2:00:33,Nicky Stearn,Peru,F,33,0.67,Pansy Urquhart,Czech Republic,F,63,0.8
+701,18:30:47,Conney McLarty,Indonesia,F,61,0.86,Pebrook Franey,Philippines,M,40,0.68
+702,21:55:50,Melisa Fitzjohn,Thailand,F,37,0.92,Goldie Pickrill,Peru,F,27,0.16
+703,6:27:58,Hilda Legg,Iran,F,77,0.01,Cloe Petyt,China,F,38,0.98
+704,4:44:10,Dalt Wyley,North Korea,M,85,0.1,Gauthier Rydings,Indonesia,M,83,0.66
+705,3:07:29,Rossy Pavelin,China,M,36,0.7,Kipper Josofovitz,Poland,M,20,0.76
+706,10:26:15,Darbie McMullen,Philippines,F,93,0.44,Lois Kynnd,Australia,F,25,0.42
+707,14:26:33,Tami Greenhall,Greece,F,86,0.94,Roxie Knappett,Philippines,F,36,0.2
+708,12:02:19,Lorelle Camolli,Ecuador,F,7,0.16,Elena Rosario,Tanzania,F,6,1.0
+709,6:19:39,Reinhard Locard,China,M,17,0.05,Cosimo Burehill,Uzbekistan,M,65,0.03
+710,5:46:47,Rodger Wogden,Venezuela,F,1,0.89,Denney Enbury,Indonesia,M,94,0.34
+711,5:20:55,Kermie Jeandin,France,M,75,0.17,Pierre Clyburn,Finland,M,30,0.89
+712,17:02:45,Emory Trickett,Mongolia,M,32,0.97,Derrik Dannohl,Russia,M,22,0.8
+713,9:02:08,Cecil Winterbourne,Russia,M,74,0.53,Roderick Connerry,Russia,M,75,0.14
+714,17:19:28,Lyndy Sealove,Philippines,M,25,0.61,Erika Kupis,Afghanistan,F,54,0.65
+715,22:20:36,Reg McEachern,China,F,51,0.15,Maxwell Twiddle,French Polynesia,M,15,0.26
+716,20:25:34,Faith Brazil,Czech Republic,M,22,0.23,Saba Jindrak,Tunisia,F,55,0.6
+717,6:05:49,Dill Petran,China,F,10,0.56,Francis Vader,South Africa,M,25,0.84
+718,9:21:09,Danette Owbrick,Thailand,M,41,0.28,Aurie Barkus,China,F,67,0.26
+719,11:22:58,Madelene Ortmann,China,M,95,0.73,Elianore Olander,Senegal,F,10,0.37
+720,0:54:32,Hermione Geraldi,Afghanistan,F,70,0.13,Doreen O'Hallagan,Honduras,F,85,0.4
+721,10:12:36,Meghan Bambrugh,Ukraine,F,56,0.27,Anthiathia Argont,Ireland,F,41,0.87
+722,15:40:37,Graeme Pech,Brazil,F,15,0.64,Foster Phillins,Malaysia,M,67,0.81
+723,4:59:46,Reggy Venturoli,Czech Republic,F,48,0.76,Reinaldos Philcock,Russia,M,65,0.35
+724,13:56:31,Tabbitha Cauthra,Indonesia,F,15,0.59,Elyssa Cayette,Portugal,F,47,0.06
+725,8:44:21,Gennifer Kempshall,China,M,66,0.72,Tabatha Jago,Philippines,F,5,0.02
+726,20:06:47,Madelyn Goldspink,Philippines,M,35,0.63,Orel Bushill,Peru,F,33,0.37
+727,5:49:12,Kayla Vaughton,China,F,62,0.31,Desiri Huonic,Cameroon,F,93,0.16
+728,7:00:26,Rees O'Shirine,Indonesia,F,68,0.94,Thaddeus Rambadt,China,M,63,0.18
+729,1:48:11,Bree Castan,Belarus,F,18,0.63,Minnaminnie Tilberry,China,F,20,0.76
+730,10:21:11,Abbot Carnie,Czech Republic,F,10,0.36,Tanney Fallanche,Japan,M,25,0.07
+731,1:49:15,Russ McGennis,Portugal,F,32,0.32,Edmund Bearne,France,M,43,0.05
+732,23:42:16,Nanice Coche,Japan,M,43,0.87,Berry Lever,South Korea,F,30,0.21
+733,20:50:26,Merill Jarvis,Italy,F,66,0.38,Victoir Giorgione,Portugal,M,68,0.65
+734,9:41:18,Cicily Carbine,China,M,49,0.71,Hatty Keane,China,F,4,0.15
+735,21:29:10,Joe Dracksford,Macedonia,M,83,0.75,Jorgan Palle,Argentina,M,10,0.25
+736,13:03:24,Don Robuchon,China,F,65,0.52,Boyce Normanell,Russia,M,95,0.06
+737,5:10:31,Mareah Smissen,Dominican Republic,F,71,0.37,Robbie Curcher,Armenia,F,30,0.02
+738,17:09:48,Phyllis Dibben,Canada,F,93,0.09,Kath Bendixen,Thailand,F,37,0.74
+739,12:48:59,Cherianne Cromer,China,F,23,0.87,Merilee Thundercliffe,Peru,F,77,0.82
+740,9:03:00,Cindie Doel,France,M,1,0.31,Shelagh Milillo,Armenia,F,4,0.58
+741,13:01:14,Blake Jessard,Russia,F,80,0.81,Bonnie FitzGeorge,Cambodia,F,87,0.02
+742,2:48:50,Michale Rigney,Saudi Arabia,F,78,0.74,Wes Shields,Pakistan,M,24,0.85
+743,10:53:51,Fonz Clorley,Latvia,F,81,0.14,Hilary Aronsohn,Palestinian Territory,M,95,0.96
+744,0:41:51,Floria Sibbald,Sweden,F,16,0.1,Gweneth Fountian,Brazil,F,57,0.43
+745,1:21:07,Dew Fancet,Portugal,M,90,0.93,Mauricio Goddert.sf,France,M,36,0.34
+746,5:10:11,Caleb Rosettini,United States,M,71,0.14,Bob Yes,Russia,M,1,0.25
+747,23:50:56,Lora Prestland,Philippines,F,10,0.08,Paulina Fellow,Czech Republic,F,81,0.84
+748,19:05:07,Ariadne Dilston,Russia,M,39,0.45,Katinka Moulding,China,F,65,0.43
+749,16:24:46,Maxim Denziloe,Thailand,F,48,0.15,Bern Elcomb,Indonesia,M,76,0.71
+750,3:37:58,Alair Padgham,Japan,M,25,0.47,Coleman Hartnell,Philippines,M,49,0.9
+751,20:41:08,Marget Keach,Eritrea,F,70,0.85,Corinne Longcake,China,F,35,0.56
+752,16:53:21,Gerik Duffil,Indonesia,M,3,0.18,Harv Folds,Ethiopia,M,21,0.21
+753,20:35:37,Tabby Downes,Indonesia,F,76,0.42,Giusto MacKnockiter,Czech Republic,M,78,0.17
+754,4:37:06,Natala Acres,China,F,56,0.95,Carolina Thew,China,F,3,0.03
+755,23:21:56,Beau Cobbledick,Philippines,M,88,0.38,Rolland Krollman,China,M,13,0.26
+756,12:15:43,Kellen Windress,Philippines,F,45,0.7,Collin Swindell,Nicaragua,M,57,0.79
+757,18:57:07,Lynnea Entwhistle,China,M,37,0.2,Gigi Cappineer,Angola,F,46,0.78
+758,10:25:41,Darline Wallage,China,M,12,0.59,Georgianna Flecknoe,China,F,91,0.56
+759,5:37:14,Eloisa Marmion,Canada,F,8,0.23,Nicky Worcester,France,F,92,0.7
+760,20:36:58,Enoch Ashurst,France,M,42,0.67,Saunders Kime,Ireland,M,77,0.46
+761,1:01:33,Noah Gleadle,Thailand,F,58,0.1,Serge Izatt,Egypt,M,32,0.83
+762,20:59:12,Joshua McAughtrie,Bangladesh,M,5,0.81,Temp Cristofari,Iran,M,26,0.75
+763,7:13:59,Harri Sarton,Finland,M,54,0.97,Anjanette Karpeev,Czech Republic,F,66,0.65
+764,20:59:25,Shurwood Heeran,China,M,2,0.66,Baxie Van Halen,China,M,20,0.38
+765,4:48:32,Nicolea Torritti,Indonesia,F,86,0.58,Caryl Pendle,Indonesia,F,62,0.02
+766,0:15:11,Kip Frane,Indonesia,M,73,0.63,Harris Guinness,Finland,M,80,0.66
+767,12:27:10,Cameron Carn,Kazakhstan,M,13,0.7,Godart Pauley,Burundi,M,87,0.31
+768,14:44:13,Berkie Pavlovic,Philippines,F,38,0.67,Findlay Lates,China,M,73,0.81
+769,5:21:44,Xylia Eakens,Portugal,M,2,0.41,Georgia Colbourn,Indonesia,F,6,0.18
+770,22:45:44,Gilemette Blyth,Indonesia,F,52,0.82,Camala Fassmann,Tanzania,F,87,0.68
+771,0:30:52,Andie Porch,Russia,M,57,0.41,Vincents Madgewick,Poland,M,24,0.59
+772,19:19:45,Savina Purches,Cuba,F,55,0.36,Zara Ramelot,Russia,F,50,0.98
+773,5:19:15,Bonny Sturt,Russia,F,14,0.24,Claudia Barhams,Guinea-Bissau,F,16,0.54
+774,23:00:18,Fabian Saffon,Liberia,M,71,0.91,Boycey MacBrearty,Ukraine,M,42,0.02
+775,8:54:56,Jacquelyn Cheales,Indonesia,F,37,0.92,Michele Avarne,Russia,F,74,0.07
+776,2:42:13,Orville Cadany,Russia,M,47,0.75,Andre Dericot,Peru,M,6,0.77
+777,13:18:18,Jerald Billo,Azerbaijan,F,79,0.16,Noam Becconsall,Poland,M,60,0.43
+778,4:30:49,Meridel Schlagtmans,China,M,67,0.5,Maggee Petti,South Africa,F,33,0.78
+779,2:22:06,Ford Wintersgill,Russia,M,92,0.05,Obediah Benjafield,Bangladesh,M,41,0.93
+780,20:38:10,Diena Mayfield,Greece,M,28,0.17,Blanche Hannent,Libya,F,69,0.24
+781,5:21:32,Jasun Rawlins,France,M,36,0.17,Petr Pardue,Indonesia,M,61,0.69
+782,18:22:55,Geraldine Wytchard,China,F,20,0.08,Verina Calam,Philippines,F,24,0.37
+783,4:29:06,Hercules Brightman,China,F,66,0.78,Fredric Cuell,Argentina,M,51,0.92
+784,8:01:46,Iolande Madill,China,F,45,0.33,Adelle Dyzart,Ukraine,F,29,0.4
+785,13:28:45,Sylvester Fulloway,China,F,65,0.87,Fielding Gott,Poland,M,13,0.78
+786,3:14:01,Joshia Caddick,Brazil,M,91,0.74,Manfred Hastin,Greece,M,7,0.32
+787,18:42:08,Mayor Mibourne,Bangladesh,F,16,0.71,Augustus Tipens,Palestinian Territory,M,7,0.62
+788,9:11:16,Merrill De Bruyne,Sweden,F,20,0.21,Westbrook Wisham,Indonesia,M,53,0.43
+789,5:21:19,Hortense O'Deegan,China,F,78,0.41,Mada Cabble,Palestinian Territory,F,18,0.64
+790,17:52:30,Obed Alexsandrowicz,Russia,M,46,0.28,Bing Hayland,Peru,M,85,0.18
+791,14:43:27,Cosme Swadden,Germany,F,63,0.37,Park O'Tierney,China,M,27,0.02
+792,8:59:55,Harlin Delaprelle,Philippines,F,40,0.16,Harley Kundert,Indonesia,M,89,0.99
+793,23:44:35,Greer Moquin,Japan,M,13,0.26,Jackquelin Ovesen,Honduras,F,83,0.26
+794,16:57:59,Nels Burdell,China,F,15,0.08,Cheston Dalton,Philippines,M,68,0.69
+795,1:14:59,Shirlene Cockings,Portugal,F,79,0.42,Rivy Hemmingway,China,F,38,0.87
+796,20:14:41,Staci Winthrop,United States,F,75,0.38,Yoko Weldon,Philippines,F,3,0.77
+797,22:51:55,Raimondo Flower,Brazil,M,42,0.44,Care Bains,Greece,M,29,0.1
+798,5:17:03,Ardelis Perulli,Philippines,M,94,0.15,Abbi Melbourne,Thailand,F,30,0.52
+799,9:42:28,Lolita Tettley,United States,M,46,0.1,Guillema Gartland,Mexico,F,11,0.51
+800,6:10:41,Audrie Lillicrap,China,F,63,0.79,Josefa Withringten,Ukraine,F,66,0.66
+801,13:34:18,Ingaborg Golden,Netherlands,F,55,0.11,Herta Haddington,Czech Republic,F,19,0.09
+802,16:51:58,Jacob Stead,Ireland,F,71,0.5,Ichabod Spickett,Bangladesh,M,82,0.88
+803,0:36:17,Wade Coulthard,Iraq,F,39,0.59,Byram Berntssen,Nigeria,M,95,0.07
+804,18:13:34,Wilbert Wallace,France,M,24,0.98,Brandon Howsam,China,M,60,0.4
+805,0:12:19,Johna Luparti,China,F,45,0.53,Ginnie Trusler,Indonesia,F,46,0.78
+806,3:22:23,Cesaro Cowitz,Indonesia,M,48,0.64,Cullan O'Flynn,Honduras,M,37,0.34
+807,6:46:19,Aili Ardern,Finland,M,91,0.42,Darya Gercken,China,F,18,0.72
+808,7:27:04,Floyd Stanmore,Poland,F,1,0.77,Sim Kempton,Japan,M,71,0.54
+809,6:40:36,Ainsley Fearnsides,Egypt,F,57,0.01,Dani Othick,Canada,F,17,0.9
+810,18:27:27,Erroll Orwin,China,M,50,0.32,Rayner Levee,Dominican Republic,M,22,0.72
+811,18:35:20,Aileen MacInnes,China,M,52,0.47,Angelita Airey,Russia,F,57,0.95
+812,22:44:10,Gregor Onion,Haiti,F,85,0.68,Marlowe Picken,Hungary,M,41,0.51
+813,11:50:30,Felipa Manlow,Philippines,M,48,0.99,Allegra O'Doireidh,China,F,74,0.09
+814,9:04:19,Culley Riccard,China,F,52,0.09,Lionel Nulty,Croatia,M,64,0.29
+815,6:31:01,Cynthy Mattschas,Malaysia,M,46,0.66,Vonnie Shayler,Sweden,F,63,0.35
+816,17:44:35,Cassey Spurryer,Czech Republic,M,30,0.85,Anett Keer,Peru,F,67,0.34
+817,14:05:28,Waldon Creavin,Portugal,F,46,0.63,Maurizio Klimochkin,Philippines,M,32,0.9
+818,8:37:11,Osborn Birdall,China,M,73,0.26,Al McCaughey,Philippines,M,76,0.94
+819,17:06:57,Lothario Dabnor,Jordan,M,71,0.83,Hammad Sommerly,Philippines,M,82,0.11
+820,6:13:16,Annabela Poor,Thailand,M,87,0.93,Nicoli Parken,Poland,F,7,0.6
+821,12:54:01,Brietta Lote,Indonesia,F,54,0.17,Kathie Scrancher,Ukraine,F,44,0.31
+822,1:52:43,Sanford Sleney,Australia,F,69,0.67,Connie Facher,Poland,M,24,0.26
+823,3:04:42,Somerset Landis,Canada,M,2,0.78,Palm Shadbolt,Georgia,M,25,0.98
+824,11:58:15,Bartie Burkwood,Palestinian Territory,F,70,0.77,Hussein Edelmann,Portugal,M,63,0.57
+825,6:40:12,Moina Kubyszek,Ukraine,M,6,0.16,Deirdre Cuer,El Salvador,F,23,0.55
+826,6:48:38,Corrina Slipper,Brazil,M,52,0.24,Jeane Ennever,Greece,F,1,0.88
+827,16:09:39,Felisha Placide,Philippines,M,91,0.43,Stefa Penk,Russia,F,52,0.05
+828,11:51:52,Aliza Thunnercliff,Peru,F,10,0.01,Ramona Luxmoore,Bosnia and Herzegovina,F,95,0.96
+829,22:49:40,Gladi Pimblett,Thailand,F,26,0.41,Clara Williscroft,Czech Republic,F,3,0.68
+830,18:57:24,Maurita Causier,China,M,89,0.56,Melissa Chishull,United Kingdom,F,12,0.72
+831,17:33:13,Garik Eyers,Ireland,M,89,0.16,Leif Bernardotti,China,M,74,0.15
+832,22:46:06,Ciro MacAllaster,Sri Lanka,F,67,0.3,Armin Housbie,Azerbaijan,M,75,0.88
+833,1:08:45,Melly Portwaine,Lithuania,F,91,0.61,Marin Daffey,Tanzania,F,8,0.35
+834,11:18:22,Annamarie McCree,Vietnam,M,54,0.96,Marylynne Salzberger,Peru,F,15,0.4
+835,2:06:32,Dody Ohrtmann,Japan,M,55,0.51,Iris Mollitt,France,F,81,0.63
+836,15:38:21,Renard Eckert,Philippines,M,22,0.45,Archie Benesevich,Indonesia,M,1,0.81
+837,12:18:16,Coreen Van Zon,Myanmar,M,58,0.48,Carmelita Menguy,Egypt,F,90,0.17
+838,16:58:10,Sherry Jocelyn,Philippines,F,23,0.31,Roxane Shillington,Ukraine,F,27,0.53
+839,16:54:50,Melodie Posnett,China,F,60,0.47,Doll Knotte,Indonesia,F,62,0.16
+840,19:44:38,Avis Turpie,Indonesia,M,93,0.91,Raeann Spenton,Czech Republic,F,22,0.11
+841,17:54:39,Bard Grewes,Peru,M,93,0.38,Ignazio Wolfers,Yemen,M,80,0.45
+842,10:09:27,Everett Goodey,China,M,47,0.24,Michal Hellin,China,M,23,0.48
+843,3:35:26,Kerry Brodbin,Indonesia,F,88,0.69,Ewell Portwain,Egypt,M,53,0.77
+844,1:31:47,Lin Spillman,Portugal,M,2,0.4,Koralle Trustrie,Russia,F,40,0.97
+845,20:52:01,Kata Espley,Indonesia,M,12,0.16,Kyla Parfrey,Pakistan,F,88,0.49
+846,19:50:06,Jayson Rief,China,M,2,0.81,Reggie Kirk,United States,M,47,0.59
+847,17:24:00,Elisha Le Teve,Russia,M,2,0.8,Agosto Larkkem,Philippines,M,50,0.65
+848,5:31:06,Alexandro McLagan,Uzbekistan,M,84,0.55,Aguie Fernie,China,M,45,0.92
+849,18:02:52,Westleigh Randle,Slovenia,M,88,0.97,Kelbee Munning,China,M,94,0.44
+850,15:32:32,Frankie Ivanishev,Philippines,F,71,0.35,Abel Alderman,Indonesia,M,36,0.77
+851,15:07:23,Patrick Preddle,Sweden,M,90,0.34,Roger Cruddace,Portugal,M,61,0.26
+852,0:40:06,Amelia Boatwright,China,M,90,0.16,Ermentrude Obey,Indonesia,F,24,0.5
+853,18:28:19,Gordy Everex,Portugal,M,9,0.82,Benjamin Rastall,Russia,M,56,0.48
+854,8:13:29,Eli Spada,Russia,F,85,0.08,Napoleon Ruggiero,Poland,M,12,0.19
+855,9:34:58,Analise Willford,China,F,85,0.1,Fancy Scaddon,Brazil,F,30,0.72
+856,20:29:36,Fransisco Bagster,Greece,M,40,0.02,Vinny Korn,Oman,M,60,0.15
+857,7:12:30,Alexis Gopsall,Cuba,F,42,0.82,Gayle Pynner,Nicaragua,M,82,0.16
+858,20:14:29,Warner Antyukhin,China,M,6,0.85,Vernon Filipyev,Mexico,M,16,0.97
+859,8:17:48,Martica Maccari,Peru,M,12,0.61,Erinna Samuel,Bulgaria,F,12,0.03
+860,10:12:31,Tailor Pockey,China,M,25,0.15,Ogdan Nosworthy,Indonesia,M,80,0.74
+861,12:44:19,Shelby Takos,Greece,M,2,0.31,Susi Coots,Thailand,F,36,0.78
+862,22:02:26,Odilia Gomm,Sweden,M,74,0.08,Kristan Kipping,Ecuador,F,17,0.38
+863,5:20:57,Loraine Quarton,Croatia,M,23,0.56,Bobbi Blaschke,Poland,F,87,0.88
+864,1:39:08,Teressa Budibent,Russia,M,23,0.31,Pearl Neads,Canada,F,16,0.32
+865,22:46:58,Breanne Grigorio,Philippines,M,78,0.95,Dulcine Grabiec,Poland,F,79,0.65
+866,2:10:12,Doug Del Castello,Honduras,M,67,0.57,Gaven Glendenning,Indonesia,M,50,0.8
+867,11:32:13,Richy Verillo,China,F,56,0.18,Pietro Billyeald,Argentina,M,27,0.58
+868,23:20:27,Waverley Creavin,Costa Rica,F,57,0.52,Marcus Maasz,China,M,53,0.35
+869,17:11:40,Mayor Tardiff,Indonesia,M,11,0.02,Rolland Redwood,China,M,33,0.7
+870,1:25:00,Mellisa Roll,Thailand,F,38,0.95,Farand Semor,Canada,F,47,0.03
+871,14:46:00,Gunner Tabor,Russia,M,57,0.97,Sid Brettoner,Czech Republic,M,84,0.71
+872,13:53:24,Lynett Kneel,Philippines,F,85,0.78,Devondra Greatrex,Mexico,F,45,0.57
+873,17:14:16,Suellen Truter,Colombia,M,53,0.53,Larisa Kelwaybamber,United States,F,60,0.42
+874,8:57:07,Matthew McGroarty,Indonesia,F,75,0.85,Gus Newcom,China,M,46,0.23
+875,4:24:21,Desiree Gelly,Indonesia,F,91,0.7,Bernetta Mostyn,Greece,F,87,0.9
+876,7:00:01,Clarine Spincks,Hungary,M,78,0.21,Heath Dennis,Brazil,F,48,0.61
+877,21:11:17,Antoine Mayor,Sweden,M,40,0.03,Carling Albarez,Thailand,M,83,0.51
+878,22:23:19,Stafford Dobney,Brazil,F,55,0.85,Aleksandr Bogaert,China,M,21,0.53
+879,2:39:41,Ives Fountain,Azerbaijan,M,89,0.2,Rik Felstead,China,M,94,0.94
+880,16:37:22,El Fernez,China,M,9,0.52,Eldredge Clarabut,China,M,47,0.52
+881,11:03:11,Shandie Sudlow,Portugal,M,7,0.22,Vida Mance,Ecuador,F,1,0.01
+882,19:24:10,Nataniel Hatchman,Guatemala,M,10,0.8,Ives Caldera,China,M,10,0.46
+883,22:48:09,Penelope Wickersley,Slovenia,M,41,0.87,Halie Whate,Japan,F,26,0.69
+884,11:07:02,Lodovico Vedstra,Brazil,M,17,0.52,Reid Shemilt,China,M,28,0.9
+885,17:21:21,Kristi Pennycuick,China,M,45,0.53,Tonia Brozek,Uganda,F,62,0.93
+886,20:04:21,Rosa Bushen,Portugal,F,27,0.37,Cicely Le Estut,Greece,F,7,0.71
+887,23:54:19,Prentice Riddington,China,M,78,0.76,Irvine Youings,Colombia,M,86,0.47
+888,6:14:12,Karoline Rowson,Philippines,M,33,0.7,Rosa Caistor,Poland,F,37,0.56
+889,13:49:19,Cliff Comusso,Indonesia,F,56,0.98,Jean Watkiss,Indonesia,M,49,0.86
+890,3:18:54,Candida Thistleton,Portugal,F,40,0.49,Harriett Davidavidovics,Russia,F,93,0.74
+891,21:04:31,Kellen Payze,Indonesia,F,57,0.97,Roseline Cockcroft,Cameroon,F,55,0.59
+892,13:43:41,Marji Adess,Honduras,M,40,0.66,Mirilla Imore,Lesotho,F,71,0.23
+893,16:50:31,Dorie Cacacie,Portugal,M,91,0.5,Cordey Macari,Ireland,F,84,0.24
+894,7:38:22,Laure Bransgrove,Colombia,M,47,0.54,Aprilette Roulston,Indonesia,F,64,0.33
+895,13:59:57,Kendrick McRitchie,Colombia,M,90,0.09,Sylvester Josephoff,Haiti,M,81,0.48
+896,22:45:56,Constance Ashtonhurst,Afghanistan,F,59,0.49,Robbyn Jakubovitch,Bolivia,F,53,0.18
+897,18:25:38,Beatriz Juschka,Sweden,M,56,0.04,Zara Mc Meekan,Russia,F,4,0.24
+898,0:17:08,Gerik Swaisland,Sweden,M,67,0.31,Sandy Readwing,Indonesia,M,10,0.75
+899,7:58:04,Horatia Kembery,China,F,11,0.55,Kalindi Iskowicz,China,F,40,0.54
+900,16:51:06,Eloise Dackombe,Argentina,M,45,0.02,Marlyn Whitehorn,Indonesia,F,59,0.08
+901,19:32:33,Lindy Dyson,Spain,M,88,0.58,Mike Tebald,Ukraine,M,85,0.08
+902,18:45:49,Jacklin Eble,China,F,62,0.1,Dido Wyborn,Brazil,F,1,0.59
+903,14:02:28,Yasmeen MacMickan,Japan,M,2,0.35,Alica Antonioni,Finland,F,21,0.02
+904,12:53:15,Margareta Simkin,Indonesia,F,57,0.64,Misty Deadman,China,F,7,0.98
+905,4:32:05,Vonnie Tuson,Philippines,F,74,0.16,Gustie Sooley,Mexico,F,44,0.18
+906,21:47:08,Lainey Hodgon,Brazil,F,41,0.68,Dasie Sturney,Russia,F,42,0.09
+907,18:01:16,Corbett Purveys,China,F,40,0.9,Derril Kenward,Australia,M,94,0.86
+908,5:53:40,Jeramey Sisnett,Malawi,F,49,0.26,Thadeus Gorries,China,M,80,0.38
+909,3:38:27,Larine MacGinley,Indonesia,M,3,0.64,Marjie Overy,Tajikistan,F,28,0.62
+910,10:57:23,Vernen Klos,China,F,47,0.73,Valdemar Dorney,Azerbaijan,M,89,0.84
+911,4:42:50,Ofelia Schimpke,Greece,F,32,0.3,Abbi Bellamy,Poland,F,72,0.37
+912,9:48:20,Merle Dupre,Guadeloupe,F,28,0.99,Peg Talkington,China,F,16,0.92
+913,12:08:32,Evin Didsbury,China,M,1,0.44,Dwayne McKleod,Senegal,M,36,0.94
+914,5:09:00,Sammy Breacher,Myanmar,F,77,0.44,Pavia Mew,Indonesia,F,36,0.92
+915,3:33:35,Bertie Krolik,China,F,83,0.44,Angeline Franchi,Indonesia,F,68,0.85
+916,5:09:53,Welbie Dalglish,Indonesia,M,53,0.54,Miguel McKeevers,China,M,85,0.95
+917,20:29:42,Frannie Du Plantier,Morocco,M,73,0.82,Beatrix Kentish,China,F,43,0.27
+918,3:29:23,Giselbert Guitonneau,China,M,39,0.69,Horacio Lequeux,China,M,42,0.63
+919,6:13:09,Fleurette Harg,Ecuador,F,35,0.14,Delcine Stapleford,United States,F,90,0.92
+920,14:46:30,Granthem Laurenz,Panama,M,73,0.35,Zebulen Sango,Tanzania,M,12,0.81
+921,19:17:47,Jamaal Doveston,Brazil,F,18,0.39,Garrett Yashin,Philippines,M,65,0.73
+922,20:50:54,Kiley Tucknott,Egypt,M,91,0.72,Karly Feighney,U.S. Virgin Islands,F,58,0.07
+923,5:13:01,Cele Chazier,Philippines,M,46,0.76,Kissie Venart,Honduras,F,58,0.93
+924,9:34:33,Bartlett Oxburgh,Guadeloupe,F,1,0.68,Rafferty Lante,Uzbekistan,M,79,0.87
+925,4:05:22,Blinny Wollrauch,Serbia,F,71,0.87,Bunnie McDonald,Greece,F,42,0.26
+926,15:12:08,Sella Kiln,Russia,F,9,0.41,Hynda Newlands,South Korea,F,24,0.44
+927,8:40:43,Ardyth Philbin,Portugal,F,69,0.08,Doralynne Wolfindale,Indonesia,F,48,0.13
+928,8:32:52,Roze Hammerberg,China,F,41,0.86,Mariam Kilpatrick,Indonesia,F,47,0.94
+929,14:37:10,Penn Ponnsett,Philippines,F,75,0.8,Angel Losel,Indonesia,M,60,0.3
+930,8:24:30,Klaus Lyvon,Philippines,F,45,0.7,Tiler Bienvenu,China,M,17,0.39
+931,21:00:07,Wildon Mottini,Russia,F,25,0.17,Erastus Barens,Brazil,M,74,0.25
+932,12:58:04,Florencia Callender,Montenegro,F,29,0.87,Joleen Haydock,China,F,77,0.72
+933,8:59:40,Lisetta Rule,Thailand,M,3,0.03,Katharina Burnitt,Bulgaria,F,73,0.66
+934,6:01:44,Toby McNair,Uruguay,F,18,0.23,Hailey Wiffler,China,M,21,0.08
+935,21:52:21,Edwina Windmill,China,F,87,0.35,Blisse McIlhone,China,F,21,0.18
+936,3:07:45,Egan Rea,Finland,M,40,0.71,Warren Bergeon,Poland,M,29,0.64
+937,13:19:18,Pavia Stawell,Czech Republic,F,86,0.61,Koressa McLanachan,Poland,F,63,0.17
+938,18:12:28,Halsey Rappaport,China,M,92,0.39,Haven Cussons,China,M,19,0.12
+939,16:59:35,Mayer Cunio,Azerbaijan,M,84,0.02,Timmy Moncrefe,Indonesia,M,15,0.57
+940,2:56:38,Colby Blesing,Indonesia,M,71,0.9,Rockie Hanshaw,Chad,M,61,0.44
+941,9:04:59,Jamima Tombs,Thailand,F,86,0.65,Zorine McElane,France,F,40,0.94
+942,19:50:21,Sarine Cleverly,China,M,16,0.17,Merralee Brumfitt,Armenia,F,79,0.51
+943,6:12:16,Ferdinanda Amorts,Portugal,F,16,0.78,Vivianne Tomaszewski,Sweden,F,32,0.38
+944,16:34:24,Stern Keighly,Cameroon,M,21,0.78,Roland Pexton,China,M,69,0.99
+945,19:14:53,Sidonia Farrants,Poland,M,54,0.57,Cristal Croughan,Poland,F,16,0.48
+946,10:56:30,Schuyler Aubery,Russia,M,76,0.68,Arte McIllroy,Brazil,M,95,0.06
+947,5:32:13,Nestor Durno,Indonesia,M,45,0.13,Ahmed Pottell,Brazil,M,33,0.29
+948,21:14:46,Bevon Wissbey,China,M,67,0.36,Valentin Adamec,Vietnam,M,48,0.43
+949,16:54:48,Carolann Dursley,China,F,22,0.06,Noella Martinek,Nigeria,F,28,0.66
+950,13:52:48,Willy Sinnocke,South Korea,M,30,0.24,Bob Pudan,China,M,5,0.66
+951,4:55:40,Eugenio Wraggs,South Korea,M,67,0.36,Rand McMurraya,Indonesia,M,70,0.93
+952,11:16:14,Cindelyn Howis,Portugal,F,79,0.29,Florence McMychem,Croatia,F,73,0.58
+953,9:20:56,Juditha Leger,Vietnam,M,19,0.77,Ruthy Campaigne,France,F,30,0.34
+954,12:17:50,Nadiya Broddle,Norway,F,50,0.03,Flss Dyment,Japan,F,40,0.46
+955,18:45:11,Koral Cota,Croatia,F,1,1.0,Therine Croux,Indonesia,F,64,0.44
+956,14:41:29,Rodney Pears,Russia,F,18,0.5,Reinaldos Pentecust,Philippines,M,48,0.52
+957,21:23:59,Lona Vigars,Tajikistan,F,80,0.49,Corissa Henrys,Philippines,F,29,0.38
+958,11:57:46,Dewitt Hold,Sweden,M,53,0.34,Mathias Niave,Thailand,M,83,0.72
+959,7:59:30,Ephrem Rippen,Poland,M,53,0.8,Murvyn Crebbin,France,M,87,0.92
+960,1:14:58,Issy Chason,Poland,F,38,0.8,Jerrilee Tinan,Indonesia,F,74,0.66
+961,3:50:23,Alphonse Grinikhin,Bosnia and Herzegovina,M,72,0.67,Abbe Greasty,Pakistan,M,90,0.32
+962,7:12:02,Rozamond Ancell,Poland,M,22,0.83,Dorette St Ledger,Mexico,F,78,0.15
+963,15:47:12,Andros Ciobutaru,Philippines,M,79,0.14,Stefan Loughton,Philippines,M,85,0.79
+964,17:17:35,Karlen Maudlin,Ukraine,F,80,0.63,Veronike Halfpenny,France,F,32,0.54
+965,11:24:14,Augustine Binnes,Moldova,M,16,0.7,Connor Stracey,China,M,21,0.73
+966,1:26:29,Joshuah Nibley,China,F,43,0.25,Rodge Torrijos,Russia,M,65,0.16
+967,21:08:04,Gerek Vasilischev,France,F,27,0.54,Birch Boniface,Thailand,M,42,0.09
+968,2:12:38,Osborne Brandel,Bolivia,F,45,0.81,Pierce Leisk,Luxembourg,M,52,0.13
+969,5:35:03,Goldarina D'Antoni,Indonesia,F,77,0.83,Denny Blomefield,Nigeria,F,77,0.83
+970,2:35:34,Justine Spurway,China,M,13,0.54,Jeannie Helbeck,China,F,36,0.12
+971,22:57:20,Godart Climie,Japan,M,3,0.61,Pierson Capitano,Sweden,M,62,0.71
+972,4:04:00,Krissie Fedynski,Ukraine,F,11,0.36,Sorcha Rosenblath,Russia,F,18,0.13
+973,3:48:54,Sharl Larham,Latvia,M,64,0.93,Rani Brockie,Colombia,F,4,0.8
+974,16:27:05,Charmaine Prestie,Indonesia,M,58,0.96,Vitoria Eykel,Colombia,F,17,0.95
+975,13:52:04,Dylan Martinets,China,F,44,0.08,Kele Antyukhin,Indonesia,M,82,0.22
+976,7:49:33,Garvin Annesley,Russia,M,95,0.54,Abba Matuszewski,Poland,M,5,0.69
+977,22:41:59,Dev Stoakley,China,F,41,0.06,Torin Hovert,Indonesia,M,71,0.43
+978,21:45:01,Shaylyn Neligan,Guatemala,M,21,0.65,Lyndell Eykel,Philippines,F,64,0.23
+979,19:11:48,Kellsie Gormally,Democratic Republic of the Congo,M,66,0.48,Sallee Meatcher,China,F,36,0.43
+980,15:10:17,Marsha Corner,Iran,M,76,0.9,Linet Oldfield,China,F,15,0.54
+981,13:57:34,Fleur Maffi,Indonesia,M,75,0.91,Rasla Littleover,Thailand,F,33,0.89
+982,21:28:22,Bing Rist,Palestinian Territory,F,55,0.44,Blaine Tarbert,United States,M,68,1.0
+983,18:27:23,Onofredo Daenen,China,F,60,0.14,Iggie Bultitude,China,M,49,0.69
+984,17:24:55,Eldon Lionel,Canada,M,94,0.2,Pembroke Casper,Venezuela,M,92,0.46
+985,10:34:38,Candy Lerway,Palestinian Territory,M,91,0.79,Jeanine Giscken,Poland,F,59,0.21
+986,21:09:01,Roxanne Pettiford,Netherlands,F,20,0.07,Issie Rapa,Sweden,F,51,0.97
+987,15:00:08,Guillermo Chazerand,Tunisia,F,12,0.72,Alexei Oak,France,M,33,0.78
+988,10:31:18,Patsy Leggate,Indonesia,F,18,0.92,Emelyne Martinon,Kenya,F,58,0.21
+989,7:01:04,Nowell Varfolomeev,Philippines,F,64,0.79,Cliff Greenhow,Ukraine,M,19,0.4
+990,6:26:41,Webster Martusov,Poland,F,35,0.78,Dallas Fassbindler,China,M,35,0.25
+991,7:07:37,Christa Extall,Colombia,F,25,0.97,Karyn Caird,Peru,F,89,0.45
+992,6:24:02,Waiter Cade,Philippines,F,69,0.71,Arnoldo Boyd,Russia,M,30,0.01
+993,16:17:29,Rex Ferrarin,Morocco,M,59,0.52,Alec Majury,Philippines,M,50,0.6
+994,3:44:30,Nahum Youson,Czech Republic,M,42,0.23,Ephrayim Bartod,Russia,M,74,0.79
+995,8:43:24,Ty Maidens,Brazil,M,2,0.77,Corty MacCathay,Azerbaijan,M,23,0.49
+996,10:46:24,Izzy De Mattei,Ukraine,M,57,0.79,Dannie Persehouse,Ireland,M,1,0.6
+997,9:47:25,Moira Koeppke,Indonesia,M,29,0.1,May Bartoletti,Libya,F,50,0.95
+998,6:39:34,Hamel Lujan,China,M,5,0.3,Alair Ungaretti,China,M,36,0.59
+999,14:50:28,Kiele Smithers,Mexico,M,87,0.38,Kassia Nesby,France,F,33,0.96
+1000,3:36:23,Julee Ameer-Beg,Indonesia,M,65,0.17,Beth Faragher,Philippines,F,85,0.27
