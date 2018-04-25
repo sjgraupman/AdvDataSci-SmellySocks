@@ -3,6 +3,7 @@
 //Source: http://bl.ocks.org/micahstubbs/8e15870eb432a21f0bc4d3d527b2d14f
 //4 / 22 / 2018
 //=======================================================================================================================
+var globalData;
 function parseLine(line) {
 	return {
 		Row_Num: parseInt(line["Row_Number"]),
@@ -68,7 +69,7 @@ queue()
 	
 	population.forEach(function (d) { populationById[d.id] = +d.population; });
 	data.features.forEach(function (d) { d.population = populationById[d.id] });
-
+	globalData = data;
 	worldSvg.append("g")
 		.attr("class", "countries")
 		.selectAll("path")
@@ -115,8 +116,6 @@ queue()
 		// .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
 		.attr("class", "names")
 		.attr("d", path);
-		return data;
-
 	}
 //=======================================================================================================================
 //Slider Code
@@ -275,15 +274,15 @@ function generateCountry(data) {
 //=======================================================================================================================
 
 d3.select('#run-simulation').on("click", function () {
-	var results = {};
+	var results = [];
 	//TO-DO Swap out 100 for number of set simulations
 	for (var i = 0; i < 10; i ++) {
 		var age = generateAge();
 		var gender = generateGender();
-		var country = generateCountry(data);
-		var particpant = {age: age, gender: gender, country:country};
-		results.push(participant)
+		var country = generateCountry(globalData);
+		var participant = {age: age, gender: gender, country:country};
+		results.push(participant);
 	}
 	console.log(results);
-	return results
+	return results;
 });
