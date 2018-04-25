@@ -62,9 +62,8 @@ queue()
 	.defer(d3.json, "world_countries.json")
 	.defer(d3.tsv, "world_population.tsv")
 	.await(ready);
-
-function ready(error, data, population) {
-
+	
+	function ready(error, data, population) {
 	var populationById = {};
 	
 	population.forEach(function (d) { populationById[d.id] = +d.population; });
@@ -116,7 +115,9 @@ function ready(error, data, population) {
 		// .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
 		.attr("class", "names")
 		.attr("d", path);
-}
+		return data;
+
+	}
 //=======================================================================================================================
 //Slider Code
 //=======================================================================================================================
@@ -242,24 +243,47 @@ svg2.selectAll(".dot")
 //=======================================================================================================================
 //Simualtion Code
 //=======================================================================================================================
+
 // The 0 - 80 should be the default but we want to use whatever the slider is set to.
-var age = d3.randomUniform(0, 80);
-var gender = generateGender();
-var Country = generateGender
+function generateAge() {
+ var age = Math.floor(Math.random() * 80 + 1);
+return age;
+}
+
 //This is equally likely to generate a male or female
 function generateGender() {
     var rand = Math.random();
+	var gender;
     if (rand < .5) {
         gender = 'F';
     }
     else{
         gender = 'M';
     }
-}
-//This is equally likely to generate each country. Let's change this later to match the population of the country.
-function generateCountry(d) {
-	var rand = Math.floor((Math.random() * d.features.length));
-	console.log(rand);
-	console.log(d.features[rand].properties.name)	
+	return gender;
 }
 
+//This is equally likely to generate each country. Let's change this later to match the population of the country.
+function generateCountry(data) {
+	var rand = Math.floor((Math.random() * data.features.length));
+	var country = data.features[rand].properties.name;
+	return country;
+}
+
+//=======================================================================================================================
+//Submit button Code
+//=======================================================================================================================
+
+d3.select('#run-simulation').on("click", function () {
+	var results = {};
+	//TO-DO Swap out 100 for number of set simulations
+	for (var i = 0; i < 10; i ++) {
+		var age = generateAge();
+		var gender = generateGender();
+		var country = generateCountry(data);
+		var particpant = {age: age, gender: gender, country:country};
+		results.push(participant)
+	}
+	console.log(results);
+	return results
+});
