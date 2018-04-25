@@ -64,8 +64,9 @@ queue()
 	.await(ready);
 
 function ready(error, data, population) {
-	var populationById = {};
 
+	var populationById = {};
+	
 	population.forEach(function (d) { populationById[d.id] = +d.population; });
 	data.features.forEach(function (d) { d.population = populationById[d.id] });
 
@@ -105,7 +106,6 @@ function ready(error, data, population) {
 			if (countryName.hasChildNodes()) {
 				countryName.removeChild(countryName.childNodes[0]);
 			}
-
 			var newCountryName = document.createElement('h1');
 			newCountryName.appendChild(document.createTextNode('Country Selected: ' + d.properties.name));
 			countryName.appendChild(newCountryName);
@@ -238,4 +238,28 @@ svg2.selectAll(".dot")
 	.attr("cx", function (d, i) { return xScale(i) })
 	.attr("cy", function (d) { return yScale(d.y) })
 	.attr("r", 5);
+
+//=======================================================================================================================
+//Simualtion Code
+//=======================================================================================================================
+// The 0 - 80 should be the default but we want to use whatever the slider is set to.
+var age = d3.randomUniform(0, 80);
+var gender = generateGender();
+var Country = generateGender
+//This is equally likely to generate a male or female
+function generateGender() {
+    var rand = Math.random();
+    if (rand < .5) {
+        gender = 'F';
+    }
+    else{
+        gender = 'M';
+    }
+}
+//This is equally likely to generate each country. Let's change this later to match the population of the country.
+function generateCountry(d) {
+	var rand = Math.floor((Math.random() * d.features.length));
+	console.log(rand);
+	console.log(d.features[rand].properties.name)	
+}
 
