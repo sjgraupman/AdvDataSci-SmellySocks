@@ -1,6 +1,6 @@
 ## Website
 
-https://github.com/sjgraupman/AdvDataSci-SmellySocks/Website/
+https://sjgraupman.github.io/AdvDataSci-SmellySocks/Website/
 
 This is the current working website of the smelly socks project run on  [Jekyll](https://jekyllrb.com/). 
 
