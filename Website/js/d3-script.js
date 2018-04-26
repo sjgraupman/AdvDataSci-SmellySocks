@@ -35,8 +35,8 @@ var tip = d3.tip()
 	})
 
 var margin = { top: 0, right: 0, bottom: 0, left: 0 },
-	width = 960 - margin.left - margin.right,
-	height = 500 - margin.top - margin.bottom;
+	width = 600,
+	height = 400;
 
 var color = d3.scaleThreshold()
 	.domain([10000, 100000, 500000, 1000000, 5000000, 10000000, 50000000, 100000000, 500000000, 1500000000])
@@ -46,13 +46,16 @@ var path = d3.geoPath();
 
 var worldSvg = d3.select("#worldmap")
 	.append("svg")
-	.attr("width", width)
-	.attr("height", height)
+	.classed("svg-container", true) //container class to make it responsive
+	.attr("preserveAspectRatio", "xMinYMin meet")
+	.attr("viewBox", "0 0 600 400")
+//	.attr("width", width)
+//	.attr("height", height)
 	.append('g')
 	.attr('class', 'map');
 
 var projection = d3.geoMercator()
-	.scale(130)
+	.scale(width / 2 / Math.PI)
 	.translate([width / 2, height / 1.5]);
 
 var path = d3.geoPath().projection(projection);
