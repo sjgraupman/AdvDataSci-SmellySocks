@@ -4,6 +4,7 @@
 //4 / 22 / 2018
 //=======================================================================================================================
 var globalData;
+var globalGender;
 function parseLine(line) {
 	return {
 		Row_Num: parseInt(line["Row_Number"]),
@@ -277,6 +278,9 @@ function generateCountry(data) {
 	return country;
 }
 
+d3.selectAll("input[name='gender']").on("change", function(){
+   globalGender = this.value;
+});
 //=======================================================================================================================
 //Submit button Code
 //=======================================================================================================================
@@ -286,7 +290,11 @@ d3.select('#run-simulation').on("click", function () {
 	//TO-DO Swap out 100 for number of set simulations
 	for (var i = 0; i < 10; i ++) {
 		var age = generateAge();
-		var gender = generateGender();
+		var gender;
+		if (typeof globalGender == "undefined" || globalGender == "B"){
+			gender = generateGender();
+		}
+		else {gender = globalGender;}
 		var country = generateCountry(globalData);
 		var participant = {age: age, gender: gender, country:country};
 		results.push(participant);
