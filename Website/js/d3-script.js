@@ -278,6 +278,25 @@ function generateCountry(data) {
 	return country;
 }
 
+function getSmelliness(participant){
+	var mean;
+	if (participant.gender == 'F') {
+		mean = .58;
+	}
+	else {
+		mean = .595;
+	}
+	if (participant.age < 20)
+		//Kids smell more than adults
+		mean += .25;
+	else 
+		mean -= .2;
+	var smelliness = d3.randomNormal(mean, .25)();
+	if (smelliness < 0) smelliness = 0;
+	if (smelliness > 1) smelliness = 1;
+	return smelliness;
+}
+
 d3.selectAll("input[name='gender']").on("change", function(){
    globalGender = this.value;
 });
@@ -297,6 +316,8 @@ d3.select('#run-simulation').on("click", function () {
 		else {gender = globalGender;}
 		var country = generateCountry(globalData);
 		var participant = {age: age, gender: gender, country:country};
+		var smelliness = getSmelliness(participant);
+		participant.smelliness = smelliness;
 		results.push(participant);
 	}
 	console.log(results);
