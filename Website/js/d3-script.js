@@ -201,6 +201,7 @@ var yScale = d3.scaleLinear()
 	.domain([0, 1]) // input
 	.range([height, 0]); // output
 
+
 // 7. d3's line generator
 /*var line = d3.line()
 	.x(function (d, i) { return xScale(i); }) // set the x values for the line generator
@@ -307,7 +308,7 @@ d3.selectAll("input[name='gender']").on("change", function(){
 d3.select('#run-simulation').on("click", function () {
 	var results = [];
 	//TO-DO Swap out 100 for number of set simulations
-	for (var i = 0; i < 10; i ++) {
+	for (var i = 0; i < 300; i ++) {
 		var age = generateAge();
 		var gender;
 		if (typeof globalGender == "undefined" || globalGender == "B"){
@@ -320,6 +321,20 @@ d3.select('#run-simulation').on("click", function () {
 		participant.smelliness = smelliness;
 		results.push(participant);
 	}
-	console.log(results);
+
+	svg2.selectAll("circle").remove();
+	svg2.selectAll(".dot")
+	.data(results)
+	.enter().append("circle") // Uses the enter().append() method
+	.attr("class", "dot") // Assign a class for styling
+	.attr("cx", function (d) { return xScale(d.age) })
+	.attr("cy", function (d) { return yScale(d.smelliness) })
+	.style("fill", function (d) {return scale_colors(d.gender)})
+	.attr("r", 3);
 	return results;
 });
+
+function scale_colors(gender) {
+	if (gender == 'F') return 'pink';
+	else return 'blue'
+} 
