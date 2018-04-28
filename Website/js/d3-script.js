@@ -37,7 +37,7 @@ var tip = d3.tip()
 
 var margin = { top: 0, right: 0, bottom: 0, left: 0 },
 	width = 600,
-	height = 400;
+	height = 300;
 
 var color = d3.scaleThreshold()
 	.domain([10000, 100000, 500000, 1000000, 5000000, 10000000, 50000000, 100000000, 500000000, 1500000000])
@@ -49,7 +49,7 @@ var worldSvg = d3.select("#worldmap")
 	.append("svg")
 	.classed("svg-container", true) //container class to make it responsive
 	.attr("preserveAspectRatio", "xMinYMin meet")
-	.attr("viewBox", "0 0 600 400")
+	.attr("viewBox", "0 0 600 300")
 //	.attr("width", width)
 //	.attr("height", height)
 	.append('g')
@@ -181,34 +181,28 @@ noUiSlider.create(handlesSlider, {
 //13) Add some basic styling to the chart so its easier on the eyes
 
 
-
 // 2. Use the margin convention practice
 var margin = { top: 50, right: 50, bottom: 50, left: 50 }
 	//Update padding with new margins
 	, width = width - margin.left - margin.right 	
 	, height = height - margin.top - margin.bottom; 
 
-// The number of datapoints
-var n = 100;
+// TO-DO Make this line up with sliders
+var minAge = 0;
+var maxAge = 100;
 
 // 5. X scale will use the index of our data
 var xScale = d3.scaleLinear()
-	.domain([0, n - 1]) // input
+	.domain([minAge, maxAge]) // input
 	.range([0, width]); // output
 
-// 6. Y scale will use the randomly generate number
+// 6. Y scale is 0 to 1 
 var yScale = d3.scaleLinear()
 	.domain([0, 1]) // input
 	.range([height, 0]); // output
-
-
-// 7. d3's line generator
-/*var line = d3.line()
-	.x(function (d, i) { return xScale(i); }) // set the x values for the line generator
-	.y(function (d) { return yScale(d.y); }) // set the y values for the line generator
-	.curve(d3.curveMonotoneX) // apply smoothing to the line
-	*/
-
+//This is currently original dataset that we load
+// TODO make this a default simulation or some sort of load screen?
+var n = 100;
 // 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
 var dataset = d3.range(n).map(function (d) { return { "y": d3.randomUniform(1)() } })
 
@@ -216,19 +210,19 @@ var dataset = d3.range(n).map(function (d) { return { "y": d3.randomUniform(1)()
 var svg2 = d3.select("#smellgraph").append("svg")
 	.classed("svg-container", true) //container class to make it responsive
 	.attr("preserveAspectRatio", "xMinYMin meet")
-	.attr("viewBox", "0 0 600 400")
-//	.attr("width", width + margin.left + margin.right)
-//	.attr("height", height + margin.top + margin.bottom)
+	.attr("viewBox", "0 0 600 300")
 	.append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // 3. Call the x axis in a group tag
+// TO-DO Label this Age
 svg2.append("g")
 	.attr("class", "x axis")
 	.attr("transform", "translate(0," + height + ")")
 	.call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
 
 // 4. Call the y axis in a group tag
+// TO-DO Label this Smelliness
 svg2.append("g")
 	.attr("class", "y axis")
 	.call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
@@ -241,6 +235,7 @@ svg2.append("g")
 	*/
 
 // 12. Appends a circle for each datapoint
+// TO-DO we could make this something more fun like the socks in the img folder
 svg2.selectAll(".dot")
 	.data(dataset)
 	.enter().append("circle") // Uses the enter().append() method
@@ -248,6 +243,16 @@ svg2.selectAll(".dot")
 	.attr("cx", function (d, i) { return xScale(i) })
 	.attr("cy", function (d) { return yScale(d.y) })
 	.attr("r", 5);
+
+//=======================================================================================================================
+// Code for getting information from UI
+//=======================================================================================================================
+	d3.selectAll("input[name='gender']").on("change", function(){
+		globalGender = this.value;
+	 });
+
+
+
 
 //=======================================================================================================================
 //Simualtion Code
@@ -272,13 +277,14 @@ function generateGender() {
 	return gender;
 }
 
-//This is equally likely to generate each country. Let's change this later to match the population of the country.
+//This is equally likely to generate each country
+// TO-DO change this to match the population of the country.
 function generateCountry(data) {
 	var rand = Math.floor((Math.random() * data.features.length));
 	var country = data.features[rand].properties.name;
 	return country;
 }
-
+//TO-DO Evaluate how we want simulate smelliness
 function getSmelliness(participant){
 	var mean;
 	if (participant.gender == 'F') {
@@ -298,14 +304,15 @@ function getSmelliness(participant){
 	return smelliness;
 }
 
-d3.selectAll("input[name='gender']").on("change", function(){
-   globalGender = this.value;
-});
+
 //=======================================================================================================================
 //Submit button Code
 //=======================================================================================================================
-
 d3.select('#run-simulation').on("click", function () {
+	 //TODO make sure you can re-enter information
+	d3.select(this).text("Run Simulation Again"); 
+	d3.selectAll("#entry-information").style('display', 'none');
+
 	var results = [];
 	//TO-DO Swap out 100 for number of set simulations
 	for (var i = 0; i < 300; i ++) {
