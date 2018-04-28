@@ -5,6 +5,8 @@
 //=======================================================================================================================
 var globalData;
 var globalGender;
+var globalMinAge;
+var globalMaxAge;
 function parseLine(line) {
 	return {
 		Row_Num: parseInt(line["Row_Number"]),
@@ -249,18 +251,25 @@ svg2.selectAll(".dot")
 //=======================================================================================================================
 	d3.selectAll("input[name='gender']").on("change", function(){
 		globalGender = this.value;
+		//re-run this simulation anytime this is changed
+		run_simulation()
 	 });
-
-
+	 
+	 //NOT WORKING YET
+	 d3.select("slider-handles").on("change", function(){
+		minAge = this.range.min;
+		maxAge = this.range.max;
+		//re-run this simulation anytime this is changed
+		run_simulation()
+	 });
 
 
 //=======================================================================================================================
 //Simualtion Code
 //=======================================================================================================================
 
-// The 0 - 80 should be the default but we want to use whatever the slider is set to.
-function generateAge() {
- var age = Math.floor(Math.random() * 80 + 1);
+function generateAge(minAge, maxAge) {
+ var age = Math.floor(Math.random() * (maxAge - minAge) + minAge + 1);
 return age;
 }
 
@@ -306,17 +315,30 @@ function getSmelliness(participant){
 
 
 //=======================================================================================================================
-//Submit button Code
+// Button Functionality
 //=======================================================================================================================
 d3.select('#run-simulation').on("click", function () {
 	 //TODO make sure you can re-enter information
 	d3.select(this).text("Run Simulation Again"); 
-	d3.selectAll("#entry-information").style('display', 'none');
+	d3.selectAll("#entry-information").style('display',  'none');
+	run_simulation();
+
+});
+
+function scale_colors(gender) {
+	if (gender == 'F') return 'pink';
+	else return 'blue'
+} 
+
+//Make simulation it's own function
+
+function run_simulation() {
 
 	var results = [];
 	//TO-DO Swap out 100 for number of set simulations
-	for (var i = 0; i < 300; i ++) {
-		var age = generateAge();
+	for (var i = 0; i < 100; i ++) {
+		//TO-DO make this correlate to slider
+		var age = generateAge(minAge, maxAge);
 		var gender;
 		if (typeof globalGender == "undefined" || globalGender == "B"){
 			gender = generateGender();
@@ -328,7 +350,6 @@ d3.select('#run-simulation').on("click", function () {
 		participant.smelliness = smelliness;
 		results.push(participant);
 	}
-
 	svg2.selectAll("circle").remove();
 	svg2.selectAll(".dot")
 	.data(results)
@@ -339,9 +360,11 @@ d3.select('#run-simulation').on("click", function () {
 	.style("fill", function (d) {return scale_colors(d.gender)})
 	.attr("r", 3);
 	return results;
-});
+	}
 
-function scale_colors(gender) {
-	if (gender == 'F') return 'pink';
-	else return 'blue'
-} 
+
+//source: https://blog.webkid.io/replacing-jquery-with-d3/
+d3.selection.prototype.toggle = function() {  
+	var isHidden = this.style('display') == 'none';
+	return this.style('display', isHidden ? 'inherit' : 'none');
+  }
