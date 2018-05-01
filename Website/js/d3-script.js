@@ -52,13 +52,11 @@ var worldSvg = d3.select("#worldmap")
 	.classed("svg-container", true) //container class to make it responsive
 	.attr("preserveAspectRatio", "xMinYMin meet")
 	.attr("viewBox", "0 0 600 300")
-//	.attr("width", width)
-//	.attr("height", height)
 	.append('g')
 	.attr('class', 'map');
 
 var projection = d3.geoMercator()
-	.scale(width / 2 / Math.PI)
+	.scale(width / 2.5 / Math.PI)
 	.translate([width / 2, height / 1.5]);
 
 var path = d3.geoPath().projection(projection);
@@ -317,13 +315,19 @@ function getSmelliness(participant){
 //=======================================================================================================================
 // Button Functionality
 //=======================================================================================================================
-d3.select('#run-simulation').on("click", function () {
+d3.select('#enter-information').on("click", function () {
 	 //TODO make sure you can re-enter information
-	d3.select(this).text("Run Simulation Again"); 
-	d3.selectAll("#entry-information").style('display',  'none');
+	d3.select(this).text("Edit Information"); 
+	d3.selectAll("#entry-information").toggle();
 	run_simulation();
 
 });
+//source: https://blog.webkid.io/replacing-jquery-with-d3/
+d3.selection.prototype.toggle = function() {  
+	var isHidden = this.style('display') == 'none';
+	return this.style('display', isHidden ? 'inherit' : 'none');
+  }
+
 
 function scale_colors(gender) {
 	if (gender == 'F') return 'pink';
@@ -349,7 +353,22 @@ function run_simulation() {
 		var smelliness = getSmelliness(participant);
 		participant.smelliness = smelliness;
 		results.push(participant);
-	}
+	}		
+
+	 var smellinessByGender = d3.nest()
+  			.key(function(d) { return d.gender; })
+  			.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
+			 .object(results);
+			 
+	 var smellinessByAge = d3.nest()
+  			.key(function(d) { return d.age; })
+  			.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
+			 .object(results);
+	var smellinessByCountry = d3.nest()
+			 .key(function(d) { return d.country; })
+			 .rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
+			.object(results);
+
 	svg2.selectAll("circle").remove();
 	svg2.selectAll(".dot")
 	.data(results)
@@ -359,12 +378,14 @@ function run_simulation() {
 	.attr("cy", function (d) { return yScale(d.smelliness) })
 	.style("fill", function (d) {return scale_colors(d.gender)})
 	.attr("r", 3);
+
 	return results;
 	}
 
 
-//source: https://blog.webkid.io/replacing-jquery-with-d3/
-d3.selection.prototype.toggle = function() {  
-	var isHidden = this.style('display') == 'none';
-	return this.style('display', isHidden ? 'inherit' : 'none');
-  }
+
+  d3.select('#run-simulation').on("click", function () {
+	//TODO make sure you can re-enter information
+   d3.select(this).text("Run Simulation Again"); 
+   run_simulation();
+});
