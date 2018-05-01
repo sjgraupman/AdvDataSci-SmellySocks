@@ -284,6 +284,11 @@ function run_simulation() {
 	var xScale = d3.scaleLinear()
 	.domain([minAge, maxAge]) // input
 	.range([0, width]);
+// source: http://bl.ocks.org/Caged/6476579
+var div = d3.select("body").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0);
+
 
 	svg2.selectAll("circle").remove();
 	svg2.selectAll(".dot")
@@ -293,7 +298,20 @@ function run_simulation() {
 	.attr("cx", function (d) { return xScale(d.age) })
 	.attr("cy", function (d) { return yScale(d.smelliness) })
 	.style("fill", function (d) {return scale_colors(d.gender)})
-	.attr("r", 3);
+	.attr("r", 3)
+	.on("mouseover", function(d) {
+		div.transition()
+		.duration(200)
+		.style("opacity", .9);
+		div.html("Age: " + d.age + "<br/>" +  "Smelliness: " + d.smelliness.toFixed(2))
+			.style("left", d3.event.pageX + "px")
+			.style("top", (d3.event.pageY) + "px");
+	})
+	.on("mouseout", function(d) {
+		div.transition()
+			.duration(500)
+			.style("opacity", 0);
+		});
 	return results;
 }
 
