@@ -19,7 +19,7 @@ function parseLine(line) {
 }
 
 d3.csv("Sock_Data_LibraryMock.csv", parseLine, function (error, data) {
-
+	
 });
 
 
@@ -31,99 +31,103 @@ d3.csv("Sock_Data_LibraryMock.csv", parseLine, function (error, data) {
 var format = d3.format(",");
 // Set tooltips
 var tip = d3.tip()
-	.attr('class', 'd3-tip')
-	.offset([-10, 0])
-	.html(function (d) {
-		return "<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" + "<strong>Participants: </strong><span class='details'>" + format(d.population) + "</span>";
-	})
+.attr('class', 'd3-tip')
+.offset([-10, 0])
+.html(function (d) {
+	return "<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" + "<strong>Participants: </strong><span class='details'>" + format(d.population) + "</span>";
+})
 
 var margin = { top: 0, right: 0, bottom: 0, left: 0 },
-	width = 600,
-	height = 300;
+width = 600,
+height = 300;
 
 var color = d3.scaleThreshold()
-	.domain([10000, 100000, 500000, 1000000, 5000000, 10000000, 50000000, 100000000, 500000000, 1500000000])
-	.range(["rgb(247,251,255)", "rgb(222,235,247)", "rgb(198,219,239)", "rgb(158,202,225)", "rgb(107,174,214)", "rgb(66,146,198)", "rgb(33,113,181)", "rgb(8,81,156)", "rgb(8,48,107)", "rgb(3,19,43)"]);
+.domain([10000, 100000, 500000, 1000000, 5000000, 10000000, 50000000, 100000000, 500000000, 1500000000])
+.range(["rgb(247,251,255)", "rgb(222,235,247)", "rgb(198,219,239)", "rgb(158,202,225)", "rgb(107,174,214)", "rgb(66,146,198)", "rgb(33,113,181)", "rgb(8,81,156)", "rgb(8,48,107)", "rgb(3,19,43)"]);
 
 var path = d3.geoPath();
 
 var worldSvg = d3.select("#worldmap")
-	.append("svg")
-	.classed("svg-container", true) //container class to make it responsive
-	.attr("preserveAspectRatio", "xMinYMin meet")
-	.attr("viewBox", "0 0 600 300")
-	.append('g')
-	.attr('class', 'map');
+.append("svg")
+.classed("svg-container", true) //container class to make it responsive
+.attr("preserveAspectRatio", "xMinYMin meet")
+.attr("viewBox", "0 0 600 300")
+.append('g')
+.attr('class', 'map');
 
 var projection = d3.geoMercator()
-	.scale(width / 2.5 / Math.PI)
-	.translate([width / 2, height / 1.5]);
+.scale(width / 2.5 / Math.PI)
+.translate([width / 2, height / 1.5]);
 
 var path = d3.geoPath().projection(projection);
 
 worldSvg.call(tip);
 
 queue()
-	.defer(d3.json, "world_countries.json")
-	.defer(d3.tsv, "world_population.tsv")
-	.await(ready);
-	
-	function ready(error, data, population) {
+.defer(d3.json, "world_countries.json")
+.defer(d3.tsv, "world_population.tsv")
+.await(ready);
+
+function ready(error, data, population) {
 	var populationById = {};
 	
 	population.forEach(function (d) { populationById[d.id] = +d.population; });
 	data.features.forEach(function (d) { d.population = populationById[d.id] });
 	globalData = data;
 	worldSvg.append("g")
-		.attr("class", "countries")
-		.selectAll("path")
-		.data(data.features)
-		.enter().append("path")
-		.attr("d", path)
-		.style("fill", function (d) { return color(populationById[d.id]); })
-		.style('stroke', 'white')
-		.style('stroke-width', 1.5)
+	.attr("class", "countries")
+	.selectAll("path")
+	.data(data.features)
+	.enter().append("path")
+	.attr("d", path)
+	.style("fill", function (d) { return color(populationById[d.id]); })
+	.style('stroke', 'white')
+	.style('stroke-width', 1.5)
+	.style("opacity", 0.8)
+	// tooltips
+	.style("stroke", "white")
+	.style('stroke-width', 0.3)
+	.on('mouseover', function (d) {
+		tip.show(d);
+		
+		d3.select(this)
+		.style("opacity", 1)
+		.style("stroke", "#6f9600")//maybe change back to black?
+		.style("stroke-width", 3);
+	})
+	.on('mouseout', function (d) {
+		tip.hide(d);
+		
+		d3.select(this)
 		.style("opacity", 0.8)
-		// tooltips
 		.style("stroke", "white")
-		.style('stroke-width', 0.3)
-		.on('mouseover', function (d) {
-			tip.show(d);
-
-			d3.select(this)
-				.style("opacity", 1)
-				.style("stroke", "#6f9600")//maybe change back to black?
-				.style("stroke-width", 3);
-		})
-		.on('mouseout', function (d) {
-			tip.hide(d);
-
-			d3.select(this)
-				.style("opacity", 0.8)
-				.style("stroke", "white")
-				.style("stroke-width", 0.3);
-		})
-		//Here I add the country name to the countryname div -CQ
-		.on('click', function (d) {
-			countryName = document.getElementById("countryname");
-			if (countryName.hasChildNodes()) {
-				countryName.removeChild(countryName.childNodes[0]);
-			}
-			var newCountryName = document.createElement('h1');
-			newCountryName.appendChild(document.createTextNode('Country Selected: ' + d.properties.name));
-			countryName.appendChild(newCountryName);
-		});
-
+		.style("stroke-width", 0.3);
+	})
+	//Here I add the country name to the countryname div -CQ
+	.on('click', function (d) {
+		countryName = document.getElementById("countryname");
+		if (countryName.hasChildNodes()) {
+			countryName.removeChild(countryName.childNodes[0]);
+		}
+		var newCountryName = document.createElement('h1');
+		newCountryName.appendChild(document.createTextNode('Country Selected: ' + d.properties.name));
+		countryName.appendChild(newCountryName);
+	});
+	
 	worldSvg.append("path")
-		.datum(topojson.mesh(data.features, function (a, b) { return a.id !== b.id; }))
-		// .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
-		.attr("class", "names")
-		.attr("d", path);
-	}
+	.datum(topojson.mesh(data.features, function (a, b) { return a.id !== b.id; }))
+	// .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
+	.attr("class", "names")
+	.attr("d", path);
+}
 //=======================================================================================================================
 //Slider Code
 //=======================================================================================================================
 var handlesSlider = document.getElementById('slider-handles');
+
+// TO-DO Make this line up with sliders
+var minAge = 0;
+var maxAge = 100;
 
 noUiSlider.create(handlesSlider, {
 	connect: true,
@@ -165,122 +169,149 @@ noUiSlider.create(handlesSlider, {
 //Smelly Socks Graph
 //=======================================================================================================================
 
-//			
-//	1) Add an SVG to draw our line chart on
-//2) Use the D3 standard margin convetion
-//3) Create an x axis
-//4) Create a y axis
-//5) Create an x scale
-//6) Create a y scale
-//7) Create a line generator
-//8) Create a random dataset
-//9) Create a path object for the line
-//			10) Bind the data to the path object
-//11) Call the line generator on the data- bound path object
-//12) Add circles to show each datapoint
-//13) Add some basic styling to the chart so its easier on the eyes
-
-
 // 2. Use the margin convention practice
 var margin = { top: 50, right: 50, bottom: 50, left: 50 }
-	//Update padding with new margins
-	, width = width - margin.left - margin.right 	
-	, height = height - margin.top - margin.bottom; 
+//Update padding with new margins
+, width = width - margin.left - margin.right 	
+, height = height - margin.top - margin.bottom; 
 
-// TO-DO Make this line up with sliders
-var minAge = 0;
-var maxAge = 100;
-
-// 5. X scale will use the index of our data
 var xScale = d3.scaleLinear()
-	.domain([minAge, maxAge]) // input
-	.range([0, width]); // output
+.domain([minAge, maxAge]) // input
+.range([0, width]); // output
 
-// 6. Y scale is 0 to 1 
 var yScale = d3.scaleLinear()
-	.domain([0, 1]) // input
-	.range([height, 0]); // output
-//This is currently original dataset that we load
-// TODO make this a default simulation or some sort of load screen?
-var n = 100;
-// 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
-var dataset = d3.range(n).map(function (d) { return { "y": d3.randomUniform(1)() } })
-
-// 1. Add the SVG to the page and employ #2
+.domain([0, 1]) // input
+.range([height, 0]); // output
+// Add the SVG to the page and employ #2
 var svg2 = d3.select("#smellgraph").append("svg")
-	.classed("svg-container", true) //container class to make it responsive
-	.attr("preserveAspectRatio", "xMinYMin meet")
-	.attr("viewBox", "0 0 600 300")
-	.append("g")
-	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+.classed("svg-container", true) //container class to make it responsive
+.attr("preserveAspectRatio", "xMinYMin meet")
+.attr("viewBox", "0 0 600 300")
+.append("g")
+.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// 3. Call the x axis in a group tag
+// Call the x axis in a group tag
 // TO-DO Label this Age
 svg2.append("g")
-	.attr("class", "x axis")
-	.attr("transform", "translate(0," + height + ")")
-	.call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
+.attr("class", "x axis")
+.attr("transform", "translate(0," + height + ")")
+.call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
 
 // 4. Call the y axis in a group tag
 // TO-DO Label this Smelliness
 svg2.append("g")
-	.attr("class", "y axis")
-	.call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
-
-// 9. Append the path, bind the data, and call the line generator
-/*svg2.append("path")
-	.datum(dataset) // 10. Binds data to the line
-	.attr("class", "line") // Assign a class for styling
-	.attr("d", line); // 11. Calls the line generator
-	*/
-
-// 12. Appends a circle for each datapoint
-// TO-DO we could make this something more fun like the socks in the img folder
-svg2.selectAll(".dot")
-	.data(dataset)
-	.enter().append("circle") // Uses the enter().append() method
-	.attr("class", "dot") // Assign a class for styling
-	.attr("cx", function (d, i) { return xScale(i) })
-	.attr("cy", function (d) { return yScale(d.y) })
-	.attr("r", 5);
+.attr("class", "y axis")
+.call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
 
 //=======================================================================================================================
 // Code for getting information from UI
 //=======================================================================================================================
-	d3.selectAll("input[name='gender']").on("change", function(){
-		globalGender = this.value;
-		//re-run this simulation anytime this is changed
-		run_simulation()
-	 });
-	 
-	 //NOT WORKING YET
-	 d3.select("slider-handles").on("change", function(){
-		minAge = this.range.min;
-		maxAge = this.range.max;
-		//re-run this simulation anytime this is changed
-		run_simulation()
-	 });
+//This is what gets what gender is selected to run the simulation not what the user inputted
+d3.selectAll("input[name='gender']").on("change", function(){
+	globalGender = this.value;
+	//re-run this simulation anytime this is changed
+	run_simulation()
+});
+
+//NOT WORKING YET
+d3.select("slider-handles").on("change", function(){
+	minAge = this.range.min;
+	maxAge = this.range.max;
+	//re-run this simulation anytime this is changed
+	run_simulation()
+});
 
 
 //=======================================================================================================================
-//Simualtion Code
+// Button Functionality
 //=======================================================================================================================
+d3.select('#enter-information').on("click", function () {
+	d3.select(this).text("Edit Information"); 
+	d3.selectAll("#entry-information").toggle();
+	run_simulation();
+});
+d3.select('#run-simulation').on("click", function () {
+	d3.select(this).text("Run Simulation Again"); 
+	run_simulation();
+});
+//source: https://blog.webkid.io/replacing-jquery-with-d3/
+d3.selection.prototype.toggle = function() {  
+	var isHidden = this.style('display') == 'none';
+	return this.style('display', isHidden ? 'inherit' : 'none');
+}
+
+function scale_colors(gender) {
+	if (gender == 'F') return 'pink';
+	else return 'blue'
+} 
+
+//Make simulation it's own function
+
+function run_simulation() {
+	
+	var results = [];
+	//TO-DO Swap out 100 for number of set simulations
+	for (var i = 0; i < 100; i ++) {
+		//TO-DO make this correlate to slider
+		var age = generateAge(minAge, maxAge);
+		var gender;
+		if (typeof globalGender == "undefined" || globalGender == "B"){
+			gender = generateGender();
+		}
+		else {gender = globalGender;}
+		var country = generateCountry(globalData);
+		var participant = {age: age, gender: gender, country:country};
+		var smelliness = getSmelliness(participant);
+		participant.smelliness = smelliness;
+		results.push(participant);
+	}		
+	
+	var smellinessByGender = d3.nest()
+	.key(function(d) { return d.gender; })
+	.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
+	.entries(results);
+	
+	var smellinessByAge = d3.nest()
+	.key(function(d) { return d.age; })
+	.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
+	.entries(results);
+	
+	var smellinessByCountry = d3.nest()
+	.key(function(d) { return d.country; })
+	.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
+	.entries(results);
+	
+	var xScale = d3.scaleLinear()
+	.domain([minAge, maxAge]) // input
+	.range([0, width]);
+
+	svg2.selectAll("circle").remove();
+	svg2.selectAll(".dot")
+	.data(results)
+	.enter().append("circle") // Uses the enter().append() method
+	.attr("class", "dot") // Assign a class for styling
+	.attr("cx", function (d) { return xScale(d.age) })
+	.attr("cy", function (d) { return yScale(d.smelliness) })
+	.style("fill", function (d) {return scale_colors(d.gender)})
+	.attr("r", 3);
+	return results;
+}
 
 function generateAge(minAge, maxAge) {
- var age = Math.floor(Math.random() * (maxAge - minAge) + minAge + 1);
-return age;
+	var age = Math.floor(Math.random() * (maxAge - minAge) + minAge + 1);
+	return age;
 }
 
 //This is equally likely to generate a male or female
 function generateGender() {
-    var rand = Math.random();
+	var rand = Math.random();
 	var gender;
-    if (rand < .5) {
-        gender = 'F';
-    }
-    else{
-        gender = 'M';
-    }
+	if (rand < .5) {
+		gender = 'F';
+	}
+	else{
+		gender = 'M';
+	}
 	return gender;
 }
 
@@ -301,91 +332,13 @@ function getSmelliness(participant){
 		mean = .595;
 	}
 	if (participant.age < 20)
-		//Kids smell more than adults
-		mean += .25;
+	//Kids smell more than adults
+	mean += .25;
 	else 
-		mean -= .2;
+	mean -= .2;
 	var smelliness = d3.randomNormal(mean, .25)();
 	if (smelliness < 0) smelliness = 0;
 	if (smelliness > 1) smelliness = 1;
 	return smelliness;
 }
 
-
-//=======================================================================================================================
-// Button Functionality
-//=======================================================================================================================
-d3.select('#enter-information').on("click", function () {
-	 //TODO make sure you can re-enter information
-	d3.select(this).text("Edit Information"); 
-	d3.selectAll("#entry-information").toggle();
-	run_simulation();
-
-});
-//source: https://blog.webkid.io/replacing-jquery-with-d3/
-d3.selection.prototype.toggle = function() {  
-	var isHidden = this.style('display') == 'none';
-	return this.style('display', isHidden ? 'inherit' : 'none');
-  }
-
-
-function scale_colors(gender) {
-	if (gender == 'F') return 'pink';
-	else return 'blue'
-} 
-
-//Make simulation it's own function
-
-function run_simulation() {
-
-	var results = [];
-	//TO-DO Swap out 100 for number of set simulations
-	for (var i = 0; i < 100; i ++) {
-		//TO-DO make this correlate to slider
-		var age = generateAge(minAge, maxAge);
-		var gender;
-		if (typeof globalGender == "undefined" || globalGender == "B"){
-			gender = generateGender();
-		}
-		else {gender = globalGender;}
-		var country = generateCountry(globalData);
-		var participant = {age: age, gender: gender, country:country};
-		var smelliness = getSmelliness(participant);
-		participant.smelliness = smelliness;
-		results.push(participant);
-	}		
-
-	 var smellinessByGender = d3.nest()
-  			.key(function(d) { return d.gender; })
-  			.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
-			 .object(results);
-			 
-	 var smellinessByAge = d3.nest()
-  			.key(function(d) { return d.age; })
-  			.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
-			 .object(results);
-	var smellinessByCountry = d3.nest()
-			 .key(function(d) { return d.country; })
-			 .rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
-			.object(results);
-
-	svg2.selectAll("circle").remove();
-	svg2.selectAll(".dot")
-	.data(results)
-	.enter().append("circle") // Uses the enter().append() method
-	.attr("class", "dot") // Assign a class for styling
-	.attr("cx", function (d) { return xScale(d.age) })
-	.attr("cy", function (d) { return yScale(d.smelliness) })
-	.style("fill", function (d) {return scale_colors(d.gender)})
-	.attr("r", 3);
-
-	return results;
-	}
-
-
-
-  d3.select('#run-simulation').on("click", function () {
-	//TODO make sure you can re-enter information
-   d3.select(this).text("Run Simulation Again"); 
-   run_simulation();
-});
