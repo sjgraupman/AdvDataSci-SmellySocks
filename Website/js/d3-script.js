@@ -19,7 +19,7 @@ function parseLine(line) {
 }
 
 d3.csv("Sock_Data_LibraryMock.csv", parseLine, function (error, data) {
-	
+
 });
 
 
@@ -29,96 +29,131 @@ d3.csv("Sock_Data_LibraryMock.csv", parseLine, function (error, data) {
 //4 / 22 / 2018
 //=======================================================================================================================
 var format = d3.format(",");
+var countries = [];
 // Set tooltips
 var tip = d3.tip()
-.attr('class', 'd3-tip')
-.offset([-10, 0])
-.html(function (d) {
-	return "<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" + "<strong>Participants: </strong><span class='details'>" + format(d.population) + "</span>";
-})
+	.attr('class', 'd3-tip')
+	.offset([-10, 0])
+	.html(function (d) {
+		return "<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" + "<strong>Participants: </strong><span class='details'>" + format(d.population) + "</span>";
+	})
 
 var margin = { top: 0, right: 0, bottom: 0, left: 0 },
-width = 600,
-height = 300;
+	width = 600,
+	height = 300;
 
 var color = d3.scaleThreshold()
-.domain([10000, 100000, 500000, 1000000, 5000000, 10000000, 50000000, 100000000, 500000000, 1500000000])
-.range(["rgb(247,251,255)", "rgb(222,235,247)", "rgb(198,219,239)", "rgb(158,202,225)", "rgb(107,174,214)", "rgb(66,146,198)", "rgb(33,113,181)", "rgb(8,81,156)", "rgb(8,48,107)", "rgb(3,19,43)"]);
+	.domain([10000, 100000, 500000, 1000000, 5000000, 10000000, 50000000, 100000000, 500000000, 1500000000])
+	.range(["rgb(247,251,255)", "rgb(222,235,247)", "rgb(198,219,239)", "rgb(158,202,225)", "rgb(107,174,214)", "rgb(66,146,198)", "rgb(33,113,181)", "rgb(8,81,156)", "rgb(8,48,107)", "rgb(3,19,43)"]);
 
 var path = d3.geoPath();
 
 var worldSvg = d3.select("#worldmap")
-.append("svg")
-.classed("svg-container", true) //container class to make it responsive
-.attr("preserveAspectRatio", "xMinYMin meet")
-.attr("viewBox", "0 0 600 300")
-.append('g')
-.attr('class', 'map');
+	.append("svg")
+	.classed("svg-container", true) //container class to make it responsive
+	.attr("preserveAspectRatio", "xMinYMin meet")
+	.attr("viewBox", "0 0 600 300")
+	.append('g')
+	.attr('class', 'map');
 
 var projection = d3.geoMercator()
-.scale(width / 2.5 / Math.PI)
-.translate([width / 2, height / 1.5]);
+	.scale(width / 2.5 / Math.PI)
+	.translate([width / 2, height / 1.5]);
 
 var path = d3.geoPath().projection(projection);
 
 worldSvg.call(tip);
 
 queue()
-.defer(d3.json, "world_countries.json")
-.defer(d3.tsv, "world_population.tsv")
-.await(ready);
+	.defer(d3.json, "world_countries.json")
+	.defer(d3.tsv, "world_population.tsv")
+	.await(ready);
 
+function checkForCountry(d) {
+	var countryPresent;
+	var map = countries.map(function (country) {
+		if (country == d.properties.name) {
+			countryPresent = true;
+		} else {
+			countryPresent = false;
+		}
+	});
+
+	if (map === undefined || map.length == 0) {
+		countryPresent = false;
+	}
+
+	return countryPresent;
+}
 function ready(error, data, population) {
 	var populationById = {};
-	
+
 	population.forEach(function (d) { populationById[d.id] = +d.population; });
 	data.features.forEach(function (d) { d.population = populationById[d.id] });
 	globalData = data;
 	worldSvg.append("g")
-	.attr("class", "countries")
-	.selectAll("path")
-	.data(data.features)
-	.enter().append("path")
-	.attr("d", path)
-	.style("fill", function (d) { return color(populationById[d.id]); })
-	.style('stroke', 'white')
-	.style('stroke-width', 1.5)
-	.style("opacity", 0.8)
-	// tooltips
-	.style("stroke", "white")
-	.style('stroke-width', 0.3)
-	.on('mouseover', function (d) {
-		tip.show(d);
-		
-		d3.select(this)
-		.style("opacity", 1)
-		.style("stroke", "#6f9600")//maybe change back to black?
-		.style("stroke-width", 3);
-	})
-	.on('mouseout', function (d) {
-		tip.hide(d);
-		
-		d3.select(this)
+		.attr("class", "countries")
+		.selectAll("path")
+		.data(data.features)
+		.enter().append("path")
+		.attr("d", path)
+		.style("fill", function (d) { return color(populationById[d.id]); })
+		.style('stroke', 'white')
+		.style('stroke-width', 1.5)
 		.style("opacity", 0.8)
+		// tooltips
 		.style("stroke", "white")
-		.style("stroke-width", 0.3);
-	})
-	//Here I add the country name to the countryname div -CQ
-	.on('click', function (d) {
-		countryName = document.getElementById("countryname");
-		if (countryName.hasChildNodes()) {
-			countryName.removeChild(countryName.childNodes[0]);
-		}
-		var newCountryName = document.createElement('h1');
-		newCountryName.appendChild(document.createTextNode('Country Selected: ' + d.properties.name));
-		countryName.appendChild(newCountryName);
-	});
-	
+		.style('stroke-width', 0.3)
+		.on('mouseover', function (d) {
+			tip.show(d);
+
+			d3.select(this)
+				.style("opacity", 1)
+				.style("stroke", "#6f9600")//maybe change back to black?
+				.style("stroke-width", 3);
+		})
+		.on('mouseout', function (d) {
+			tip.hide(d);
+
+			var highlight = checkForCountry(d); //Returns a boolean that if true, means that the country should remain highlighted
+
+			if (!highlight) {
+				d3.select(this)
+					.style("opacity", 0.8)
+					.style("stroke", "white")
+					.style("stroke-width", 0.3);
+			}
+		})
+		//Here I add the country name to the countryname div -CQ
+		.on('click', function (d) {
+
+			d3.select(this)
+				.style("opacity", 1)
+				.style("stroke", "#6f9600")//maybe change back to black?
+				.style("stroke-width", 3);
+
+			var allCountries = '';
+			countryName = document.getElementById("countryname");
+			countries.push(d.properties.name);
+			if (countryName.hasChildNodes()) {
+				countryName.removeChild(countryName.childNodes[0]);
+			}
+			var newCountryName = document.createElement('h1');
+			for (var i = 0; i < countries.length; i++) {
+				if ((i + 1) == (countries.length)) {
+					allCountries += countries[i];
+				} else {
+					allCountries += countries[i] + ", ";
+				}
+			}
+			newCountryName.appendChild(document.createTextNode('Country Selected: ' + allCountries));
+			countryName.appendChild(newCountryName);
+		});
 	worldSvg.append("path")
-	.datum(topojson.mesh(data.features, function (a, b) { return a.id !== b.id; }))
-	// .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
-	.attr("class", "names")
-	.attr("d", path);
+		.datum(topojson.mesh(data.features, function (a, b) { return a.id !== b.id; }))
+		// .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
+		.attr("class", "names")
+		.attr("d", path);
 }
 //=======================================================================================================================
 //Slider Code
@@ -171,50 +206,50 @@ noUiSlider.create(handlesSlider, {
 
 // 2. Use the margin convention practice
 var margin = { top: 50, right: 50, bottom: 50, left: 50 }
-//Update padding with new margins
-, width = width - margin.left - margin.right 	
-, height = height - margin.top - margin.bottom; 
+	//Update padding with new margins
+	, width = width - margin.left - margin.right
+	, height = height - margin.top - margin.bottom;
 
 var xScale = d3.scaleLinear()
-.domain([minAge, maxAge]) // input
-.range([0, width]); // output
+	.domain([minAge, maxAge]) // input
+	.range([0, width]); // output
 
 var yScale = d3.scaleLinear()
-.domain([0, 1]) // input
-.range([height, 0]); // output
+	.domain([0, 1]) // input
+	.range([height, 0]); // output
 // Add the SVG to the page and employ #2
 var svg2 = d3.select("#smellgraph").append("svg")
-.classed("svg-container", true) //container class to make it responsive
-.attr("preserveAspectRatio", "xMinYMin meet")
-.attr("viewBox", "0 0 600 300")
-.append("g")
-.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	.classed("svg-container", true) //container class to make it responsive
+	.attr("preserveAspectRatio", "xMinYMin meet")
+	.attr("viewBox", "0 0 600 300")
+	.append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // Call the x axis in a group tag
 // TO-DO Label this Age
 svg2.append("g")
-.attr("class", "x axis")
-.attr("transform", "translate(0," + height + ")")
-.call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
+	.attr("class", "x axis")
+	.attr("transform", "translate(0," + height + ")")
+	.call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
 
 // 4. Call the y axis in a group tag
 // TO-DO Label this Smelliness
 svg2.append("g")
-.attr("class", "y axis")
-.call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
+	.attr("class", "y axis")
+	.call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
 
 //=======================================================================================================================
 // Code for getting information from UI
 //=======================================================================================================================
 //This is what gets what gender is selected to run the simulation not what the user inputted
-d3.selectAll("input[name='gender']").on("change", function(){
+d3.selectAll("input[name='gender']").on("change", function () {
 	globalGender = this.value;
 	//re-run this simulation anytime this is changed
 	run_simulation()
 });
 
 //NOT WORKING YET
-d3.select("slider-handles").on("change", function(){
+d3.select("slider-handles").on("change", function () {
 	minAge = this.range.min;
 	maxAge = this.range.max;
 	//re-run this simulation anytime this is changed
@@ -226,16 +261,16 @@ d3.select("slider-handles").on("change", function(){
 // Button Functionality
 //=======================================================================================================================
 d3.select('#enter-information').on("click", function () {
-	d3.select(this).text("Edit Information"); 
+	d3.select(this).text("Edit Information");
 	d3.selectAll("#entry-information").toggle();
 	run_simulation();
 });
 d3.select('#run-simulation').on("click", function () {
-	d3.select(this).text("Run Simulation Again"); 
+	d3.select(this).text("Run Simulation Again");
 	run_simulation();
 });
 //source: https://blog.webkid.io/replacing-jquery-with-d3/
-d3.selection.prototype.toggle = function() {  
+d3.selection.prototype.toggle = function () {
 	var isHidden = this.style('display') == 'none';
 	return this.style('display', isHidden ? 'inherit' : 'none');
 }
@@ -243,74 +278,74 @@ d3.selection.prototype.toggle = function() {
 function scale_colors(gender) {
 	if (gender == 'F') return 'pink';
 	else return 'blue'
-} 
+}
 
 //Make simulation it's own function
 
 function run_simulation() {
-	
+
 	var results = [];
 	//TO-DO Swap out 100 for number of set simulations
-	for (var i = 0; i < 100; i ++) {
+	for (var i = 0; i < 100; i++) {
 		//TO-DO make this correlate to slider
 		var age = generateAge(minAge, maxAge);
 		var gender;
-		if (typeof globalGender == "undefined" || globalGender == "B"){
+		if (typeof globalGender == "undefined" || globalGender == "B") {
 			gender = generateGender();
 		}
-		else {gender = globalGender;}
+		else { gender = globalGender; }
 		var country = generateCountry(globalData);
-		var participant = {age: age, gender: gender, country:country};
+		var participant = { age: age, gender: gender, country: country };
 		var smelliness = getSmelliness(participant);
 		participant.smelliness = smelliness;
 		results.push(participant);
-	}		
-	
+	}
+
 	var smellinessByGender = d3.nest()
-	.key(function(d) { return d.gender; })
-	.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
-	.entries(results);
-	
+		.key(function (d) { return d.gender; })
+		.rollup(function (v) { return d3.mean(v, function (d) { return d.smelliness; }); })
+		.entries(results);
+
 	var smellinessByAge = d3.nest()
-	.key(function(d) { return d.age; })
-	.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
-	.entries(results);
-	
+		.key(function (d) { return d.age; })
+		.rollup(function (v) { return d3.mean(v, function (d) { return d.smelliness; }); })
+		.entries(results);
+
 	var smellinessByCountry = d3.nest()
-	.key(function(d) { return d.country; })
-	.rollup(function(v) { return d3.mean(v, function(d) { return d.smelliness; }); })
-	.entries(results);
-	
+		.key(function (d) { return d.country; })
+		.rollup(function (v) { return d3.mean(v, function (d) { return d.smelliness; }); })
+		.entries(results);
+
 	var xScale = d3.scaleLinear()
-	.domain([minAge, maxAge]) // input
-	.range([0, width]);
-// source: http://bl.ocks.org/Caged/6476579
-var div = d3.select("body").append("div")	
-    .attr("class", "tooltip")				
-    .style("opacity", 0);
+		.domain([minAge, maxAge]) // input
+		.range([0, width]);
+	// source: http://bl.ocks.org/Caged/6476579
+	var div = d3.select("body").append("div")
+		.attr("class", "tooltip")
+		.style("opacity", 0);
 
 
 	svg2.selectAll("circle").remove();
 	svg2.selectAll(".dot")
-	.data(results)
-	.enter().append("circle") // Uses the enter().append() method
-	.attr("class", "dot") // Assign a class for styling
-	.attr("cx", function (d) { return xScale(d.age) })
-	.attr("cy", function (d) { return yScale(d.smelliness) })
-	.style("fill", function (d) {return scale_colors(d.gender)})
-	.attr("r", 3)
-	.on("mouseover", function(d) {
-		div.transition()
-		.duration(200)
-		.style("opacity", .9);
-		div.html("Age: " + d.age + "<br/>" +  "Smelliness: " + d.smelliness.toFixed(2))
-			.style("left", d3.event.pageX + "px")
-			.style("top", (d3.event.pageY) + "px");
-	})
-	.on("mouseout", function(d) {
-		div.transition()
-			.duration(500)
-			.style("opacity", 0);
+		.data(results)
+		.enter().append("circle") // Uses the enter().append() method
+		.attr("class", "dot") // Assign a class for styling
+		.attr("cx", function (d) { return xScale(d.age) })
+		.attr("cy", function (d) { return yScale(d.smelliness) })
+		.style("fill", function (d) { return scale_colors(d.gender) })
+		.attr("r", 3)
+		.on("mouseover", function (d) {
+			div.transition()
+				.duration(200)
+				.style("opacity", .9);
+			div.html("Age: " + d.age + "<br/>" + "Smelliness: " + d.smelliness.toFixed(2))
+				.style("left", d3.event.pageX + "px")
+				.style("top", (d3.event.pageY) + "px");
+		})
+		.on("mouseout", function (d) {
+			div.transition()
+				.duration(500)
+				.style("opacity", 0);
 		});
 	return results;
 }
@@ -327,7 +362,7 @@ function generateGender() {
 	if (rand < .5) {
 		gender = 'F';
 	}
-	else{
+	else {
 		gender = 'M';
 	}
 	return gender;
@@ -341,7 +376,7 @@ function generateCountry(data) {
 	return country;
 }
 //TO-DO Evaluate how we want simulate smelliness
-function getSmelliness(participant){
+function getSmelliness(participant) {
 	var mean;
 	if (participant.gender == 'F') {
 		mean = .58;
@@ -350,10 +385,10 @@ function getSmelliness(participant){
 		mean = .595;
 	}
 	if (participant.age < 20)
-	//Kids smell more than adults
-	mean += .25;
-	else 
-	mean -= .2;
+		//Kids smell more than adults
+		mean += .25;
+	else
+		mean -= .2;
 	var smelliness = d3.randomNormal(mean, .25)();
 	if (smelliness < 0) smelliness = 0;
 	if (smelliness > 1) smelliness = 1;
