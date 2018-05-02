@@ -425,7 +425,7 @@ function generateGender() {
 // TO-DO change this to match the population of the country.
 function generateCountry(data) {
 	var rand = Math.floor((Math.random() * data.features.length));
-	var country = data.features[rand].properites.name;
+	var country = data.features[rand].id;
 	return country;
 }
 //TO-DO Evaluate how we want simulate smelliness
