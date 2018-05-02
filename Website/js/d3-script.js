@@ -302,7 +302,12 @@ function run_simulation() {
 			gender = generateGender();
 		}
 		else { gender = globalGender; }
-		var country = generateCountry(globalData);
+		if (countries.length == 0) {
+			var country = generateCountry(globalData);
+		}
+		else {
+			var country = generateCountry2(countries);
+		}
 		var participant = { age: age, gender: gender, country: country };
 		var smelliness = getSmelliness(participant);
 		participant.smelliness = smelliness;
@@ -425,7 +430,13 @@ function generateGender() {
 // TO-DO change this to match the population of the country.
 function generateCountry(data) {
 	var rand = Math.floor((Math.random() * data.features.length));
-	var country = data.features[rand].id;
+	var country = data.features[rand].properties.name;
+	return country;
+}
+
+function generateCountry2(countries) {
+	var rand = Math.floor((Math.random() * countries.length));
+	var country = countries[rand];
 	return country;
 }
 //TO-DO Evaluate how we want simulate smelliness
