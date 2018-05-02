@@ -158,12 +158,13 @@ function ready(error, data, population) {
 		.attr("d", path);
 
 	handlesSlider.noUiSlider.on('change', function (values, handle) {
-		console.log("min: " + values[0] + " max: " + values[1]);
+		console.log(" [" + values[0] + " , " + values[1]);
 		minAge = values[0];
 		maxAge = values[1];
 		//re-run this simulation anytime this is changed
 		run_simulation();
 	});
+
 }
 //=======================================================================================================================
 //Slider Code
@@ -190,19 +191,6 @@ noUiSlider.create(handlesSlider, {
 		density: 4
 	}
 });
-
-//handlesSlider.noUiSlider.on('update', function (values, handle) {
-
-
-//	//updateXAxis($(this), values);
-//	console.log("min: " + values[0] + " max: " + values[1]);
-//	minAge = values[0];
-//	maxAge = values[1];
-//	//re-run this simulation anytime this is changed
-//	run_simulation()
-//});
-
-
 
 //Might have to change to using something like this:
 //$(function () {
@@ -384,14 +372,14 @@ function run_simulation() {
 				.style("opacity", 0);
 		});
 
-		if (!jQuery.isEmptyObject(user)) {
-			var smellier = 0;
-			for (i=1; i < results.length; i++) {
-				if (results[i].smelliness > user.smellines) {
-					smellier++;
-				}
+	if (!jQuery.isEmptyObject(user)) {
+		var smellier = 0;
+		for (i = 1; i < results.length; i++) {
+			if (results[i].smelliness > user.smellines) {
+				smellier++;
 			}
 		}
+	}
 
 
 	return results;
