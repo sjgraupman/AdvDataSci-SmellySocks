@@ -5,8 +5,8 @@
 //=======================================================================================================================
 var globalData;
 var globalGender;
-var globalMinAge;
-var globalMaxAge;
+var minAge = 0;
+var maxAge = 100;
 var user = {};
 var results;
  function parseLine(line) {
@@ -156,15 +156,20 @@ function ready(error, data, population) {
 		// .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
 		.attr("class", "names")
 		.attr("d", path);
+
+		handlesSlider.noUiSlider.on('change', function (values, handle) {
+			console.log("min: " + values[0] + " max: " + values[1]);
+			minAge = parseInt(values[0]);
+			maxAge = parseInt(values[1]);
+			//re-run this simulation anytime this is changed
+			run_simulation();
+		});
 }
 //=======================================================================================================================
 //Slider Code
 //=======================================================================================================================
 var handlesSlider = document.getElementById('slider-handles');
 
-// TO-DO Make this line up with sliders
-var minAge = 0;
-var maxAge = 100;
 
 noUiSlider.create(handlesSlider, {
 	connect: true,
@@ -258,16 +263,6 @@ d3.selectAll("input[name='gender']").on("change", function () {
 	//re-run this simulation anytime this is changed
 	results = run_simulation()
 });
-
-//NOT WORKING YET
-d3.select("slider-handles").on("change", function () {
-	minAge = this.range.min;
-	maxAge = this.range.max;
-	//re-run this simulation anytime this is changed
-	results = run_simulation()
-});
-
-
 //=======================================================================================================================
 // Button Functionality
 //=======================================================================================================================
@@ -332,14 +327,18 @@ function run_simulation() {
 		};})
 		.entries(results);
 
-	//var xScale = d3.scaleLinear()
-	//	.domain([minAge, maxAge]) // input
-	//	.range([0, width]);
+	var xScale = d3.scaleLinear()
+		.domain([minAge, maxAge]) // input
+		.range([0, width]);
+	svg2.select("g")
+		.transition()
+		.duration(1000)
+		.call(d3.axisBottom(xScale));
+
 	// source: http://bl.ocks.org/Caged/6476579
 	var div = d3.select("body").append("div")
 		.attr("class", "tooltip")
 		.style("opacity", 0);
-
 
 	svg2.selectAll("circle").remove();
 	svg2.selectAll(".dot")
