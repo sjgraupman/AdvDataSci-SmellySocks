@@ -7,6 +7,7 @@ var globalData;
 var globalGender;
 var globalMinAge;
 var globalMaxAge;
+var user = {};
 function parseLine(line) {
 	return {
 		Row_Num: parseInt(line["Row_Number"]),
@@ -263,7 +264,7 @@ d3.select("slider-handles").on("change", function () {
 d3.select('#enter-information').on("click", function () {
 	d3.select(this).text("Edit Information");
 	d3.selectAll("#entry-information").toggle();
-	run_simulation();
+	getUserData();
 });
 d3.select('#run-simulation').on("click", function () {
 	d3.select(this).text("Run Simulation Again");
@@ -283,8 +284,10 @@ function scale_colors(gender) {
 //Make simulation it's own function
 
 function run_simulation() {
-
 	var results = [];
+	if (typeof user != "undefined" ) {
+		results.push(user);
+	}
 	//TO-DO Swap out 100 for number of set simulations
 	for (var i = 0; i < 100; i++) {
 		//TO-DO make this correlate to slider
@@ -316,9 +319,9 @@ function run_simulation() {
 		.rollup(function (v) { return d3.mean(v, function (d) { return d.smelliness; }); })
 		.entries(results);
 
-	var xScale = d3.scaleLinear()
-		.domain([minAge, maxAge]) // input
-		.range([0, width]);
+	//var xScale = d3.scaleLinear()
+	//	.domain([minAge, maxAge]) // input
+	//	.range([0, width]);
 	// source: http://bl.ocks.org/Caged/6476579
 	var div = d3.select("body").append("div")
 		.attr("class", "tooltip")
@@ -332,8 +335,18 @@ function run_simulation() {
 		.attr("class", "dot") // Assign a class for styling
 		.attr("cx", function (d) { return xScale(d.age) })
 		.attr("cy", function (d) { return yScale(d.smelliness) })
-		.style("fill", function (d) { return scale_colors(d.gender) })
-		.attr("r", 3)
+		.style("fill", function (d) { 
+			if (typeof d.Name != "undefined"){
+				return ("red");
+			}
+			else {return scale_colors(d.gender) }
+		})
+		.attr("r", function(d) {
+			if (typeof d.Name != "undefined"){
+				return 5;
+			}
+			else {return 3};
+		})
 		.on("mouseover", function (d) {
 			div.transition()
 				.duration(200)
@@ -379,19 +392,26 @@ function generateCountry(data) {
 function getSmelliness(participant) {
 	var mean;
 	if (participant.gender == 'F') {
-		mean = .58;
+		mean = .53;
 	}
 	else {
 		mean = .595;
 	}
 	if (participant.age < 20)
 		//Kids smell more than adults
-		mean += .25;
+		mean += .005*(20 - participant.age);
 	else
-		mean -= .2;
-	var smelliness = d3.randomNormal(mean, .25)();
+		mean -= .002*(participant.age - 20);
+	var smelliness = d3.randomNormal(mean, .15)();
 	if (smelliness < 0) smelliness = 0;
 	if (smelliness > 1) smelliness = 1;
 	return smelliness;
 }
 
+function getUserData() {
+	user.country = d3.select("#userCountry").node().value;
+	user.age = d3.select("input[name='userage']").property("value");
+	user.Name = d3.select("input[name='username']").property("value");
+	user.gender = d3.select('input[name="usergender"]:checked').node().value;
+	user.smelliness =getSmelliness(user);
+}
