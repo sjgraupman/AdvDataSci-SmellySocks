@@ -292,13 +292,6 @@ function run_simulation() {
 	var results = [];
 	if (!jQuery.isEmptyObject(user)) {
 		results.push(user);
-		svg2.selectAll("line").remove();
-		svg2.append("line")
-			.attr("x1", 0)
-			.attr("y1", yScale(user.smelliness))
-			.attr("x2", xScale(width))
-			.attr("y2", yScale(user.smelliness))
-			.attr("stroke", "red");
 	}
 	//TO-DO Swap out 100 for number of set simulations
 	for (var i = 0; i < 100; i++) {
@@ -398,6 +391,13 @@ function run_simulation() {
 			.style("font-size", "16px")
 			.style("text-decoration", "underline")
 			.text("You won " + smellier + "% of the races");
+		svg2.selectAll("line").remove();
+		svg2.append("line")
+				.attr("x1", 0)
+				.attr("y1", yScale(user.smelliness))
+				.attr("x2", xScale(width))
+				.attr("y2", yScale(user.smelliness))
+				.attr("stroke", "red");
 	}
 
 	return results;
