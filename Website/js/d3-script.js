@@ -376,10 +376,19 @@ function run_simulation() {
 		if (!jQuery.isEmptyObject(user)) {
 			var smellier = 0;
 			for (i=1; i < results.length; i++) {
-				if (results[i].smelliness > user.smellines) {
+				if (results[i].smelliness < user.smelliness) {
 					smellier++;
 				}
 			}
+		svg2.select("#graphtitle").remove("text");
+		svg2.append("text")
+		.attr("id", "graphtitle")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("text-decoration", "underline")  
+		.text("You won " + smellier + "% of the races");
 		}
 		
 	return results;
