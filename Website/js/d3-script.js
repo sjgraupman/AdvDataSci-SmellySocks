@@ -292,6 +292,13 @@ function run_simulation() {
 	var results = [];
 	if (!jQuery.isEmptyObject(user)) {
 		results.push(user);
+		svg2.selectAll("line").remove();
+		svg2.append("line")
+			.attr("x1", 0)
+			.attr("y1", yScale(user.smelliness))
+			.attr("x2", xScale(width))
+			.attr("y2", yScale(user.smelliness))
+			.attr("stroke", "red");
 	}
 	//TO-DO Swap out 100 for number of set simulations
 	for (var i = 0; i < 100; i++) {
@@ -445,11 +452,5 @@ function getUserData() {
 	user.Name = d3.select("input[name='username']").property("value");
 	user.gender = d3.select('input[name="usergender"]:checked').node().value;
 	user.smelliness = getSmelliness(user);
-	svg2.selectAll("line").remove();
-	svg2.append("line")
-		.attr("x1", 0)
-		.attr("y1", yScale(user.smelliness))
-		.attr("x2", xScale(width))
-		.attr("y2", yScale(user.smelliness))
-		.attr("stroke", "red");
+
 }
