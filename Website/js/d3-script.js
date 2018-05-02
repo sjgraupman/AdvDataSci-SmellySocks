@@ -156,6 +156,15 @@ function ready(error, data, population) {
 		// .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
 		.attr("class", "names")
 		.attr("d", path);
+
+	handlesSlider.noUiSlider.on('change', function (values, handle) {
+		console.log(" [" + values[0] + " , " + values[1]);
+		minAge = values[0];
+		maxAge = values[1];
+		//re-run this simulation anytime this is changed
+		run_simulation();
+	});
+
 }
 //=======================================================================================================================
 //Slider Code
@@ -344,6 +353,7 @@ function run_simulation() {
 		};})
 		.entries(results);
 
+<<<<<<< HEAD
 	population.forEach(function (d) { populationById[d.id] = 0; });
 	smellinessByCountry.forEach(function (d) {populationById[d.id] = d.count;})
 	data.features.forEach(function (d) { d.population = populationById[d.id] });
@@ -351,7 +361,13 @@ function run_simulation() {
 	//var xScale = d3.scaleLinear()
 	//	.domain([minAge, maxAge]) // input
 	//	.range([0, width]);
+=======
+	var xScale = d3.scaleLinear()
+		.domain([minAge, maxAge]) // input
+		.range([0, width]);
+>>>>>>> 769c147e75eee8d19552311d8f000f4d97188281
 	// source: http://bl.ocks.org/Caged/6476579
+
 	var div = d3.select("body").append("div")
 		.attr("class", "tooltip")
 		.style("opacity", 0);
@@ -390,15 +406,20 @@ function run_simulation() {
 				.style("opacity", 0);
 		});
 
-		if (!jQuery.isEmptyObject(user)) {
-			var smellier = 0;
-			for (i=1; i < results.length; i++) {
-				if (results[i].smelliness > user.smellines) {
-					smellier++;
-				}
+	if (!jQuery.isEmptyObject(user)) {
+		var smellier = 0;
+		for (i = 1; i < results.length; i++) {
+			if (results[i].smelliness > user.smellines) {
+				smellier++;
 			}
 		}
+<<<<<<< HEAD
 		
+=======
+	}
+
+
+>>>>>>> 769c147e75eee8d19552311d8f000f4d97188281
 	return results;
 }
 
