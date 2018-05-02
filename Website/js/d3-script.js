@@ -9,7 +9,7 @@ var globalMinAge;
 var globalMaxAge;
 var user = {};
 var results;
-/* function parseLine(line) {
+ function parseLine(line) {
 	return {
 		Row_Num: parseInt(line["Row_Number"]),
 		Time_Stamp: line["Time_Stamp"],
@@ -23,7 +23,6 @@ var results;
 d3.csv("Sock_Data_LibraryMock.csv", parseLine, function (error, data) {
 
 });
- */
 
 //=======================================================================================================================
 //World Map Code
@@ -80,7 +79,8 @@ function checkForCountry(d) {
 	return false;
 }
 function ready(error, data, population) {
-	population = population;
+	var populationById = {};
+
 	population.forEach(function (d) { populationById[d.id] = +d.population; });
 	data.features.forEach(function (d) { d.population = populationById[d.id] });
 	globalData = data;
@@ -249,18 +249,6 @@ svg2.append("text")
 	.attr("x",0 - (height / 2))
 	.style("text-anchor", "middle")
 	.text("Smelliness");      
-
-
-//=======================================================================================================================
-// SVG3 
-//=======================================================================================================================
-
-var svg3 = d3.select("#graph3").append("svg")
-.classed("svg-container", true) //container class to make it responsive
-.attr("preserveAspectRatio", "xMinYMin meet")
-.attr("viewBox", "0 0 10 10")
-.append("g")
-.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 //=======================================================================================================================
 // Code for getting information from UI
 //=======================================================================================================================
@@ -343,10 +331,6 @@ function run_simulation() {
 			avg: d3.mean(v, function(d) { return d.smelliness; })
 		};})
 		.entries(results);
-
-	population.forEach(function (d) { populationById[d.id] = 0; });
-	smellinessByCountry.forEach(function (d) {populationById[d.id] = d.count;})
-	data.features.forEach(function (d) { d.population = populationById[d.id] });
 
 	//var xScale = d3.scaleLinear()
 	//	.domain([minAge, maxAge]) // input
