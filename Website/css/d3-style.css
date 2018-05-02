@@ -148,11 +148,12 @@ form {
 div.tooltip {
 	position: absolute;
 	text-align: center;
-	width: 62px;
-	height: 50px;
-	padding: 2px;
+	width: inherit;
+	height: inherit;
+	padding: 12px;
 	font: 12px sans-serif;
-	background: lightsteelblue;
+	color: white;
+	background: #00283a;
 	border: 0px;
 	border-radius: 8px;
 	pointer-events: none;

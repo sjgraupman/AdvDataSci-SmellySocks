@@ -365,7 +365,7 @@ function run_simulation() {
 			div.transition()
 				.duration(200)
 				.style("opacity", .9);
-			div.html("Age: " + d.age + "<br/>" + "Smelliness: " + d.smelliness.toFixed(2))
+			div.html("Age: " + d.age + "<br/>" + "Smelliness: " + d.smelliness.toFixed(2) + "<br/>" + "Country of Origin: " + d.country)
 				.style("left", d3.event.pageX + "px")
 				.style("top", (d3.event.pageY) + "px");
 		})
