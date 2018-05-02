@@ -9,7 +9,7 @@ var minAge = 0;
 var maxAge = 100;
 var user = {};
 var results;
- function parseLine(line) {
+function parseLine(line) {
 	return {
 		Row_Num: parseInt(line["Row_Number"]),
 		Time_Stamp: line["Time_Stamp"],
@@ -138,7 +138,7 @@ function ready(error, data, population) {
 			if (countryName.hasChildNodes()) {
 				countryName.removeChild(countryName.childNodes[0]);
 			}
-			var newCountryName = document.createElement('h1');
+			var newCountryName = document.createElement('h3');
 			for (var i = 0; i < countries.length; i++) {
 				if ((i + 1) == (countries.length)) {
 					allCountries += countries[i];
@@ -146,7 +146,7 @@ function ready(error, data, population) {
 					allCountries += countries[i] + ", ";
 				}
 			}
-			newCountryName.appendChild(document.createTextNode('Country Selected: ' + allCountries));
+			newCountryName.appendChild(document.createTextNode(allCountries));
 			countryName.appendChild(newCountryName);
 
 			console.log(countries);
@@ -157,13 +157,13 @@ function ready(error, data, population) {
 		.attr("class", "names")
 		.attr("d", path);
 
-		handlesSlider.noUiSlider.on('change', function (values, handle) {
-			console.log("min: " + values[0] + " max: " + values[1]);
-			minAge = parseInt(values[0]);
-			maxAge = parseInt(values[1]);
-			//re-run this simulation anytime this is changed
-			run_simulation();
-		});
+	handlesSlider.noUiSlider.on('change', function (values, handle) {
+		console.log("min: " + values[0] + " max: " + values[1]);
+		minAge = parseInt(values[0]);
+		maxAge = parseInt(values[1]);
+		//re-run this simulation anytime this is changed
+		run_simulation();
+	});
 }
 //=======================================================================================================================
 //Slider Code
@@ -239,8 +239,8 @@ svg2.append("g")
 	.attr("transform", "translate(0," + height + ")")
 	.call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
 svg2.append("text")
-	.attr("x", width / 2 )
-	.attr("y",  height + .75* margin.bottom)
+	.attr("x", width / 2)
+	.attr("y", height + .75 * margin.bottom)
 	.style("text-anchor", "middle")
 	.text("Age");
 // 4. Call the y axis in a group tag
@@ -250,10 +250,10 @@ svg2.append("g")
 	.call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
 svg2.append("text")
 	.attr("transform", "rotate(-90)")
-	.attr("y", 0 - margin.left/2)
-	.attr("x",0 - (height / 2))
+	.attr("y", 0 - margin.left / 2)
+	.attr("x", 0 - (height / 2))
 	.style("text-anchor", "middle")
-	.text("Smelliness");      
+	.text("Smelliness");
 //=======================================================================================================================
 // Code for getting information from UI
 //=======================================================================================================================
@@ -321,10 +321,12 @@ function run_simulation() {
 
 	var smellinessByCountry = d3.nest()
 		.key(function (d) { return d.country; })
-		.rollup(function (v) { return {
-			count: v.length,
-			avg: d3.mean(v, function(d) { return d.smelliness; })
-		};})
+		.rollup(function (v) {
+			return {
+				count: v.length,
+				avg: d3.mean(v, function (d) { return d.smelliness; })
+			};
+		})
 		.entries(results);
 
 	var xScale = d3.scaleLinear()
@@ -373,24 +375,24 @@ function run_simulation() {
 				.style("opacity", 0);
 		});
 
-		if (!jQuery.isEmptyObject(user)) {
-			var smellier = 0;
-			for (i=1; i < results.length; i++) {
-				if (results[i].smelliness < user.smelliness) {
-					smellier++;
-				}
+	if (!jQuery.isEmptyObject(user)) {
+		var smellier = 0;
+		for (i = 1; i < results.length; i++) {
+			if (results[i].smelliness < user.smelliness) {
+				smellier++;
 			}
+		}
 		svg2.select("#graphtitle").remove("text");
 		svg2.append("text")
-		.attr("id", "graphtitle")
-        .attr("x", (width / 2))             
-        .attr("y", 0 - (margin.top / 2))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .style("text-decoration", "underline")  
-		.text("You won " + smellier + "% of the races");
-		}
-		
+			.attr("id", "graphtitle")
+			.attr("x", (width / 2))
+			.attr("y", 0 - (margin.top / 2))
+			.attr("text-anchor", "middle")
+			.style("font-size", "16px")
+			.style("text-decoration", "underline")
+			.text("You won " + smellier + "% of the races");
+	}
+
 	return results;
 }
 
