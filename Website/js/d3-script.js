@@ -8,6 +8,7 @@ var globalGender;
 var globalMinAge;
 var globalMaxAge;
 var user = {};
+var results;
 /* function parseLine(line) {
 	return {
 		Row_Num: parseInt(line["Row_Number"]),
@@ -31,7 +32,7 @@ d3.csv("Sock_Data_LibraryMock.csv", parseLine, function (error, data) {
 //=======================================================================================================================
 var format = d3.format(",");
 var countries = [];
-// Set tooltips
+// Set tooltips for map
 var tip = d3.tip()
 	.attr('class', 'd3-tip')
 	.offset([-10, 0])
@@ -79,8 +80,7 @@ function checkForCountry(d) {
 	return false;
 }
 function ready(error, data, population) {
-	var populationById = {};
-
+	population = population;
 	population.forEach(function (d) { populationById[d.id] = +d.population; });
 	data.features.forEach(function (d) { d.population = populationById[d.id] });
 	globalData = data;
@@ -233,13 +233,34 @@ svg2.append("g")
 	.attr("class", "x axis")
 	.attr("transform", "translate(0," + height + ")")
 	.call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
-
+svg2.append("text")
+	.attr("x", width / 2 )
+	.attr("y",  height + .75* margin.bottom)
+	.style("text-anchor", "middle")
+	.text("Age");
 // 4. Call the y axis in a group tag
 // TO-DO Label this Smelliness
 svg2.append("g")
 	.attr("class", "y axis")
 	.call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
+svg2.append("text")
+	.attr("transform", "rotate(-90)")
+	.attr("y", 0 - margin.left/2)
+	.attr("x",0 - (height / 2))
+	.style("text-anchor", "middle")
+	.text("Smelliness");      
 
+
+//=======================================================================================================================
+// SVG3 
+//=======================================================================================================================
+
+var svg3 = d3.select("#graph3").append("svg")
+.classed("svg-container", true) //container class to make it responsive
+.attr("preserveAspectRatio", "xMinYMin meet")
+.attr("viewBox", "0 0 10 10")
+.append("g")
+.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 //=======================================================================================================================
 // Code for getting information from UI
 //=======================================================================================================================
@@ -247,7 +268,7 @@ svg2.append("g")
 d3.selectAll("input[name='gender']").on("change", function () {
 	globalGender = this.value;
 	//re-run this simulation anytime this is changed
-	run_simulation()
+	results = run_simulation()
 });
 
 //NOT WORKING YET
@@ -255,7 +276,7 @@ d3.select("slider-handles").on("change", function () {
 	minAge = this.range.min;
 	maxAge = this.range.max;
 	//re-run this simulation anytime this is changed
-	run_simulation()
+	results = run_simulation()
 });
 
 
@@ -269,7 +290,7 @@ d3.select('#enter-information').on("click", function () {
 });
 d3.select('#run-simulation').on("click", function () {
 	d3.select(this).text("Run Simulation Again");
-	run_simulation();
+	results = run_simulation();
 });
 //source: https://blog.webkid.io/replacing-jquery-with-d3/
 d3.selection.prototype.toggle = function () {
@@ -317,8 +338,15 @@ function run_simulation() {
 
 	var smellinessByCountry = d3.nest()
 		.key(function (d) { return d.country; })
-		.rollup(function (v) { return d3.mean(v, function (d) { return d.smelliness; }); })
+		.rollup(function (v) { return {
+			count: v.length,
+			avg: d3.mean(v, function(d) { return d.smelliness; })
+		};})
 		.entries(results);
+
+	population.forEach(function (d) { populationById[d.id] = 0; });
+	smellinessByCountry.forEach(function (d) {populationById[d.id] = d.count;})
+	data.features.forEach(function (d) { d.population = populationById[d.id] });
 
 	//var xScale = d3.scaleLinear()
 	//	.domain([minAge, maxAge]) // input
@@ -370,8 +398,7 @@ function run_simulation() {
 				}
 			}
 		}
-
-
+		
 	return results;
 }
 
@@ -397,7 +424,7 @@ function generateGender() {
 // TO-DO change this to match the population of the country.
 function generateCountry(data) {
 	var rand = Math.floor((Math.random() * data.features.length));
-	var country = data.features[rand].properties.name;
+	var country = data.features[rand].id;
 	return country;
 }
 //TO-DO Evaluate how we want simulate smelliness
