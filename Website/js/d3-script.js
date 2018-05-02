@@ -443,16 +443,16 @@ function generateCountry2(countries) {
 function getSmelliness(participant) {
 	var mean;
 	if (participant.gender == 'F') {
-		mean = .53;
+		mean = .58;
 	}
 	else {
 		mean = .595;
 	}
 	if (participant.age < 20)
 		//Kids smell more than adults
-		mean += .005 * (20 - participant.age);
+		mean -= .005 * (20 - participant.age);
 	else
-		mean -= .002 * (participant.age - 20);
+		mean += .002 * (participant.age - 20);
 	var smelliness = d3.randomNormal(mean, .15)();
 	if (smelliness < 0) smelliness = 0;
 	if (smelliness > 1) smelliness = 1;
