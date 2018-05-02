@@ -8,7 +8,7 @@ var globalGender;
 var globalMinAge;
 var globalMaxAge;
 var user = {};
-function parseLine(line) {
+/* function parseLine(line) {
 	return {
 		Row_Num: parseInt(line["Row_Number"]),
 		Time_Stamp: line["Time_Stamp"],
@@ -22,7 +22,7 @@ function parseLine(line) {
 d3.csv("Sock_Data_LibraryMock.csv", parseLine, function (error, data) {
 
 });
-
+ */
 
 //=======================================================================================================================
 //World Map Code
@@ -307,7 +307,7 @@ function scale_colors(gender) {
 
 function run_simulation() {
 	var results = [];
-	if (typeof user != "undefined") {
+	if (!jQuery.isEmptyObject(user)) {
 		results.push(user);
 	}
 	//TO-DO Swap out 100 for number of set simulations
@@ -383,6 +383,17 @@ function run_simulation() {
 				.duration(500)
 				.style("opacity", 0);
 		});
+
+		if (!jQuery.isEmptyObject(user)) {
+			var smellier = 0;
+			for (i=1; i < results.length; i++) {
+				if (results[i].smelliness > user.smellines) {
+					smellier++;
+				}
+			}
+		}
+
+
 	return results;
 }
 
@@ -437,4 +448,11 @@ function getUserData() {
 	user.Name = d3.select("input[name='username']").property("value");
 	user.gender = d3.select('input[name="usergender"]:checked').node().value;
 	user.smelliness = getSmelliness(user);
+	svg2.selectAll("line").remove();
+	svg2.append("line")
+		.attr("x1", 0)
+		.attr("y1", yScale(user.smelliness))
+		.attr("x2", xScale(width))
+		.attr("y2", yScale(user.smelliness))
+		.attr("stroke", "red");
 }
