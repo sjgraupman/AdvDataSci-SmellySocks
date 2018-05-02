@@ -156,6 +156,14 @@ function ready(error, data, population) {
 		// .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
 		.attr("class", "names")
 		.attr("d", path);
+
+	handlesSlider.noUiSlider.on('change', function (values, handle) {
+		console.log("min: " + values[0] + " max: " + values[1]);
+		minAge = values[0];
+		maxAge = values[1];
+		//re-run this simulation anytime this is changed
+		run_simulation();
+	});
 }
 //=======================================================================================================================
 //Slider Code
@@ -182,6 +190,19 @@ noUiSlider.create(handlesSlider, {
 		density: 4
 	}
 });
+
+//handlesSlider.noUiSlider.on('update', function (values, handle) {
+
+
+//	//updateXAxis($(this), values);
+//	console.log("min: " + values[0] + " max: " + values[1]);
+//	minAge = values[0];
+//	maxAge = values[1];
+//	//re-run this simulation anytime this is changed
+//	run_simulation()
+//});
+
+
 
 //Might have to change to using something like this:
 //$(function () {
@@ -320,10 +341,11 @@ function run_simulation() {
 		.rollup(function (v) { return d3.mean(v, function (d) { return d.smelliness; }); })
 		.entries(results);
 
-	//var xScale = d3.scaleLinear()
-	//	.domain([minAge, maxAge]) // input
-	//	.range([0, width]);
+	var xScale = d3.scaleLinear()
+		.domain([minAge, maxAge]) // input
+		.range([0, width]);
 	// source: http://bl.ocks.org/Caged/6476579
+
 	var div = d3.select("body").append("div")
 		.attr("class", "tooltip")
 		.style("opacity", 0);
