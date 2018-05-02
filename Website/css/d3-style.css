@@ -1,5 +1,6 @@
 svg {
 	border: solid #00283a 5px;
+	background-color: #f2f2f2;
 	border-radius: 25px;
 	display: block;
 	margin: auto;
@@ -129,29 +130,31 @@ form {
 }
 /*SVG CSS*/
 .svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom 50%; /* aspect ratio */
-    vertical-align: top;
-    overflow: hidden;
-}
-.svg-content-responsive {
-    display: inline-block;
-    position: absolute;
-    top: 5px;
-    left: 0;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom 50%; /* aspect ratio */
+	vertical-align: top;
+	overflow: hidden;
 }
 
-div.tooltip {	
-    position: absolute;			
-    text-align: center;			
-    width: 62px;					
-    height: 50px;					
-    padding: 2px;				
-    font: 12px sans-serif;		
-    background: lightsteelblue;	
-    border: 0px;		
-    border-radius: 8px;			
-    pointer-events: none;			
+.svg-content-responsive {
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+div.tooltip {
+	position: absolute;
+	text-align: center;
+	width: inherit;
+	height: inherit;
+	padding: 12px;
+	font: 12px sans-serif;
+	color: white;
+	background: #00283a;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
 }
