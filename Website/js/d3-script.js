@@ -71,20 +71,12 @@ queue()
 	.await(ready);
 
 function checkForCountry(d) {
-	var countryPresent;
-	var map = countries.map(function (country) {
-		if (country == d.properties.name) {
-			countryPresent = true;
-		} else {
-			countryPresent = false;
+	for (var i = 0; i < countries.length; i++) {
+		if (countries[i] == d.properties.name) {
+			return true;
 		}
-	});
-
-	if (map === undefined || map.length == 0) {
-		countryPresent = false;
 	}
-
-	return countryPresent;
+	return false;
 }
 function ready(error, data, population) {
 	var populationById = {};
@@ -127,15 +119,22 @@ function ready(error, data, population) {
 		})
 		//Here I add the country name to the countryname div -CQ
 		.on('click', function (d) {
-
-			d3.select(this)
-				.style("opacity", 1)
-				.style("stroke", "#6f9600")//maybe change back to black?
-				.style("stroke-width", 3);
+			if (checkForCountry(d)) {
+				countries = countries.filter(cname => cname !== d.properties.name);
+				d3.select(this)
+					.style("opacity", 0.8)
+					.style("stroke", "white")
+					.style("stroke-width", 0.3);
+			} else {
+				countries.push(d.properties.name);
+				d3.select(this)
+					.style("opacity", 1)
+					.style("stroke", "#6f9600")//maybe change back to black?
+					.style("stroke-width", 3);
+			}
 
 			var allCountries = '';
 			countryName = document.getElementById("countryname");
-			countries.push(d.properties.name);
 			if (countryName.hasChildNodes()) {
 				countryName.removeChild(countryName.childNodes[0]);
 			}
@@ -149,6 +148,8 @@ function ready(error, data, population) {
 			}
 			newCountryName.appendChild(document.createTextNode('Country Selected: ' + allCountries));
 			countryName.appendChild(newCountryName);
+
+			console.log(countries);
 		});
 	worldSvg.append("path")
 		.datum(topojson.mesh(data.features, function (a, b) { return a.id !== b.id; }))
@@ -285,7 +286,7 @@ function scale_colors(gender) {
 
 function run_simulation() {
 	var results = [];
-	if (typeof user != "undefined" ) {
+	if (typeof user != "undefined") {
 		results.push(user);
 	}
 	//TO-DO Swap out 100 for number of set simulations
@@ -335,17 +336,17 @@ function run_simulation() {
 		.attr("class", "dot") // Assign a class for styling
 		.attr("cx", function (d) { return xScale(d.age) })
 		.attr("cy", function (d) { return yScale(d.smelliness) })
-		.style("fill", function (d) { 
-			if (typeof d.Name != "undefined"){
+		.style("fill", function (d) {
+			if (typeof d.Name != "undefined") {
 				return ("red");
 			}
-			else {return scale_colors(d.gender) }
+			else { return scale_colors(d.gender) }
 		})
-		.attr("r", function(d) {
-			if (typeof d.Name != "undefined"){
+		.attr("r", function (d) {
+			if (typeof d.Name != "undefined") {
 				return 5;
 			}
-			else {return 3};
+			else { return 3 };
 		})
 		.on("mouseover", function (d) {
 			div.transition()
@@ -399,9 +400,9 @@ function getSmelliness(participant) {
 	}
 	if (participant.age < 20)
 		//Kids smell more than adults
-		mean += .005*(20 - participant.age);
+		mean += .005 * (20 - participant.age);
 	else
-		mean -= .002*(participant.age - 20);
+		mean -= .002 * (participant.age - 20);
 	var smelliness = d3.randomNormal(mean, .15)();
 	if (smelliness < 0) smelliness = 0;
 	if (smelliness > 1) smelliness = 1;
@@ -413,5 +414,5 @@ function getUserData() {
 	user.age = d3.select("input[name='userage']").property("value");
 	user.Name = d3.select("input[name='username']").property("value");
 	user.gender = d3.select('input[name="usergender"]:checked').node().value;
-	user.smelliness =getSmelliness(user);
+	user.smelliness = getSmelliness(user);
 }
